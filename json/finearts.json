@@ -1,21 +1,72 @@
 "FineArts":{
-  "Name":"Fine Arts",
-  "NoOfEvents":"3",
+  "Name":"FINE ARTS",
+  "NoOfEvents":"5",
   "Events":[
     {
-      "Name": "Mehandi and Tattoo competition",
-      "Desc": "1.Let the designer inside you speak through a mehandi cone or produce temporary tattoos. Bring your style into action with your traditional and modern patterns. Arabian designs, exotic artistry or any form of creative expression is most welcome. Materials will be provided.",
-      "Dating": " ",
-      "Timing": " ",
-      "Venue": " ",
+      "Name": "GRAB A BRUSH(THEME PAINTING)",
+      "Desc": "Bring the picasso in you with your colorful thoughts that flash when you hear the words. With your team convince us that you can reflect your message from your drawing in the preliminary round to guess within 2 minutes what you draw.",
+      "Dating": " 9th March 2017",
+      "Timing": "10 am to 1 pm",
+      "Venue": "CSE Department",
+      "Info": ["Prize Money: 1000, 750, 500 "],
+      "Ruling": [
+         "Plagiarism of any artist's work will lead to disqualifaction.",
+        "Team members is restricted to maximum 3 per team.",
+        "The art is to be completed within 45 MINUTES."
+      ],
+      "Contact": [
+        {
+          "Name":"M Kishore",
+          "Number":"9597967114"
+        },
+        {
+          "Name":"JAYASHREE .B",
+          "Number":"8939271047"
+        }
+      ]
+    },
+  {
+     "Name": "LOGO FLASH",
+     "Desc": "Look at the blurry logo, identify it and reproduce it as it is within 20 minutes. Simple right? Just testing your capability to capture a picture in your mind within seconds. Materials will be provided. Come in groups and win exciting prizes!",
+     "Dating": " 9th March 2017 ",
+     "Timing": " 2 pm to 5 pm ",
+     "Venue": " CSE Department ",
+     "Info": [
+        "Prize Money: 1000, 750, 500 "
+      ],
+     "Ruling": [
+       "Team members is restricted to maximum 3 per team. ",
+       "The art is to be completed within 30 MINUTES."
+     ],
+     "Contact": [
+        {
+          "Name":"JAYASHREE .B",
+          "Number":"8939271947"
+        },
+       {
+         "Name":"P K PRIYADHARSHINI",
+         "Number":"9840633991"
+       }
+     ]
+    },
+    {
+      "Name": "MEHANDI AND TATTOO COMPETITION",
+      "Desc": "Let the designer inside you speak through a mehandi cone or produce temporary tattoos. Bring your style into action with your traditional and modern patterns. Arabian designs, exotic artistry or any form of creative expression is most welcome. Materials will be provided.",
+      "Dating": "10th March 2017 ",
+      "Timing": " 1 pm to 3 pm ",
+      "Venue": " CSE Department ",
       "Info": [
-        "Prize Money: 1500, 1000, 500"
+        "Prize Money: 1000, 750, 500"
       ],
       "Ruling": [
-        "Team members is to be restricted to two per team.",
+        "Team members is to be restricted to 2 per team.",
         "Time taken to complete the art should be less than 45 minutes."
       ],
       "Contact": [
+       {
+          "Name":"JAYASHREE .B",
+          "Number":"8939271947"
+        },
         {
           "Name":"SOWMYA .J ",
           "Number":"9940132109"
@@ -23,35 +74,37 @@
       ]
     },
     {
-     "Name": "LOGO FLASH",
-     "Desc": "Look at the blurry logo, identify it and reproduce it as it is within 20 minutes. Simple right? Just testing your capability to capture a picture in your mind within seconds. Materials will be provided. Come in groups and win exciting prizes!",
-     "Dating": " ",
-     "Timing": " ",
-     "Venue": " ",
-     "Info": [
-        "Prize Money: 1500, 1000, 500 "
-      ],
-     "Ruling": [
-       "Team members is restricted to maximum 3 per team. ",
-       "The art is to be completed within 45 MINUTES."
-     ],
-     "Contact": [
-       {
-         "Name":"P K PRIYADHARSHINI",
-         "Number":"9840633991"
-       }
-     ]
-   },
-   {
-      "Name": "Doodle War",
-      "Desc": "Unleash your creativity and express your emotions through the doodles. Draw all that comes in your mind when you hear this word. Fill the chart with doodles enriched with creative art. Come with your friends and let your creativity reflect the theme.",
-      "Dating": "",
-      "Timing": "",
-      "Venue": "",
+      "Name": "FACE PAINTING",
+      "Desc": "Let's bring the true colours in our head, with faces painted in designs using paint brushes and the cosmetic paint. Right it's time for face painting.  Materials will NOT be provided.",
+      "Dating": " 10th March 2017",
+      "Timing": "3 pm to 5 pm",
+      "Venue": "CSE Department",
       "Info": ["Prize Money: 1000, 750, 500 "],
       "Ruling": [
-        "Maximum 3(PER TEAM) minimum(one per)",
-        "TIME:45 MINUTES"
+        "Team members is restricted to maximum 3 per team.",
+        "The art is to be completed within 45 MINUTES."
+      ],
+      "Contact": [
+        {
+          "Name":"M Kishore",
+          "Number":"9597967114"
+        },
+        {
+          "Name":"RUBY",
+          "Number":"8973551951"
+        }
+      ]
+    },
+   {
+      "Name": "DOODLE WAR",
+      "Desc": "Unleash your creativity and express your emotions through the doodles. Draw all that comes in your mind when you hear this word. Fill the chart with doodles enriched with creative art. Come with your friends and let your creativity reflect the theme.",
+      "Dating": " 11th March 2017",
+      "Timing": "2 pm to 4 pm",
+      "Venue": "CSE Department",
+      "Info": ["Prize Money: 1000, 750, 500 "],
+      "Ruling": [
+        "Team members is restricted to maximum 3 per team.",
+        "The art is to be completed within 45 MINUTES."
       ],
       "Contact": [
         {
