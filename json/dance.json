@@ -1,0 +1,95 @@
+{"Dance":{
+  "Name":"Dance",
+  "NoOfEvents":"2",
+  "Events":[
+    {
+      "Name": "Adapt to Tune",
+      "Desc": "Got the skills to kill any beat that we play and adapt perfectly to the style? Here is the right place to showcase your swag! Come show us what you got!!",
+      "Dating": "09\/03\/2017",
+      "Timing": "10 am",
+      "Venue": "Main Stage",
+      "Info": [],
+      "Ruling": [
+        "The performance will be between 2-3 minutes",
+        "The participant should be a college student.",
+        "The songs played may be of any genre.",
+        "Judges decision will be final."
+      ],
+      "Contact": [
+        {
+          "Name":"Priyanka C",
+          "Number":"9003114115"
+        }
+      ]
+    },
+    {
+      "Name": "Classical dual",
+      "Desc": "The performance can be in any indian classical dance genere such as bharathanatyam,kathak,mohiniyattam with 2 members in a team.",
+      "Dating": "09\/03\/2017",
+      "Timing": "10:00 am",
+      "Venue": "Main stage",
+      "Info": [
+        "Total prize amount : 5000"
+      ],
+      "Ruling": [
+        " The performance must be between 3 to 5 minutes.",
+        "The performance can be in any Indian classical dance genre. (bharatanatyam, kuchipudi, mohiniyattam, odissi etc) ",
+        "Participants must be college students only. ",
+        "The scoring will be based on performance,presentation and costume\/makeup.",
+        "The music\/song for the performance should be classical (Non-film Song)"
+      ],
+      "Contact": [
+        {
+          "Name":"Sujana",
+          "Number":"9600094640"
+        }
+      ]
+    },
+    {
+      "Name": "Choreonite",
+      "Desc": "It is that time of the year again when the best of dance teams share a stage, break a sweat and compete for that one elusive moment of glory. It's time for you to awe us with your effortless moves, panache and inimitable choreography that gets the audience going wild for an encore. So what are you waiting for? Strap on your sneakers, bring in your boomboxes and show us that you’ve got what it takes to be crowned the best team in town.",
+      "Dating": "10 March 2017 ",
+      "Timing": "5pm",
+      "Venue": "Main stage",
+      "Info": [
+        "*Prelims video should be sent to dance.instincts.2k17@gmail.com*"
+      ],
+      "Ruling": [
+        "A minimum of eight and a maximum of twenty five students ONSTAGE (+2 for off stage help) per team.",
+        "College IDs is a must for all the participants. ",
+        "The teams have to strictly do a WESTERN performance.",
+        "Fire, water, powder or any kind of other harmful props are prohibited.",
+        "A maximum of 7 minutes will be allotted to each team.",
+        "The decision of the judges will be final.",
+        "Any violation of the above rules will result in disqualification."
+      ],
+      "Contact": [
+        {
+          "Name":"Arjun S M",
+          "Number":"8754008373"
+        }
+      ]
+    },
+    {
+      "Name": "Western Solo",
+      "Desc": "Have you got the attitude and the moves that take to tear up the dance floor? Do you shine every time you're on stage doing your style? From Jazz to Hip hop, to Broadway, we've got 'em all! So come on, groove to your music and wow us with those moves you do oh so effortlessly!",
+      "Dating": "9 March 2017 ",
+      "Timing": "10 am",
+      "Venue": "Main stage",
+      "Info": [],
+      "Ruling": [
+        "The performance must be between 2 to 3 minutes.",
+        "The performance can be in any Western genre.",
+        "Participants must be college students only.",
+        "The music/track for the performance should be given in a pendrive."
+      ],
+      "Contact": [
+        {
+          "Name":"D K Vigneshwar",
+          "Number":"9500135345"
+        }
+      ]
+    }
+  ]
+}
+}

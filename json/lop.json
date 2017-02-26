@@ -1,0 +1,33 @@
+
+	"LOP": {
+		"Name": "Lights Out Please",
+		"NoOfEvents": "1",
+		"Events": [{
+			"Name": "Theatre24",
+			"Desc": "Is acting your passion? Have you always wanted to be under the spotlight? Theatre24 gives everyone an opportunity to experience exactly that! This event is all about testing your theatre skills within 24 hours. It’s all about the creative ideas and the crisp implementation.",
+			"Dating": "10-03-2017",
+			"Timing": "8.00 a.m.",
+			"Venue": "Mini Auditorium ",
+			"Info": [],
+			"Ruling": [
+				"5 member cast + crew ",
+				"Registration fee is 50 per member ",
+				"One 15 minute script with 5 characters will be handed to each team on the 9th of March at 9am at the Humanities Block ",
+				"The scripts are chosen by drawing lots ",
+				"One representative from each participating team must be present in the campus on the 9th of March and must pay Rs.250 (Reg. fees for 5 members). Rest of the members can register on the 10th. Teams have full freedom to adapt the script (gender swapping, adding local vernacular, extending time etc.) ",
+				"The event starts at 8am on the 10th ",
+				"Each team will be given time on the 10th to test out lights and sound ",
+				"Participants will be judged based on their ability to execute the play within the given time constraint and their theatre skills"
+			],
+			"Contact": [{
+				"Name": "Anusha",
+				"Number": "9176767385"
+			}, {
+				"Name": "Karthik",
+				"Number": "9952910767"
+			}, {
+				"Name": "Yamini",
+				"Number": "9600083063"
+			}]
+		}]
+	}

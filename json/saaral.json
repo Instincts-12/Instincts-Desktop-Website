@@ -1,0 +1,243 @@
+"Saaral":{
+  "Name":"Saaral",
+  "NoOfEvents":"10",
+  "Events":[
+    {
+      "Name": "PATTI MANDRAM (Debate)",
+      "Desc": "If you know the magic of speech, then the stage is for you ",
+      "Dating": "",
+      "Timing": "",
+      "Venue": [],
+      "Info": [
+        "First prize: Rs.3000",
+        "Second prize: Rs.2000",
+        "Third prize: Rs.1500",
+        "Fourth prize: Rs.1000",
+        "Fifth prize: Rs.1000",
+        "Sixth prize: Rs.1000"
+      ],
+      "Ruling": [
+        "Prelims pechu potti (speech) Rules:",
+        "The duration will be three minutes.",
+        "Every second of performance after the allocated three minutes will lead to reduction of marks.",
+        "Four topics wil be given. The participant must choose one among them.",
+        "Blaming without proof and usage of non-parlimentary words is not allowed.",
+        "Participants will be selected on the basis of pronunciation, information conveyed and the way it is conveyed.",
+        "Decision of the judges will be the final one.",
+        "Topics: Finals Debate Rules:",
+        "Top four qualified in speech can participate in this debate.",
+        "The duration will be seven minutes.",
+        "Blaming without proof and usage of non-parlimentary words is not allowed."
+      ],
+      "Contact": [
+        {
+          "Name":"David",
+          "Number":"8122142493"
+        }
+      ]
+    },
+    {
+      "Name": "VAAYAI MOODI PESAVUM (DumbC)",
+      "Desc": "Actions speak louder than words. Prove this even more by testing your DumbC skills!",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [
+        "First prize: Rs.1500",
+        "Second prize: Rs.1000",
+        "Third prize: Rs.500"
+      ],
+      "Ruling": [
+        "Prelims Rules:",
+        "A team must consist two members.",
+        "Usage of mouth to convey the data is considered illegal.",
+        "The data should not be conveyed by writing it.",
+        "A team will be given a question paper which consists five words(data to be conveyed).",
+        "The duration will be two minutes.",
+        "The time required by the participant will be considered.",
+        "Any sort of misbehaviour or any act of hurting any individual is not allowed.",
+        "Finals Rules:",
+        "A team must consist two members.",
+        "Usage of mouth to convey the data is considered illegal.",
+        "The data should not be conveyed by writing it.",
+        "The data to be conveyed would be thirukkural, proverbs and book titles.",
+        "The time required by the participant will be considered.",
+        "Any sort of misbehaviour or any act of hurting any individual is not allowed."
+      ],
+      "Contact": [
+        {
+          "Name":"Mohan",
+          "Number":"9500819724"
+        }
+      ]
+    },
+    {
+      "Name": "VAARTHTHAI VILAYAATTU",
+      "Desc": "Play with all those Tamil words you know!",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "A team can consist of maximum two members.",
+        "Each team will be given with a set of words .one should give clues to find the word with which the other will find the word.",
+        "No actions are allowed."
+      ],
+      "Contact": []
+    },
+    {
+      "Name": "KALAKKAL KAVIDHAI (poetry writ",
+      "Desc": "Welcome to all those outstanding poets spread across the state. Are you a person who has got talents to decorate the tamil language with magic of words?? If yes, then this is the right platform for you.",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [
+        "First prize: Rs.1500",
+        "Second prize: Rs.1000",
+        "Third prize: Rs.500"
+      ],
+      "Ruling": [
+        "The topics will announced on the day of event.",
+        "The competition includes three rounds namely: haiku (maximum three line poems), poem on given topic and poem about the given picture.",
+        "The poem should be out of your own creativity.",
+        "Mixing of other language words is not allowed.",
+        "The duration will be one hour.",
+        "It is a Individual event."
+      ],
+      "Contact": [
+        {
+        "Name":"Ajith",
+        "Number":"9789306010"
+        }
+      ]
+    },
+    {
+      "Name": "SAKALAKALAA VALLAVAN ",
+      "Desc": "The perfect stage for an all rounder!",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "Prelims Rules:",
+        "Prelims will be a written test.",
+        "A team can consist of maximum two members.",
+        "The questions can be related to any field like politics, history, economics, sports, cinema, etc.",
+        "Use of cellphones or any other electronic gadgets is strictly prohibited.",
+        "The duration is 45 minutes.",
+        "Finals Rules:",
+        "Six teams will be selected based on their performance in prelims.",
+        "The rules and regulations for various stages for the final round will be announced during the event."
+      ],
+      "Contact": []
+    },
+    {
+      "Name": "KIRUKKEZHUTHTHU (creative writ",
+      "Desc": "If you are a person filled in with creative thoughts, then this would the best event for you to try out!",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "The topics will announced on the day of event.",
+        "The duration will be 45 minutes.",
+        "All the questions must be answered.",
+        "Mixing of other language words will lead to reduction of marks.",
+        "It is a Individual event."
+      ],
+      "Contact": [
+        {
+          "Name": "Ram Sharma",
+          "Number": "9659336828"
+        }
+      ]
+    },
+    {
+      "Name": "SIRUKADHAI POTTI (story writing)",
+      "Desc": "If you are the one who writes stories with all small incident that happens around you, then this is the right place to show up your talent.",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "This is an individual event.",
+        "A paragraph will be given. And it should be placed at some point of your story.",
+        "Relevant title must be given.",
+        "The story should be out of your own creativity.",
+        "The story should neither be less than three pages not exceed four pages.",
+        "The duration will be 40 minutes."
+      ],
+      "Contact": [
+        {
+          "Name": "Sathees Babu",
+          "Number": "9597487243"
+        }
+      ]
+    },
+    {
+      "Name": "KURUKKEZHUTHTHU (crossword)",
+      "Desc": "If you are the person who has the talent of filling the squares with Tamil alphabets, then this is your turn.",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "The duration will be 20 minutes.",
+        "Spelling mistakes will lead to reduction of marks.",
+        "Usage of cellphones or any other gadgets will lead to disqualification.",
+        "A team can consist of maximum of two members."
+      ],
+      "Contact": [
+        {
+          "Name": "Divya",
+          "Number": "9677961704"
+        }
+      ]
+    },
+    {
+      "Name": "ISAITAMIL (traditional Tamil s",
+      "Desc": "Get ready to feed the audience with your outstanding Tamil traditional music.",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "A team can consist of maximum of two members.",
+        "The song must be traditional tamil song\/music (no cine song).",
+        "The song should not exceed five minutes.",
+        "Every second of performance after the allocated five minutes will lead to reduction of marks.",
+        "No musical instruments are allowed.",
+        "Decision of the judges will be the final one."
+      ],
+      "Contact": [
+        {
+          "Name": "Ganesh Kumar",
+          "Number": "9791736183"
+        }
+      ]
+    },
+    {
+      "Name": "KOLAM",
+      "Desc": "Time to decorate the floor!",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "A team can consist of two or three people.",
+        "Your art can be a dotted pattern or a rangoli.",
+        "The maximum area that can be used is 5*5 square feet.",
+        "The duration will be 90 minutes.",
+        "All needed things are to be brought by the participants.",
+        "Templates are not allowed.",
+        "Decision of the judges will be the final one."
+      ],
+      "Contact": [
+        {
+          "Name": "Sathya Priya",
+          "Number": "9791679758"
+        }
+      ]
+    }
+  ]
+}

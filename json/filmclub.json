@@ -1,0 +1,33 @@
+"FilmClub":{
+  "Name":"Film Club",
+  "NoOfEvents":"1",
+  "Events":[
+    {
+      "Name": "REELS OF FIRE",
+      "Desc": "Short film contest.",
+      "Dating": "10-03-17",
+      "Timing": "9AM - 12PM",
+      "Venue": "Main auditorium",
+      "Info": [
+        "Prize money worth Rs30,000"
+      ],
+      "Ruling": [
+        "Theme - open theme. ",
+        "Max duration - 15 min",
+        "Deadline - March 7",
+        "Entry - Rs500 for short listed entries",
+        "Send your entries to - ssnfilmclubrof2k17@gmail.com"
+      ],
+      "Contact": [
+        {
+          "Name":"S.NAVEEN",
+          "Number":"9597303058"
+        },
+        {
+          "Name":"Kamesh",
+          "Number":"9677168403"
+        }
+      ]
+    }
+  ]
+}

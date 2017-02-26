@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sampleINSTINCTS-2K17</title>
+    <!-- <link href="css/style.css" rel="stylesheet"/>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      var setsky = function(dr,dg,db,lr,lg,lb) {
+        var colorone = 'rgb(' + dr + ',' + dg + ',' + db + ')';
+        var colortwo = 'rgb(' + lr + ',' + lg + ',' + lb + ')';
+        // console.log(colorone+" "+colortwo);
+        $('#body').css({background: 'linear-gradient(to bottom,' + colorone + ',' + colortwo + ')'});
+      }
+      var calcskycolor = function(start,end,time) {
+        return Math.round((end-start)*time/5400);
+      }
+      var sky = function(){
+        var startdr,startdg,startdb,enddr,enddg,enddb,startlr,startlg,startlb,endlr,endlg,endlb,time;
+        var today = new Date();
+    		var skyhr = today.getHours();
+    		var skymin = today.getMinutes();
+        // var skyhr = 18;
+    		// var skymin = 0;
+        if(skyhr == 4 && skymin >30){
+          time = (skymin-30) * 60 ;
+          startdr = 40; enddr = 192; startlr = 75; endlr = 240;
+          startdg = 62; enddg = 81; startlg = 121; endlg = 203;
+          startdb = 81; enddb = 48; startlb = 161; endlb = 53;
+        }else if(skyhr > 4 && skyhr < 6){
+          time = 1800 + (skymin * 60) ;
+          startdr = 40; enddr = 192; startlr = 75; endlr = 240;
+          startdg = 62; enddg = 81; startlg = 121; endlg = 203;
+          startdb = 81; enddb = 48; startlb = 161; endlb = 53;
+        }else if(skyhr > 5 && skyhr < 7){
+          time = (skymin * 60) ;
+          startdr = 192; enddr = 148; startlr = 240; endlr = 256;
+          startdg = 81; enddg = 233; startlg = 203; endlg = 256;
+          startdb = 48; enddb = 254; startlb = 53; endlb = 256;
+        }else if(skyhr == 7 && skymin < 30){
+          time = 3600 + (skymin * 60) ;
+          startdr = 192; enddr = 148; startlr = 240; endlr = 256;
+          startdg = 81; enddg = 233; startlg = 203; endlg = 256;
+          startdb = 48; enddb = 254; startlb = 53; endlb = 256;
+        }else if(skyhr == 7 && skymin >=30){
+          time = 0 ;
+          startdr = 148; enddr = 148; startlr = 256; endlr = 256;
+          startdg = 233; enddg = 233; startlg = 256; endlg = 256;
+          startdb = 254; enddb = 254; startlb = 256; endlb = 256;
+        }else if(skyhr > 7 && skyhr < 16){
+          time = 0 ;
+          startdr = 148; enddr = 148; startlr = 256; endlr = 256;
+          startdg = 233; enddg = 233; startlg = 256; endlg = 256;
+          startdb = 254; enddb = 254; startlb = 256; endlb = 256;
+        }else if(skyhr == 16 && skymin <=30){
+          time = 0 ;
+          startdr = 148; enddr = 148; startlr = 256; endlr = 256;
+          startdg = 233; enddg = 233; startlg = 256; endlg = 256;
+          startdb = 254; enddb = 254; startlb = 256; endlb = 256;
+        }else if(skyhr == 16 && skymin > 30){
+          time = (skymin-30) * 60 ;
+          startdr = 148; enddr = 192; startlr = 256; endlr = 240;
+          startdg = 233; enddg = 81; startlg = 256; endlg = 203;
+          startdb = 254; enddb = 48; startlb = 256; endlb = 53;
+        }else if(skyhr > 16 && skyhr < 18){
+          time = 1800 + (skymin * 60);
+          startdr = 148; enddr = 192; startlr = 256; endlr = 240;
+          startdg = 233; enddg = 81; startlg = 256; endlg = 203;
+          startdb = 254; enddb = 48; startlb = 256; endlb = 53;
+        }else if(skyhr > 17 && skyhr <19){
+          time = (skymin * 60);
+          startdr = 192; enddr = 40; startlr = 240; endlr = 75;
+          startdg = 81; enddg = 62; startlg = 203; endlg = 121;
+          startdb = 48; enddb = 81; startlb = 53; endlb = 161;
+        }else if(skyhr == 19 && skymin < 30){
+          time = 3600 + (skymin * 60);
+          startdr = 192; enddr = 40; startlr = 240; endlr = 75;
+          startdg = 81; enddg = 62; startlg = 203; endlg = 121;
+          startdb = 48; enddb = 81; startlb = 53; endlb = 161;
+        }
+        var dr = startdr + calcskycolor(startdr,enddr,time);
+        var dg = startdg + calcskycolor(startdg,enddg,time);
+        var db = startdb + calcskycolor(startdb,enddb,time);
+        var lr = startlr + calcskycolor(startlr,endlr,time);
+        var lg = startlg + calcskycolor(startlg,endlg,time);
+        var lb = startlb + calcskycolor(startlb,endlb,time);
+        setsky(dr,dg,db,lr,lg,lb);
+      };
+      var setstarsize = function(){
+        for (var i = 0; i < 20; i++) {
+          var n = i+1;
+          var star = ".star" + n;
+          var starsize = Math.random()*15+10;
+          // console.log(starsize);
+          $(star).height(starsize);
+          $(star).width(starsize);
+        }
+      };
+      var spreadstar =function() {
+        var vpw = $(window).width();
+        for (var i = 0; i < 20; i++) {
+          var n = i+1;
+          var star = ".star" + n;
+          var starleft = (Math.random()* vpw) - 25;
+          var startop = (Math.random()* 300) - 25;
+          // console.log(starsize);
+          $(star).css({'left' : starleft , 'top': startop});
+          // $(star).width(starsize);
+        }
+      };
+      var blinkstars = function() {
+        setInterval(function() {
+          var vpw = $(window).width();
+          var n = (Math.random() * 5) + 1;
+          for (var i = 1; i <= n; i++) {
+            var k = Math.round(Math.random()*20);
+            var star = ".star" + k;
+            var starleft = (Math.random()* vpw) - 25;
+            var startop = (Math.random()* 300) - 25;
+            $(star).hide(100);
+            $(star).css({'left' : starleft , 'top': startop});
+            $(star).show(100);
+          }
+        },1000);
+      };
+      $(document).ready(function() {
+        sky();
+        setInterval(sky,60000);
+        setstarsize();
+        spreadstar();
+        blinkstars();
+
+      });
+      var app = angular.module('instincts', []);
+      app.controller('instinctsctrl', function($scope, $http) {
+        // $http.get("js/events.json")
+        //   .success(function(response) {
+        //       $scope.clubdetails = response;
+        //       $scope.club= response.Quiz;
+        //       $scope.event = $scope.club.Events[0];
+        //       checkarrow();
+        //       eventnamereset();
+        //       $('.events-side-back ul li').eq(0).addClass('club-selected');
+        //   })
+        //   .error(function(response) {
+        //       $scope.clubdetails = "Failed To fetch data from Server";
+        //   });
+          $scope.moveimageleft = function() {
+        		var ileft = $('.img-layers').position().left;
+        		var iwidth = $('.img-layers').width();
+        		var iowidth = $('.small-imgs').width()-60;
+        		if( ileft < 0 ){
+        			var ichange = 800;
+        			if(-ileft<800)
+        			ichange = -ileft;
+        			$('.img-layers').animate({left: ileft + ichange},500);
+        		}
+        	};
+
+
+        	$scope.moveimageright = function() {
+        		var ileft = $('.img-layers').position().left;
+        		var iwidth = $('.img-layers').width();
+        		var iowidth = $('.small-imgs').width()-60;
+        		if( -ileft + iowidth < iwidth){
+        			var ichange =800;
+        			if(iwidth - iowidth +ileft < 800){ichange = iwidth - iowidth +ileft }
+        			$('.img-layers').animate({left: ileft - ichange},500);
+        		}
+        	};
+
+          $scope.changeimage = function(x) {
+            $('.big-img').attr("src","img/gallery/big/"+x+".jpg");
+          }
+      });
+
+    </script>
+    <style>
+      @font-face {
+        font-family: 'fontRegular';
+        src: url('font/segoeui.ttf');
+      }
+      @font-face {
+        font-family: 'fontTitle';
+        src: url('font/rockwell.ttf');
+      }
+      @font-face {
+        font-family: 'fontBold';
+        src: url('font/segoeuib.ttf');
+      }
+      *{margin: 0;padding: 0;}
+      body{width: 100vw;height: 100vh; background:linear-gradient(to bottom, rgb(40,62,81), rgb(75,121,161));}
+      .stars{
+        height:50%;
+        width: 100%;
+        position: fixed;
+        /*background: #fff;*/
+      }
+      .stars img{
+        position: absolute;
+      }
+      .content-overlay{
+        background: #000;
+        opacity: 0.9;
+      }
+      .container, .content-overlay{
+        position: fixed;
+        /*display: none;*/
+        width: 100vw;
+        height: 100vh;
+        z-index: 5;
+        overflow: hidden;
+      }
+      .header-container, .content-container, .content-close{
+        position: absolute;
+        box-sizing: border-box;
+        border: solid 2px #774111;
+      }
+      .header-container-outer, .content-container-outer, .content-close-outer{
+        position: relative;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #CCA687;
+      }
+      .header-container-inner, .content-container-inner, .content-close-inner{
+        position: relative;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #774111;
+      }
+      .header-container-middle, .content-container-middle, .content-close-middle{
+        position: relative;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #B47F44;
+      }
+      .header-container-inner, .content-close-inner{
+        background: #42220A;
+      }
+      .header-container{
+        width: 205px;
+        height: 57px;
+        border-radius: 29px;
+        border-width: 2px;
+        margin: calc(50vw - 102px);
+        margin-top: calc(50vh - 278px);
+      }
+      .header-container-outer{
+        width: 201px;
+        height: 53px;
+        border-width: 2px;
+        border-radius: 27px;
+      }
+      .header-container-middle{
+        width: 197px;
+        height: 49px;
+        border-radius: 25px;
+        border-width: 5px;
+      }
+      .header-container-inner{
+        width: 187px;
+        height: 39px;
+        border-radius: 20px;
+        border-width: 2px;
+      }
+      .content-close{
+        width: 48px;
+        height: 48px;
+        border-radius: 23px;
+        border-width: 1px;
+        margin-left: calc(50vw + 417px);
+        margin-top: calc(50vh - 272px);
+      }
+      .content-close-outer{
+        width: 46px;
+        height: 46px;
+        border-radius: 22px;
+        border-width: 1px;
+      }
+      .content-close-middle{
+        width: 44px;
+        height: 44px;
+        border-radius: 21px;
+        border-width: 2px;
+      }
+      .content-close-inner{
+        width: 40px;
+        height: 40px;
+        border-radius: 19px;
+        border-width: 1px;
+      }
+      .content-container{
+        width: 906px;
+        height: 557px;
+        border-radius: 15px;
+        border-width: 4px;
+        margin-left: calc(50vw - 453px) ;
+        margin-top: calc(50vh - 260px);
+      }
+      .content-container-outer{
+        width: 898px;
+        height: 549px;
+        border-radius: 12px;
+        border-width: 3px;
+      }
+      .content-container-middle{
+        width: 892px;
+        height: 543px;
+        border-radius: 9px;
+        border-width: 10px;
+      }
+      .content-container-inner{
+        width: 872px;
+        height: 523px;
+        border-width: 4px;
+        background: #F7E490;
+      }
+      .frame{
+        position: relative;
+        margin-left: 281px ;
+        width:150px;
+        height: 50px;
+      }
+      .top-flip{
+        transform: rotate(180deg);
+      }
+      .about-content{
+        text-align: center;
+        height: 345px;
+        border-top: dotted 4px #42220A;
+        border-bottom: dotted 4px #42220A;
+        padding: 12px 0;
+        color: #42220A;
+        font-size: 14px;
+        font-family: "fontRegular";
+      }
+      .about-ssn-container, .contact-container, .about-instincts-container{
+        padding: 25px 80px;
+      }
+      .header-container-inner{
+        font-family: "fontTitle";
+        font-size: 16px;
+        text-align: center;
+        color: #F7E490;
+        padding-top: 6px;
+      }
+
+    </style>
+  </head>
+  <body id="body" ng-app="instincts" ng-controller="instinctsctrl">
+    <div class="content-overlay"></div>
+    <div class="container">
+      <div class="content-container">
+        <div class="content-container-outer">
+          <div class="content-container-middle">
+            <div class="content-container-inner">
+              <div class="sponsors-container" >
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-container">
+        <div class="header-container-outer">
+          <div class="header-container-middle">
+            <div class="header-container-inner">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-close">
+        <div class="content-close-outer">
+          <div class="content-close-middle">
+            <div class="content-close-inner">
+                <img src="img/Events/close.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stars">
+      <img class="star1" src="img/star.svg"/>
+      <img class="star2" src="img/star.svg"/>
+      <img class="star3" src="img/star.svg"/>
+      <img class="star4" src="img/star.svg"/>
+      <img class="star5" src="img/star.svg"/>
+      <img class="star6" src="img/star.svg"/>
+      <img class="star7" src="img/star.svg"/>
+      <img class="star8" src="img/star.svg"/>
+      <img class="star9" src="img/star.svg"/>
+      <img class="star10" src="img/star.svg"/>
+      <img class="star11" src="img/star.svg"/>
+      <img class="star12" src="img/star.svg"/>
+      <img class="star13" src="img/star.svg"/>
+      <img class="star14" src="img/star.svg"/>
+      <img class="star15" src="img/star.svg"/>
+      <img class="star16" src="img/star.svg"/>
+      <img class="star17" src="img/star.svg"/>
+      <img class="star18" src="img/star.svg"/>
+      <img class="star19" src="img/star.svg"/>
+      <img class="star20" src="img/star.svg"/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1055 @@
+{
+  "NoOfClubs":"10",
+
+  	"Quiz": {
+  		"Name": "Quiz",
+  		"NoOfEvents": "4",
+  		"Events": [{
+  			"Name": "Online Quiz",
+  			"Desc": "For those keyboard-bound lone wolfs who prize both speed and sagacity, the Online Quiz awaits! Answer questions online solo in a test of your wits, and see who comes up trumps in the end!",
+  			"Dating": "",
+  			"Timing": "7PM every evening",
+  			"Venue": "On the facebook page: https:\/\/www.facebook.com\/instincts.ssn",
+  			"Info": [
+  				"Prizes worth 2k"
+  			],
+  			"Ruling": [
+
+  			],
+  			"Contact": [{
+  				"Name": "Saketh",
+  				"Number": "8056026523"
+  			}]
+  		}, {
+  			"Name": "General Quiz",
+  			"Desc": "Have an insatiable appetite for facts about the world? Do you suck up tidbits about current affairs, causes c�l�bres, 12th-century generals, and obscure word etymologies all the same? Find two like-minded chaps and swing by the General Quiz by Q Factorial at Instincts 2017!",
+  			"Dating": "In Schedule",
+  			"Timing": "In Schedule",
+  			"Venue": "In Schedule",
+  			"Info": [
+  				"Prizes worth 15k"
+  			],
+  			"Ruling": [
+
+  			],
+  			"Contact": [{
+  				"Name": "Sreenivas V",
+  				"Number": "9789813312"
+  			}]
+  		}, {
+  			"Name": "Fandom Quiz",
+  			"Desc": "It wasn't sheer happenstance that made you click on this link - the Lord of Light guided you here, didn't he? Will you be the one quizzer to rule them all, though? Come find out at the Fandom Quiz at Instincts 2017!",
+  			"Dating": "In Schedule",
+  			"Timing": "In Schedule",
+  			"Venue": "In Schedule",
+  			"Info": [
+  				"Prizes worth 10k"
+  			],
+  			"Ruling": [
+
+  			],
+  			"Contact": [{
+  				"Name": "Sreenivas V",
+  				"Number": "9789813312"
+  			}]
+  		}, {
+  			"Name": "SpEnt Quiz",
+  			"Desc": "Is \"sports\" your middle name? Do you binge watch movies and TV shows till you're in a near-catatonic state (all right, who doesn't)? If your answer to any of these questions is in the affirmative, come check out the SpEnt Quiz by Q Factorial at Instincts 2017! Don't worry, you can hunt in packs - pick your 2 teammates wisely so you cover all bases.",
+  			"Dating": "In Schedule",
+  			"Timing": "In Schedule",
+  			"Venue": "In Schedule",
+  			"Info": [
+  				"Prizes worth 15k"
+  			],
+  			"Ruling": [
+  			
+  			],
+  			"Contact": [{
+  				"Name": "Saketh",
+  				"Number": "8056026523"
+  			}]
+  		}]
+  	},
+  "FineArts":{
+    "Name":"Fine Arts",
+    "NoOfEvents":"3",
+    "Events":[
+      {
+      	"Name": "Mehandi and Tattoo competition",
+      	"Desc": "1.Let the designer inside you speak through a mehandi cone or produce temporary tattoos. Bring your style into action with your traditional and modern patterns. Arabian designs, exotic artistry or any form of creative expression is most welcome. Materials will be provided.",
+      	"Dating": " ",
+      	"Timing": " ",
+      	"Venue": " ",
+      	"Info": [
+          "Prize Money: 1500, 1000, 500"
+        ],
+      	"Ruling": [
+      		"Team members is to be restricted to two per team.",
+      		"Time taken to complete the art should be less than 45 minutes."
+      	],
+        "Contact": [
+          {
+            "Name":"SOWMYA .J ",
+            "Number":"9940132109"
+          }
+        ]
+      },
+      {
+       "Name": "LOGO FLASH",
+       "Desc": "Look at the blurry logo, identify it and reproduce it as it is within 20 minutes. Simple right? Just testing your capability to capture a picture in your mind within seconds. Materials will be provided. Come in groups and win exciting prizes!",
+       "Dating": " ",
+       "Timing": " ",
+       "Venue": " ",
+       "Info": [
+          "Prize Money: 1500, 1000, 500 "
+        ],
+       "Ruling": [
+         "Team members is restricted to maximum 3 per team. ",
+         "The art is to be completed within 45 MINUTES."
+       ],
+       "Contact": [
+         {
+           "Name":"P K PRIYADHARSHINI",
+           "Number":"9840633991"
+         }
+       ]
+     },
+     {
+        "Name": "Doodle War",
+        "Desc": "Unleash your creativity and express your emotions through the doodles. Draw all that comes in your mind when you hear this word. Fill the chart with doodles enriched with creative art. Come with your friends and let your creativity reflect the theme.",
+        "Dating": "",
+        "Timing": "",
+        "Venue": "",
+        "Info": ["Prize Money: 1000, 750, 500 "],
+        "Ruling": [
+        	"Maximum 3(PER TEAM) minimum(one per)",
+        	"TIME:45 MINUTES"
+        ],
+        "Contact": [
+          {
+            "Name":"M Kishore",
+            "Number":"9597967114"
+          },
+          {
+            "Name":"Aishvarya S",
+            "Number":"9498042459"
+          }
+        ]
+      }
+    ]
+  },
+  "Variety":{
+    "Name":"Variety",
+    "NoOfEvents":"6",
+    "Events":[
+      {
+      	"Name": "Variety show",
+      	"ClubName": "Variety",
+      	"Desc": "Variety show includes mime, mimicry, skit and other skills which will entertain the crowd. Be innovative, sharpen your entertaining skills. Pull your sparkling creativity to reality. Be the best team to rock the floor!!!!",
+      	"Dating": "10-03-2017",
+      	"Timing": "2pm to 5pm",
+      	"Venue": "Main auditorium",
+      	"Info": [
+          "Prize amount- 5.5k + 3.5k",
+          "Fully filmy Youtube fame \"Abishek\"",
+          "Yashwanth Kishore"
+        ],
+      	"Ruling": [
+      		"Prelims will be conducted",
+          "Have your own theme.",
+          "Each team will be given 10 min for performance and 2min for stage setting.",
+          "A team may have a Minimum of 5 and maximum of 15.",
+          "No abusive languages should be used.",
+          "A team should be represented by one college only.",
+          "The teams are requested to bring their sound track in Pen drives or Cd s and have another copy for your safety.",
+          "ID cards are must for registration.",
+          "The Final Judgment will be mainly based on their performance, sense of Humor, theme and Creativity.",
+          "Judges decision will be final."
+      	],
+        "Contact": [
+          {
+            "Name":"A.Gousik",
+            "Number":"+91 90 87 995729"
+          }
+        ]
+      },
+      {
+      	"Name": "IPL Bidding",
+      	"Desc": "Strategy is about making choices, trade-offs; it s about deliberately choosing to be different - Michael Porter. This event tests your decision making skills at different situations based on your competitors. Choose wisely !!!",
+      	"Dating": "11-03-2017",
+      	"Timing": "2pm to 4.30pm",
+      	"Venue": "Mini Auditorium",
+      	"Info": [
+          "Prize amount- 2.5k +1.5K"
+        ],
+      	"Ruling": [
+      		"Each team should comprise of 2-4 people. (Can be from different colleges).",
+          "The event will have 2 rounds: First, will be a written test round comprising of questions related to CRICKET alone.",
+          "Top EIGHT teams from the first round will get through to the second round, which will be the auction.",
+          "Based on the points scored during auction, winner will be declared.",
+          "Decision of the coordinators are final."
+      	],
+        "Contact": [
+          {
+            "Name":"Antony Amalraj Morais",
+            "Number":"+91-9176343211"
+          }
+        ]
+      },
+      {
+      	"Name": "60 secs",
+      	"Desc": "Teams should put forth their skills to complete tasks within the time limit, each time will be given certain tasks which they have to complete within 60 seconds. The team with the highest score gets selected to the next level.",
+      	"Dating": "09-03-2017",
+      	"Timing": "11am to 1pm",
+      	"Venue": "Near Fountain",
+      	"Info": [
+          "Prize amount- 1.5k + 1k= 2.5k"
+        ],
+      	"Ruling": [
+      		"Only two members per team",
+          "More than one team per college is allowed",
+          "Teams should only use the resources provided to them",
+          "On the spot registration",
+          "Judges decision are the final",
+          "ID card is mandatory"
+      	],
+        "Contact": [
+          {
+            "Name":"Bevin Harish",
+            "Number":"+91 72 00 346055"
+          }
+        ]
+      },
+      {
+      	"Name": "Adzap",
+      	"Desc": "Ad zap is an exciting event to display your flair in the art of convincing people, make unnoticed, noticed and market them to win laurels. Be as creative and as humorous as possible to pull the crowd and become the best crew. Get ready to rock the floor!!!!",
+      	"Dating": "10-03-2017",
+      	"Timing": "10am to 12.30pm",
+      	"Venue": "Central seminar hall",
+      	"Info": [
+          "Prize amount - 3k + 2k +5k"
+        ],
+      	"Ruling": [
+      		"On the spot registrations.",
+          "3-4 members per team.",
+          "The slots will be given on first come first serve basis.",
+          "The prelims will be conducted on the basis of number of teams registered.",
+          "The theme for Ad zap is Branding.",
+          "This event consists of two rounds.",
+          "First round is Brand surfing where in 2 teams will be competing against each other for the same topic and will be judged on the basis of timing and quality of the tag line. Original tagline of the brand should not be used.",
+          "Time duration: 5 minutes per team.",
+          "In the second round the participants will be provided with a product on the spot to advertise. The team should come up with a new brand name for the product given. The advertisement must contain a tagline and details like price and features.",
+          "Time duration: 2 minutes to prepare and 4 minutes to perform.",
+          "The topics can be changed on the discretion of the judge.",
+          "Arbiter s decision will be final.",
+          "Spontaneity, humor and creativity will be much appreciated.",
+          "No obscene language should be used."
+      	],
+        "Contact": [
+          {
+            "Name":"Priyadharshini P K",
+            "Number":"+91 98 40 633 991"
+          }
+        ]
+      },
+      {
+        	"Name": "Mix N Match",
+        	"Desc": " Relate multiple images and find out answers. Try to make connections by virtue of clues given by the host. Use clues, be creative, and pull out your hidden thoughts. Be spontaneous let your sparkling ideas and thoughts lead to victory. So get on the floor to mix and match!!!!",
+        	"Dating": "11-03-2017",
+        	"Timing": "10am to 12.30pm",
+        	"Venue": "CSE Seminar hall",
+        	"Info": [
+            "Prize amount - 2k +1k = 3K"
+          ],
+        	"Ruling": [
+        		"On the spot registration.",
+            "2 Members per team.",
+            "Prelims will be conducted which consists of 20 questions.",
+            "The teams with highest scores are qualified to next round.",
+            "Second round is \"FACE MASKING\" (i.e.)finding out the personality from the displayed image.",
+            "Selected participants enters into final.",
+            "Final round is \"MIX N MATCH\" where the participants have to link the images to crack a word.",
+            "Decision of the coordinators are final.",
+            "Electronic gadgets are not allowed."
+        	],
+          "Contact": [
+            {
+              "Name":"Muthu Parkavi A",
+              "Number":"+91 99 52 934475"
+            }
+          ]
+        },
+        {
+        	"Name": "Treasure Hunt",
+        	"Desc": "Treasure is the best gift that you give yourself. That gift is equal to nothing. So folks get ready to fly and find clues which will lead to a great victory. Get ready for the fun loving hunting with your team and quickly find clues to attain treasure!! Each team is presented with a group of puzzles, or clues, which teams must solve in order to find a piece of information. ",
+        	"Dating": "09-03-2017",
+        	"Timing": "2pm to 4.30pm",
+        	"Venue": "Near Fountain",
+        	"Info": [
+            "Prize Amount- 2k + 1k = 3k"
+          ],
+        	"Ruling": [
+        		"On the Spot Registration.",
+            "2-4 members per team.",
+            "Prelims will be conducted.",
+            "Inter-Colg Teams allowed (SSN Students not allowed).",
+            "Co-Ords decisions are final.",
+            "ID cards are must for registration."
+        	],
+          "Contact": [
+            {
+              "Name":"Simon Selvaraj",
+              "Number":"+91 96 98 028190"
+            }
+          ]
+        }
+    ]
+  },
+  "ELC":{
+    "Name":"ELC",
+    "NoOfEvents":"6",
+    "Events": [
+      {
+        "Name": "SSN DEBATES",
+        "Desc": "SSN Debates is our flagship event and has evolved into one of the most popular parliamentary style debates in the city. This event is open to teams of two. Cross college teams are allowed.",
+        "Dating": "08/03/2017 - Day 0",
+        "Timing": "9:00am",
+        "Venue": "IT Classrooms",
+        "Info": [],
+        "Ruling": [
+          "Two members per team.",
+          "In each round, two teams will be pitted against each other.",
+          "Points of information allowed, the details of which will be put up in a dedicated post shortly.",
+          "Topics will be out soon! The list of topics and study guidelines will be given in advance for the prelims.",
+          "Prelims: Each speaker s substantive speech time is 5 minutes.",
+          "Rebuttal time for each team is 3 minutes, where either speaker from each team can choose to do the rebuttal",
+          "Questioning by the judges and audience will roughly be allotted 5 minutes per team.",
+          "Finals: Each speaker s substantive speech time is 7 minutes.",
+          "Rebuttal time for each team is 4 minutes, where either speaker from each team can choose to do the rebuttal.",
+          "Questioning by the judges and audience will roughly be allotted 5 minutes per team."
+        ],
+        "Contact": [
+          {
+            "Name": "Radhakrishnan V",
+            "Number": "8754507189"
+          }
+        ]
+      },
+      {
+        "Name": "Lawyer Up",
+        "Desc": "Battle it out in a mock trial as you are forced to defend yourself in outlandish cases",
+        "Dating": "09/03/2017 - Day 1",
+        "Timing": "11:00am",
+        "Venue": "IT Seminar Hall",
+        "Info": [],
+        "Ruling": [
+          "Individual Event",
+          "2 minutes of prep time",
+          "5 minutes of defending yourself + 2 minutes rebuttal from judge"
+        ],
+        "Contact": [
+          {
+            "Name": "Prithvi",
+            "Number": "9962216331"
+          }
+        ]
+      },
+
+      {
+        "Name": "JAM",
+        "Desc": "An event for the Grammar Nazis to reign supreme. If you can make us laugh while speaking impeccable English, this one's for you.",
+        "Dating": "10/03/2017 - Day 2",
+        "Timing": "9:00am",
+        "Venue": "Central Seminar Hall",
+        "Info": [],
+        "Ruling": [
+          "Mod is God"
+        ],
+        "Contact": [
+          {
+            "Name": "Jeevan Radhakrishnan",
+            "Number": "9941811110"
+          }
+        ]
+      },
+      {
+        "Name": "SPOOF IT UP",
+        "Descr": "The idea of spoofs has always excited all kinds of people! If you have a lot of creative ideas flowing then you should definitely try this event. Movies can be turned into new master pieces by just spoofing it up a little and that s what this event is all about!\r\n\r\n",
+        "Dating": "10/03/2017 - Day 2",
+        "Timing": "9:00am",
+        "Venue": "ECE Seminar Hall",
+        "Info": [],
+        "Ruling": [
+          "Maximum of 5 members and minimum of 3 members per team.",
+          "Consists of two rounds - prelims and finals.",
+          "Registrations start in the morning.",
+          "Topics will be given at the time of registration.",
+          "Participants will have about 2-3 hours to prepare for the event.",
+          "Each team will be given 5mins to present.",
+          "Usage of foul language is strictly prohibited.",
+          "Decision of the coordinators will be final."
+        ],
+        "Contact": [
+          {
+            "Name": "Varna Suresh",
+            "Number": "9791031462"
+          }
+        ]
+      },
+      {
+        "Name": "POT POURRI",
+        "Desc": "Welcome to the most insanely fun competition of them all. This is a crazy mix of improv events you do not want to miss.\r\n\r\n",
+        "Dating": "10/03/2017 Day - 2",
+        "Timing": "",
+        "Venue": "",
+        "Info": [],
+        "Ruling": [
+          "Three rounds",
+          "Individual participation",
+          "Be there",
+          "Be funny",
+          "Have fun",
+          "Make money"
+        ],
+        "Contact": [
+          {
+            "Name": "Rahul R",
+            "Number": "9176085329"
+          }
+        ]
+      },
+      {
+        "Name": "ELC LOUNGE",
+        "Desc": "The lounge is a place to chill and recharge your energy batteries so that you don t miss anything at Instincts!\r\n\r\n",
+        "Dating": "Day 2",
+        "Timing": "All Day",
+        "Venue": "Outside CSE Department",
+        "Info": [],
+        "Ruling": [
+          "No Netflix. Just Chill.",
+          "Couches are for potatoes only.",
+          "Trump jokes are encouraged but Trump is not.",
+          "Just walk in. Choose a game. Play. Win. Walk out with vouchers."
+        ],
+        "Contact": [
+          {
+            "Name": "Varna Suresh",
+            "Number": "9791031462"
+          }
+        ]
+      }
+    ]
+  },
+  "Music": {
+    "Name": "Music",
+    "NoOfEvents": "5",
+    "Events": [{
+      "Name": " DHWANI",
+      "Desc": "Think you could be the next Avial, Agam or Indian Ocean? Dhwani, the band event of Instincts is back for all you enthusiasts. Come battle it out with people who think likewise and prove your talent. Music lovers, this event is handcrafted for you guys.",
+      "Dating": "11th March 2017",
+      "Timing": "10 AM to 4 PM",
+      "Venue": "Main Stage",
+      "Ruling": [
+        "Light Music Band event.",
+        "This is an open band event. Inter college teams are allowed. ",
+        "This is a two stage event. With the preliminary round being an online video submission round.",
+        "Bands must consist of a minimum of 4 participants and a maximum of 10 participants with at least, one vocalist and two instrumentalists.",
+        "Songs performed must be in Indian languages only.",
+        "The time given for each band performance is 15 minutes including the time for set up of instruments and sound check. ",
+        "Own compositions will fetch additional points.",
+        "A standard five piece drum kit and a keyboard stand will be provided. Participants are requested to bring other instruments.",
+        "No Participant can be a part of more than one band.",
+        "Bands are requested to pre-register for the event online through the steps given in the \"Register\" tab."
+      ],
+      "Contact": [{
+        "Name": "Anandh",
+        "Number": "9790831175"
+      }, {
+        "Name": "Bishwanth",
+        "Number": "9655129710"
+      }, {
+        "Name": "Guru",
+        "Number": "8939288599"
+      }]
+    }, {
+      "Name": "SSN IDOL",
+      "Desc": "Looking to prove your mettle as a singer? You re at the right place. Flaunt your singing skills at the light music solo vocal event. Enthral us with your voice, all eyes are going to be on you and the stage is all yours. The event is not to be missed for all you aspiring singers!",
+      "Dating": "11th March 2017",
+      "Timing": "Prelims: 10 AM to 2 PM Finals:",
+      "Venue": "Prelims: MINI Auditorium  \n Finals: Main Auditorium.",
+      "Ruling": [
+        "Light music vocal solo event.",
+        "It is an open event. Anyone can participate.",
+        "This is a two stage event: Prelims and Finals.",
+        "8-10 participants will be chosen for the Finals by the judge. The judge s decision is final",
+        "Songs performed by participants must be in Indian languages. Presence of a considerable amount of foreign language in a performance might lead to disqualification and this is up to the judge. ",
+        "On-spot registration can be done. Registration will close one hour prior to the beginning of the event (check schedule for event timing).",
+        " Registration for the event can also be done online through the steps given in the \"Register\" tab.",
+        "Prelims:",
+        "Each participant will be given 3 minutes with set up.",
+        "Use of karaoke backing track is allowed. Participants using backing tracks must submit their tracks (in a USB device) at the desk before the event begins, aux connections will be available too. One Instrumental accompaniment is permitted.",
+        "Use of Shruti box is permitted.",
+        "The judges decision will be final.",
+        "Finals:",
+        "The participant will be given 9 minutes to perform two songs; variety in genre of songs performed will fetch more points.",
+        "One instrumental accompaniment may be used.",
+        "Rest of the rules are the same as in the prelims round.",
+        "As always, the judges decision will be final."
+
+      ],
+      "Contact": [{
+        "Name": "Vinay Srinivas",
+        "Number": "9840384690"
+      }, {
+        "Name": "Shyam",
+        "Number": "9566063837"
+      }, {
+        "Name": "Divya",
+        "Number": "9840480754"
+      }]
+    }, {
+      "Name": "SWARALAYA",
+      "Desc": "The Margazhi music season isn t over yet. See yourself in love with classical music? We give you the stage to showcase your Kutcheri skills. Come, show us your talent in the Classical music event Swaralaya .",
+      "Dating": "11th March 2017",
+      "Timing": "2PM to 4PM",
+      "Venue": "Mini Auditorium ",
+
+      "Ruling": [
+        "This is a two stage, classical music solo event. ",
+        "Participants will be judged strictly based on their mettle in classical music:Carnatic or Hindustani",
+        "Participants may be either instrumentalists (non-percussion) or vocalists.",
+        "On-spot registration can be done. Registration will close one hour prior to the beginning of the event (check schedule for event timing).",
+        " Registration for the event can also be done online through the steps given in the \"Register\" tab.",
+        "Prelims.",
+        "In this stage, each participant will be given four minutes to perform any classical piece of her\/his choice. ",
+        "Use of Shruthi box is permitted, use of accompaniments isn’t.",
+        "6 to 8 participants will be selected for the second/final round as per the judge’s discretion.",
+        "Finals",
+        "Each participant will have 7 minutes on stage .",
+        "The contestant may begin with a piece of her\/his choice. However, the judge may feel free to interrupt the contestant",
+        "The contestant may be asked to answer questions or perform pieces as per the request of the judge and a holistic assessment of the contestant will be made by the judge based on the contestant s response and performance",
+        "Cash prizes will be awarded to the top three contestants as chosen by the judge"
+      ],
+      "Contact": [{
+        "Name": "Visveshwar Nagarajan",
+        "Number": "9444712316"
+      }, {
+        "Name": "Suuraj",
+        "Number": "9003215395"
+      }, {
+        "Name": "Manasa ",
+        "Number": "9087712396"
+      }, {
+        "Name": "Manasvi S ",
+        "Number": "9176745455"
+      }]
+    }, {
+      "Name": "ELECTRIX",
+      "Desc": " When I was younger, I knew I could be anything - I could be the president if I wanted to, but then that was a stupid idea. I d rather be a rockstar - KURT COBAIN \r\nBe it Slash inspired rock n roll, BB King inspired blues or Metallica inspired metal, The SSN's Electrix is the best platform to release the rock star buried in you. With the crowd on their feet, the lights on your face, the stakes high and the inhibitions low, will you be ready?",
+      "Dating": "9th March 2017",
+      "Timing": "10 AM to 3 PM",
+      "Venue": "Main Stage",
+      "Ruling": [
+        "This is a two stage event. The registrations for the event will have to be done online . ",
+        "A panel of judges will shortlist the bands that participate at the main event.",
+        "The competition is open to school and college bands only (max. Age limit of 25).",
+        "Each band will be allotted 15 minutes on stage including setup.",
+        "Songs must predominantly be in English.",
+        "The time limit shall be adhered to very strictly.",
+        "The judges decision is final and adhering.",
+        "A 5 piece drum kit will be provided. All other instruments must be brought by the participants.",
+        "No backing tracks will be permitted.",
+        "No participant can be in more than one band.",
+        "The slots will be allocated randomly before the event. Any exchange of slots will be permitted by mutual agreement only.",
+        "In case of any discrepancies, the decision of the coordinators will be binding and final.",
+        "Bands are requested to pre-register for the event online through the steps given in the \"Register\" tab."
+      ],
+      "Contact": [{
+        "Name": "Samuel",
+        "Number": "7200025154"
+      }, {
+        "Name": "Aditya",
+        "Number": "7401627656"
+      }, {
+        "Name": "Anish",
+        "Number": "8939902328"
+      }]
+    }, {
+      "Name": "ACOUSTICS AND A CAPELLA",
+      "Desc": "There's something almost hauntingly beautiful about the vibes of an acoustic band. The mark of a great rock song is if it can stand the test of the jarring instruments stripped away. \nThere's nothing quite like a song played on just acoustic guitars, pianos or in some cases, just vocals! Presenting to you for the very first time Instinct's Acoustics & A capella.",
+      "Date": "9 th March 2017",
+      "Venue": "Main Stage",
+      "Ruling": [
+        "This is a two stage event. The registrations for the event will have to be done online (through email – check details given below) .",
+        "Bands may send online links to their performances (Youtube, Soundcloud or Dropbox) for a maximum of two songs not exceeding 20 minutes.",
+        "A panel of judges will shortlist the bands that participate at the main event.",
+        "The competition is open to school and college bands only (max. Age limit of 25).",
+        "Each band will be allotted 15 minutes on stage including setup.",
+        "Songs must predominantly be in English.",
+        "The time limit shall be adhered to very strictly.",
+        "The judges’ decision is final and adhering.",
+        "A 5 piece drum kit, a keyboard stand and a cajon will be provided. All other instruments must be brought by the participants.",
+        "No backing tracks will be permitted.",
+        "No participant can be in more than one band.",
+        "The slots will be allocated randomly before the event. Any exchange of slots will be permitted by mutual agreement only.",
+        "In case of any discrepancies, the decision of the coordinators will be binding and final.",
+        "Bands can pre-register for the event online through the steps given in the ‘Register’ tab.On-spot registration can also be done."
+      ],
+      "Contact": [{
+        "Name": "Archana",
+        "Number": "8056125879"
+      }, {
+        "Name": "Jose",
+        "Number": "9840480754"
+      }, {
+        "Name": "Naveen",
+        "Number": "8056200263"
+      }]
+
+    }]
+
+  },
+  "Dance":{
+    "Name":"Dance",
+    "NoOfEvents":"4",
+    "Events":[
+      {
+        "Name": "Adapt to Tune",
+        "Desc": "Got the skills to kill any beat that we play and adapt perfectly to the style? Here is the right place to showcase your swag! Come show us what you got!!",
+        "Dating": "09\/03\/2017",
+        "Timing": "10 am",
+        "Venue": "Main Stage",
+        "Info": [],
+        "Ruling": [
+          "The performance will be between 2-3 minutes",
+          "The participant should be a college student.",
+          "The songs played may be of any genre.",
+          "Judges decision will be final."
+        ],
+        "Contact": [
+          {
+            "Name":"Priyanka C",
+            "Number":"9003114115"
+          }
+        ]
+      },
+      {
+      	"Name": "Classical dual",
+      	"Desc": "The performance can be in any indian classical dance genere such as bharathanatyam,kathak,mohiniyattam with 2 members in a team.",
+      	"Dating": "09\/03\/2017",
+      	"Timing": "10:00 am",
+      	"Venue": "Main stage",
+      	"Info": [
+          "Total prize amount : 5000"
+        ],
+      	"Ruling": [
+      		" The performance must be between 3 to 5 minutes.",
+      		"The performance can be in any Indian classical dance genre. (bharatanatyam, kuchipudi, mohiniyattam, odissi etc) ",
+      		"Participants must be college students only. ",
+      		"The scoring will be based on performance,presentation and costume\/makeup.",
+      		"The music\/song for the performance should be classical (Non-film Song)"
+      	],
+        "Contact": [
+          {
+            "Name":"Sujana",
+            "Number":"9600094640"
+          }
+        ]
+      },
+      {
+        "Name": "Choreonite",
+        "Desc": "It is that time of the year again when the best of dance teams share a stage, break a sweat and compete for that one elusive moment of glory. It's time for you to awe us with your effortless moves, panache and inimitable choreography that gets the audience going wild for an encore. So what are you waiting for? Strap on your sneakers, bring in your boomboxes and show us that you’ve got what it takes to be crowned the best team in town.",
+        "Dating": "10 March 2017 ",
+        "Timing": "5pm",
+        "Venue": "Main stage",
+        "Info": [
+          "*Prelims video should be sent to dance.instincts.2k17@gmail.com*"
+        ],
+        "Ruling": [
+          "A minimum of eight and a maximum of twenty five students ONSTAGE (+2 for off stage help) per team.",
+          "College IDs is a must for all the participants. ",
+          "The teams have to strictly do a WESTERN performance.",
+          "Fire, water, powder or any kind of other harmful props are prohibited.",
+          "A maximum of 7 minutes will be allotted to each team.",
+          "The decision of the judges will be final.",
+          "Any violation of the above rules will result in disqualification."
+        ],
+        "Contact": [
+          {
+            "Name":"Arjun S M",
+            "Number":"8754008373"
+          }
+        ]
+      },
+      {
+        "Name": "Western Solo",
+        "Desc": "Have you got the attitude and the moves that take to tear up the dance floor? Do you shine every time you're on stage doing your style? From Jazz to Hip hop, to Broadway, we've got 'em all! So come on, groove to your music and wow us with those moves you do oh so effortlessly!",
+        "Dating": "9 March 2017 ",
+        "Timing": "10 am",
+        "Venue": "Main stage",
+        "Info": [],
+        "Ruling": [
+          "The performance must be between 2 to 3 minutes.",
+          "The performance can be in any Western genre.",
+          "Participants must be college students only.",
+          "The music/track for the performance should be given in a pendrive."
+        ],
+        "Contact": [
+          {
+            "Name":"D K Vigneshwar",
+            "Number":"9500135345"
+          }
+        ]
+      }
+    ]
+  },
+
+  	"LOP": {
+  		"Name": "Lights Out Please",
+  		"NoOfEvents": "1",
+  		"Events": [{
+  			"Name": "Theatre24",
+  			"Desc": "Is acting your passion? Have you always wanted to be under the spotlight? Theatre24 gives everyone an opportunity to experience exactly that! This event is all about testing your theatre skills within 24 hours. It’s all about the creative ideas and the crisp implementation.",
+  			"Dating": "10-03-2017",
+  			"Timing": "8.00 a.m.",
+  			"Venue": "Mini Auditorium ",
+  			"Info": [],
+  			"Ruling": [
+  				"5 member cast + crew ",
+  				"Registration fee is 50 per member ",
+  				"One 15 minute script with 5 characters will be handed to each team on the 9th of March at 9am at the Humanities Block ",
+  				"The scripts are chosen by drawing lots ",
+  				"One representative from each participating team must be present in the campus on the 9th of March and must pay Rs.250 (Reg. fees for 5 members). Rest of the members can register on the 10th. Teams have full freedom to adapt the script (gender swapping, adding local vernacular, extending time etc.) ",
+  				"The event starts at 8am on the 10th ",
+  				"Each team will be given time on the 10th to test out lights and sound ",
+  				"Participants will be judged based on their ability to execute the play within the given time constraint and their theatre skills"
+  			],
+  			"Contact": [{
+  				"Name": "Anusha",
+  				"Number": "9176767385"
+  			}, {
+  				"Name": "Karthik",
+  				"Number": "9952910767"
+  			}, {
+  				"Name": "Yamini",
+  				"Number": "9600083063"
+  			}]
+  		}]
+  	},
+  "Photography":{
+    "Name":"Photography",
+    "NoOfEvents":"2",
+    "Events":[
+      {
+      	"Name": "ONLINE PHOTOGRAPHY",
+      	"Desc": "To all the budding photographers out there! Instincts is such a grand event of the year, where you can capture some spectacular photographs. Join us and step on our roller coaster ride to INSTINCTS 2k17-The Carnival. The SSN Photography Club has been an active club in participating and organizing various intra\/inter-collegiate events. During Instincts we conduct two events, Online and On-day Photography contests. We have received over 3000 entries each year for our online contest and over 50-100 participants for the on-day event. Send in your entries and take home exciting prizes",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+        "Info": [
+          "Theme: Open! (Any theme of the participants choice)",
+          "Deadline: 7th March 2017",
+          "Send us your clicks to \"spcinstincts2k17@gmail.com\".",
+          "While sending in your entries kindly mention your name, college and contact details."
+        ],
+        "Ruling": [
+      		"Maximum of 3 entries.",
+          "We will not tolerate obscenity of any kind in the photos.",
+          "Winners will be chosen based on like and jury separately."
+      	],
+        "Contact": []
+      },
+      {
+      	"Name": "ONDAY PHOTOGRAPHY",
+      	"Desc": "Show your hotography skills during Instincts!!",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"Topics will be given on spot.",
+          "Photos should be submitted at the end of the day.",
+          "Results will be declared on the last day of instincts.",
+          "Only college students are allowed to participate."
+      	],
+      	"Contact": []
+      }
+    ]
+  },
+  "Saaral":{
+    "Name":"Saaral",
+    "NoOfEvents":"10",
+    "Events":[
+      {
+      	"Name": "PATTI MANDRAM (Debate)",
+      	"Desc": "If you know the magic of speech, then the stage is for you ",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": [],
+      	"Info": [
+          "First prize: Rs.3000",
+          "Second prize: Rs.2000",
+          "Third prize: Rs.1500",
+          "Fourth prize: Rs.1000",
+          "Fifth prize: Rs.1000",
+          "Sixth prize: Rs.1000"
+        ],
+      	"Ruling": [
+      		"Prelims pechu potti (speech) Rules:",
+          "The duration will be three minutes.",
+          "Every second of performance after the allocated three minutes will lead to reduction of marks.",
+          "Four topics wil be given. The participant must choose one among them.",
+          "Blaming without proof and usage of non-parlimentary words is not allowed.",
+          "Participants will be selected on the basis of pronunciation, information conveyed and the way it is conveyed.",
+          "Decision of the judges will be the final one.",
+          "Topics: Finals Debate Rules:",
+          "Top four qualified in speech can participate in this debate.",
+          "The duration will be seven minutes.",
+          "Blaming without proof and usage of non-parlimentary words is not allowed."
+      	],
+      	"Contact": [
+          {
+            "Name":"David",
+            "Number":"8122142493"
+          }
+      	]
+      },
+      {
+      	"Name": "VAAYAI MOODI PESAVUM (DumbC)",
+      	"Desc": "Actions speak louder than words. Prove this even more by testing your DumbC skills!",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [
+          "First prize: Rs.1500",
+          "Second prize: Rs.1000",
+          "Third prize: Rs.500"
+        ],
+      	"Ruling": [
+      		"Prelims Rules:",
+          "A team must consist two members.",
+          "Usage of mouth to convey the data is considered illegal.",
+          "The data should not be conveyed by writing it.",
+          "A team will be given a question paper which consists five words(data to be conveyed).",
+          "The duration will be two minutes.",
+          "The time required by the participant will be considered.",
+          "Any sort of misbehaviour or any act of hurting any individual is not allowed.",
+          "Finals Rules:",
+          "A team must consist two members.",
+          "Usage of mouth to convey the data is considered illegal.",
+          "The data should not be conveyed by writing it.",
+          "The data to be conveyed would be thirukkural, proverbs and book titles.",
+          "The time required by the participant will be considered.",
+          "Any sort of misbehaviour or any act of hurting any individual is not allowed."
+      	],
+      	"Contact": [
+          {
+            "Name":"Mohan",
+            "Number":"9500819724"
+          }
+      	]
+      },
+      {
+      	"Name": "VAARTHTHAI VILAYAATTU",
+      	"Desc": "Play with all those Tamil words you know!",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"A team can consist of maximum two members.",
+          "Each team will be given with a set of words .one should give clues to find the word with which the other will find the word.",
+          "No actions are allowed."
+      	],
+      	"Contact": []
+      },
+      {
+      	"Name": "KALAKKAL KAVIDHAI (poetry writ",
+      	"Desc": "Welcome to all those outstanding poets spread across the state. Are you a person who has got talents to decorate the tamil language with magic of words?? If yes, then this is the right platform for you.",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [
+          "First prize: Rs.1500",
+          "Second prize: Rs.1000",
+          "Third prize: Rs.500"
+        ],
+      	"Ruling": [
+      		"The topics will announced on the day of event.",
+          "The competition includes three rounds namely: haiku (maximum three line poems), poem on given topic and poem about the given picture.",
+          "The poem should be out of your own creativity.",
+          "Mixing of other language words is not allowed.",
+          "The duration will be one hour.",
+          "It is a Individual event."
+      	],
+      	"Contact": [
+          {
+          "Name":"Ajith",
+          "Number":"9789306010"
+          }
+      	]
+      },
+      {
+      	"Name": "SAKALAKALAA VALLAVAN ",
+      	"Desc": "The perfect stage for an all rounder!",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"Prelims Rules:",
+          "Prelims will be a written test.",
+          "A team can consist of maximum two members.",
+          "The questions can be related to any field like politics, history, economics, sports, cinema, etc.",
+          "Use of cellphones or any other electronic gadgets is strictly prohibited.",
+          "The duration is 45 minutes.",
+          "Finals Rules:",
+          "Six teams will be selected based on their performance in prelims.",
+          "The rules and regulations for various stages for the final round will be announced during the event."
+      	],
+        "Contact": []
+      },
+      {
+      	"Name": "KIRUKKEZHUTHTHU (creative writ",
+      	"Desc": "If you are a person filled in with creative thoughts, then this would the best event for you to try out!",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"The topics will announced on the day of event.",
+          "The duration will be 45 minutes.",
+          "All the questions must be answered.",
+          "Mixing of other language words will lead to reduction of marks.",
+          "It is a Individual event."
+      	],
+        "Contact": [
+          {
+            "Name": "Ram Sharma",
+          	"Number": "9659336828"
+          }
+        ]
+      },
+      {
+      	"Name": "SIRUKADHAI POTTI (story writing)",
+      	"Desc": "If you are the one who writes stories with all small incident that happens around you, then this is the right place to show up your talent.",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"This is an individual event.",
+          "A paragraph will be given. And it should be placed at some point of your story.",
+          "Relevant title must be given.",
+          "The story should be out of your own creativity.",
+          "The story should neither be less than three pages not exceed four pages.",
+          "The duration will be 40 minutes."
+      	],
+        "Contact": [
+          {
+            "Name": "Sathees Babu",
+            "Number": "9597487243"
+          }
+        ]
+      },
+      {
+      	"Name": "KURUKKEZHUTHTHU (crossword)",
+      	"Desc": "If you are the person who has the talent of filling the squares with Tamil alphabets, then this is your turn.",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"The duration will be 20 minutes.",
+          "Spelling mistakes will lead to reduction of marks.",
+          "Usage of cellphones or any other gadgets will lead to disqualification.",
+          "A team can consist of maximum of two members."
+      	],
+        "Contact": [
+          {
+            "Name": "Divya",
+            "Number": "9677961704"
+          }
+        ]
+      },
+      {
+      	"Name": "ISAITAMIL (traditional Tamil s",
+      	"Desc": "Get ready to feed the audience with your outstanding Tamil traditional music.",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"A team can consist of maximum of two members.",
+          "The song must be traditional tamil song\/music (no cine song).",
+          "The song should not exceed five minutes.",
+          "Every second of performance after the allocated five minutes will lead to reduction of marks.",
+          "No musical instruments are allowed.",
+          "Decision of the judges will be the final one."
+      	],
+        "Contact": [
+          {
+            "Name": "Ganesh Kumar",
+            "Number": "9791736183"
+          }
+        ]
+      },
+      {
+      	"Name": "KOLAM",
+      	"Desc": "Time to decorate the floor!",
+      	"Dating": "",
+      	"Timing": "",
+      	"Venue": "",
+      	"Info": [],
+      	"Ruling": [
+      		"A team can consist of two or three people.",
+          "Your art can be a dotted pattern or a rangoli.",
+          "The maximum area that can be used is 5*5 square feet.",
+          "The duration will be 90 minutes.",
+          "All needed things are to be brought by the participants.",
+          "Templates are not allowed.",
+          "Decision of the judges will be the final one."
+      	],
+        "Contact": [
+          {
+            "Name": "Sathya Priya",
+            "Number": "9791679758"
+          }
+        ]
+      }
+    ]
+  },
+  "FilmClub":{
+    "Name":"Film Club",
+    "NoOfEvents":"1",
+    "Events":[
+      {
+      	"Name": "REELS OF FIRE",
+      	"Desc": "Short film contest.",
+      	"Dating": "10-03-17",
+      	"Timing": "9AM - 12PM",
+      	"Venue": "Main auditorium",
+        "Info": [
+          "Prize money worth Rs30,000"
+        ],
+        "Ruling": [
+          "Theme - open theme. ",
+      		"Max duration - 15 min",
+      		"Deadline - March 7",
+      		"Entry - Rs500 for short listed entries",
+          "Send your entries to - ssnfilmclubrof2k17@gmail.com"
+      	],
+        "Contact": [
+          {
+            "Name":"S.NAVEEN",
+            "Number":"9597303058"
+          },
+          {
+            "Name":"Kamesh",
+            "Number":"9677168403"
+          }
+        ]
+      }
+    ]
+  }
+}

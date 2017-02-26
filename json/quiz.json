@@ -1,0 +1,70 @@
+
+	"Quiz": {
+		"Name": "Quiz",
+		"NoOfEvents": "4",
+		"Events": [{
+			"Name": "Online Quiz",
+			"Desc": "For those keyboard-bound lone wolfs who prize both speed and sagacity, the Online Quiz awaits! Answer questions online solo in a test of your wits, and see who comes up trumps in the end!",
+			"Dating": "",
+			"Timing": "7PM every evening",
+			"Venue": "On the facebook page: https:\/\/www.facebook.com\/instincts.ssn",
+			"Info": [
+				"Prizes worth 2k"
+			],
+			"Ruling": [
+				""
+			],
+			"Contact": [{
+				"Name": "Saketh",
+				"Number": "8056026523"
+			}]
+		}, {
+			"Name": "General Quiz",
+			"Desc": "Have an insatiable appetite for facts about the world? Do you suck up tidbits about current affairs, causes c�l�bres, 12th-century generals, and obscure word etymologies all the same? Find two like-minded chaps and swing by the General Quiz by Q Factorial at Instincts 2017!",
+			"Dating": "In Schedule",
+			"Timing": "In Schedule",
+			"Venue": "In Schedule",
+			"Info": [
+				"Prizes worth 15k"
+			],
+			"Ruling": [
+				""
+			],
+			"Contact": [{
+				"Name": "Sreenivas V",
+				"Number": "9789813312"
+			}]
+		}, {
+			"Name": "Fandom Quiz",
+			"Desc": "It wasn't sheer happenstance that made you click on this link - the Lord of Light guided you here, didn't he? Will you be the one quizzer to rule them all, though? Come find out at the Fandom Quiz at Instincts 2017!",
+			"Dating": "In Schedule",
+			"Timing": "In Schedule",
+			"Venue": "In Schedule",
+			"Info": [
+				"Prizes worth 10k"
+			],
+			"Ruling": [
+				""
+			],
+			"Contact": [{
+				"Name": "Sreenivas V",
+				"Number": "9789813312"
+			}]
+		}, {
+			"Name": "SpEnt Quiz",
+			"Desc": "Is \"sports\" your middle name? Do you binge watch movies and TV shows till you're in a near-catatonic state (all right, who doesn't)? If your answer to any of these questions is in the affirmative, come check out the SpEnt Quiz by Q Factorial at Instincts 2017! Don't worry, you can hunt in packs - pick your 2 teammates wisely so you cover all bases.",
+			"Dating": "In Schedule",
+			"Timing": "In Schedule",
+			"Venue": "In Schedule",
+			"Info": [
+				"Prizes worth 15k"
+			],
+			"Ruling": [
+				""
+			],
+			"Contact": [{
+				"Name": "Saketh",
+				"Number": "8056026523"
+			}]
+		}]
+	}

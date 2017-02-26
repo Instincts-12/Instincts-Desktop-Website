@@ -1,0 +1,135 @@
+"ELC":{
+  "Name":"ELC",
+  "NoOfEvents":"6",
+  "Events": [
+    {
+      "Name": "SSN DEBATES",
+      "Desc": "SSN Debates is our flagship event and has evolved into one of the most popular parliamentary style debates in the city. This event is open to teams of two. Cross college teams are allowed.",
+      "Dating": "08/03/2017 - Day 0",
+      "Timing": "9:00am",
+      "Venue": "IT Classrooms",
+      "Info": [],
+      "Ruling": [
+        "Two members per team.",
+        "In each round, two teams will be pitted against each other.",
+        "Points of information allowed, the details of which will be put up in a dedicated post shortly.",
+        "Topics will be out soon! The list of topics and study guidelines will be given in advance for the prelims.",
+        "Prelims: Each speaker s substantive speech time is 5 minutes.",
+        "Rebuttal time for each team is 3 minutes, where either speaker from each team can choose to do the rebuttal",
+        "Questioning by the judges and audience will roughly be allotted 5 minutes per team.",
+        "Finals: Each speaker s substantive speech time is 7 minutes.",
+        "Rebuttal time for each team is 4 minutes, where either speaker from each team can choose to do the rebuttal.",
+        "Questioning by the judges and audience will roughly be allotted 5 minutes per team."
+      ],
+      "Contact": [
+        {
+          "Name": "Radhakrishnan V",
+          "Number": "8754507189"
+        }
+      ]
+    },
+    {
+      "Name": "Lawyer Up",
+      "Desc": "Battle it out in a mock trial as you are forced to defend yourself in outlandish cases",
+      "Dating": "09/03/2017 - Day 1",
+      "Timing": "11:00am",
+      "Venue": "IT Seminar Hall",
+      "Info": [],
+      "Ruling": [
+        "Individual Event",
+        "2 minutes of prep time",
+        "5 minutes of defending yourself + 2 minutes rebuttal from judge"
+      ],
+      "Contact": [
+        {
+          "Name": "Prithvi",
+          "Number": "9962216331"
+        }
+      ]
+    },
+
+    {
+      "Name": "JAM",
+      "Desc": "An event for the Grammar Nazis to reign supreme. If you can make us laugh while speaking impeccable English, this one's for you.",
+      "Dating": "10/03/2017 - Day 2",
+      "Timing": "9:00am",
+      "Venue": "Central Seminar Hall",
+      "Info": [],
+      "Ruling": [
+        "Mod is God"
+      ],
+      "Contact": [
+        {
+          "Name": "Jeevan Radhakrishnan",
+          "Number": "9941811110"
+        }
+      ]
+    },
+    {
+      "Name": "SPOOF IT UP",
+      "Descr": "The idea of spoofs has always excited all kinds of people! If you have a lot of creative ideas flowing then you should definitely try this event. Movies can be turned into new master pieces by just spoofing it up a little and that s what this event is all about!\r\n\r\n",
+      "Dating": "10/03/2017 - Day 2",
+      "Timing": "9:00am",
+      "Venue": "ECE Seminar Hall",
+      "Info": [],
+      "Ruling": [
+        "Maximum of 5 members and minimum of 3 members per team.",
+        "Consists of two rounds - prelims and finals.",
+        "Registrations start in the morning.",
+        "Topics will be given at the time of registration.",
+        "Participants will have about 2-3 hours to prepare for the event.",
+        "Each team will be given 5mins to present.",
+        "Usage of foul language is strictly prohibited.",
+        "Decision of the coordinators will be final."
+      ],
+      "Contact": [
+        {
+          "Name": "Varna Suresh",
+          "Number": "9791031462"
+        }
+      ]
+    },
+    {
+      "Name": "POT POURRI",
+      "Desc": "Welcome to the most insanely fun competition of them all. This is a crazy mix of improv events you do not want to miss.\r\n\r\n",
+      "Dating": "10/03/2017 Day - 2",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "Three rounds",
+        "Individual participation",
+        "Be there",
+        "Be funny",
+        "Have fun",
+        "Make money"
+      ],
+      "Contact": [
+        {
+          "Name": "Rahul R",
+          "Number": "9176085329"
+        }
+      ]
+    },
+    {
+      "Name": "ELC LOUNGE",
+      "Desc": "The lounge is a place to chill and recharge your energy batteries so that you don t miss anything at Instincts!\r\n\r\n",
+      "Dating": "Day 2",
+      "Timing": "All Day",
+      "Venue": "Outside CSE Department",
+      "Info": [],
+      "Ruling": [
+        "No Netflix. Just Chill.",
+        "Couches are for potatoes only.",
+        "Trump jokes are encouraged but Trump is not.",
+        "Just walk in. Choose a game. Play. Win. Walk out with vouchers."
+      ],
+      "Contact": [
+        {
+          "Name": "Varna Suresh",
+          "Number": "9791031462"
+        }
+      ]
+    }
+  ]
+}

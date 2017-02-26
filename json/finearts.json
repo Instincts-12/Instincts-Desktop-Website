@@ -1,0 +1,68 @@
+"FineArts":{
+  "Name":"Fine Arts",
+  "NoOfEvents":"3",
+  "Events":[
+    {
+      "Name": "Mehandi and Tattoo competition",
+      "Desc": "1.Let the designer inside you speak through a mehandi cone or produce temporary tattoos. Bring your style into action with your traditional and modern patterns. Arabian designs, exotic artistry or any form of creative expression is most welcome. Materials will be provided.",
+      "Dating": " ",
+      "Timing": " ",
+      "Venue": " ",
+      "Info": [
+        "Prize Money: 1500, 1000, 500"
+      ],
+      "Ruling": [
+        "Team members is to be restricted to two per team.",
+        "Time taken to complete the art should be less than 45 minutes."
+      ],
+      "Contact": [
+        {
+          "Name":"SOWMYA .J ",
+          "Number":"9940132109"
+        }
+      ]
+    },
+    {
+     "Name": "LOGO FLASH",
+     "Desc": "Look at the blurry logo, identify it and reproduce it as it is within 20 minutes. Simple right? Just testing your capability to capture a picture in your mind within seconds. Materials will be provided. Come in groups and win exciting prizes!",
+     "Dating": " ",
+     "Timing": " ",
+     "Venue": " ",
+     "Info": [
+        "Prize Money: 1500, 1000, 500 "
+      ],
+     "Ruling": [
+       "Team members is restricted to maximum 3 per team. ",
+       "The art is to be completed within 45 MINUTES."
+     ],
+     "Contact": [
+       {
+         "Name":"P K PRIYADHARSHINI",
+         "Number":"9840633991"
+       }
+     ]
+   },
+   {
+      "Name": "Doodle War",
+      "Desc": "Unleash your creativity and express your emotions through the doodles. Draw all that comes in your mind when you hear this word. Fill the chart with doodles enriched with creative art. Come with your friends and let your creativity reflect the theme.",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": ["Prize Money: 1000, 750, 500 "],
+      "Ruling": [
+        "Maximum 3(PER TEAM) minimum(one per)",
+        "TIME:45 MINUTES"
+      ],
+      "Contact": [
+        {
+          "Name":"M Kishore",
+          "Number":"9597967114"
+        },
+        {
+          "Name":"Aishvarya S",
+          "Number":"9498042459"
+        }
+      ]
+    }
+  ]
+}

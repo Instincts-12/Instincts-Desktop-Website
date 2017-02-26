@@ -1,0 +1,40 @@
+"Photography":{
+  "Name":"Photography",
+  "NoOfEvents":"2",
+  "Events":[
+    {
+      "Name": "ONLINE PHOTOGRAPHY",
+      "Desc": "To all the budding photographers out there! Instincts is such a grand event of the year, where you can capture some spectacular photographs. Join us and step on our roller coaster ride to INSTINCTS 2k17-The Carnival. The SSN Photography Club has been an active club in participating and organizing various intra\/inter-collegiate events. During Instincts we conduct two events, Online and On-day Photography contests. We have received over 3000 entries each year for our online contest and over 50-100 participants for the on-day event. Send in your entries and take home exciting prizes",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [
+        "Theme: Open! (Any theme of the participants choice)",
+        "Deadline: 7th March 2017",
+        "Send us your clicks to \"spcinstincts2k17@gmail.com\".",
+        "While sending in your entries kindly mention your name, college and contact details."
+      ],
+      "Ruling": [
+        "Maximum of 3 entries.",
+        "We will not tolerate obscenity of any kind in the photos.",
+        "Winners will be chosen based on like and jury separately."
+      ],
+      "Contact": []
+    },
+    {
+      "Name": "ONDAY PHOTOGRAPHY",
+      "Desc": "Show your hotography skills during Instincts!!",
+      "Dating": "",
+      "Timing": "",
+      "Venue": "",
+      "Info": [],
+      "Ruling": [
+        "Topics will be given on spot.",
+        "Photos should be submitted at the end of the day.",
+        "Results will be declared on the last day of instincts.",
+        "Only college students are allowed to participate."
+      ],
+      "Contact": []
+    }
+  ]
+}

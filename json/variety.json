@@ -1,0 +1,167 @@
+"Variety":{
+  "Name":"Variety",
+  "NoOfEvents":"6",
+  "Events":[
+    {
+      "Name": "Variety show",
+      "ClubName": "Variety",
+      "Desc": "Variety show includes mime, mimicry, skit and other skills which will entertain the crowd. Be innovative, sharpen your entertaining skills. Pull your sparkling creativity to reality. Be the best team to rock the floor!!!!",
+      "Dating": "10-03-2017",
+      "Timing": "2pm to 5pm",
+      "Venue": "Main auditorium",
+      "Info": [
+        "Prize amount- 5.5k + 3.5k",
+        "Fully filmy Youtube fame \"Abishek\"",
+        "Yashwanth Kishore"
+      ],
+      "Ruling": [
+        "Prelims will be conducted",
+        "Have your own theme.",
+        "Each team will be given 10 min for performance and 2min for stage setting.",
+        "A team may have a Minimum of 5 and maximum of 15.",
+        "No abusive languages should be used.",
+        "A team should be represented by one college only.",
+        "The teams are requested to bring their sound track in Pen drives or Cd s and have another copy for your safety.",
+        "ID cards are must for registration.",
+        "The Final Judgment will be mainly based on their performance, sense of Humor, theme and Creativity.",
+        "Judges decision will be final."
+      ],
+      "Contact": [
+        {
+          "Name":"A.Gousik",
+          "Number":"+91 90 87 995729"
+        }
+      ]
+    },
+    {
+      "Name": "IPL Bidding",
+      "Desc": "Strategy is about making choices, trade-offs; it s about deliberately choosing to be different - Michael Porter. This event tests your decision making skills at different situations based on your competitors. Choose wisely !!!",
+      "Dating": "11-03-2017",
+      "Timing": "2pm to 4.30pm",
+      "Venue": "Mini Auditorium",
+      "Info": [
+        "Prize amount- 2.5k +1.5K"
+      ],
+      "Ruling": [
+        "Each team should comprise of 2-4 people. (Can be from different colleges).",
+        "The event will have 2 rounds: First, will be a written test round comprising of questions related to CRICKET alone.",
+        "Top EIGHT teams from the first round will get through to the second round, which will be the auction.",
+        "Based on the points scored during auction, winner will be declared.",
+        "Decision of the coordinators are final."
+      ],
+      "Contact": [
+        {
+          "Name":"Antony Amalraj Morais",
+          "Number":"+91-9176343211"
+        }
+      ]
+    },
+    {
+      "Name": "60 secs",
+      "Desc": "Teams should put forth their skills to complete tasks within the time limit, each time will be given certain tasks which they have to complete within 60 seconds. The team with the highest score gets selected to the next level.",
+      "Dating": "09-03-2017",
+      "Timing": "11am to 1pm",
+      "Venue": "Near Fountain",
+      "Info": [
+        "Prize amount- 1.5k + 1k= 2.5k"
+      ],
+      "Ruling": [
+        "Only two members per team",
+        "More than one team per college is allowed",
+        "Teams should only use the resources provided to them",
+        "On the spot registration",
+        "Judges decision are the final",
+        "ID card is mandatory"
+      ],
+      "Contact": [
+        {
+          "Name":"Bevin Harish",
+          "Number":"+91 72 00 346055"
+        }
+      ]
+    },
+    {
+      "Name": "Adzap",
+      "Desc": "Ad zap is an exciting event to display your flair in the art of convincing people, make unnoticed, noticed and market them to win laurels. Be as creative and as humorous as possible to pull the crowd and become the best crew. Get ready to rock the floor!!!!",
+      "Dating": "10-03-2017",
+      "Timing": "10am to 12.30pm",
+      "Venue": "Central seminar hall",
+      "Info": [
+        "Prize amount - 3k + 2k +5k"
+      ],
+      "Ruling": [
+        "On the spot registrations.",
+        "3-4 members per team.",
+        "The slots will be given on first come first serve basis.",
+        "The prelims will be conducted on the basis of number of teams registered.",
+        "The theme for Ad zap is Branding.",
+        "This event consists of two rounds.",
+        "First round is Brand surfing where in 2 teams will be competing against each other for the same topic and will be judged on the basis of timing and quality of the tag line. Original tagline of the brand should not be used.",
+        "Time duration: 5 minutes per team.",
+        "In the second round the participants will be provided with a product on the spot to advertise. The team should come up with a new brand name for the product given. The advertisement must contain a tagline and details like price and features.",
+        "Time duration: 2 minutes to prepare and 4 minutes to perform.",
+        "The topics can be changed on the discretion of the judge.",
+        "Arbiter s decision will be final.",
+        "Spontaneity, humor and creativity will be much appreciated.",
+        "No obscene language should be used."
+      ],
+      "Contact": [
+        {
+          "Name":"Priyadharshini P K",
+          "Number":"+91 98 40 633 991"
+        }
+      ]
+    },
+    {
+        "Name": "Mix N Match",
+        "Desc": " Relate multiple images and find out answers. Try to make connections by virtue of clues given by the host. Use clues, be creative, and pull out your hidden thoughts. Be spontaneous let your sparkling ideas and thoughts lead to victory. So get on the floor to mix and match!!!!",
+        "Dating": "11-03-2017",
+        "Timing": "10am to 12.30pm",
+        "Venue": "CSE Seminar hall",
+        "Info": [
+          "Prize amount - 2k +1k = 3K"
+        ],
+        "Ruling": [
+          "On the spot registration.",
+          "2 Members per team.",
+          "Prelims will be conducted which consists of 20 questions.",
+          "The teams with highest scores are qualified to next round.",
+          "Second round is \"FACE MASKING\" (i.e.)finding out the personality from the displayed image.",
+          "Selected participants enters into final.",
+          "Final round is \"MIX N MATCH\" where the participants have to link the images to crack a word.",
+          "Decision of the coordinators are final.",
+          "Electronic gadgets are not allowed."
+        ],
+        "Contact": [
+          {
+            "Name":"Muthu Parkavi A",
+            "Number":"+91 99 52 934475"
+          }
+        ]
+      },
+      {
+        "Name": "Treasure Hunt",
+        "Desc": "Treasure is the best gift that you give yourself. That gift is equal to nothing. So folks get ready to fly and find clues which will lead to a great victory. Get ready for the fun loving hunting with your team and quickly find clues to attain treasure!! Each team is presented with a group of puzzles, or clues, which teams must solve in order to find a piece of information. ",
+        "Dating": "09-03-2017",
+        "Timing": "2pm to 4.30pm",
+        "Venue": "Near Fountain",
+        "Info": [
+          "Prize Amount- 2k + 1k = 3k"
+        ],
+        "Ruling": [
+          "On the Spot Registration.",
+          "2-4 members per team.",
+          "Prelims will be conducted.",
+          "Inter-Colg Teams allowed (SSN Students not allowed).",
+          "Co-Ords decisions are final.",
+          "ID cards are must for registration."
+        ],
+        "Contact": [
+          {
+            "Name":"Simon Selvaraj",
+            "Number":"+91 96 98 028190"
+          }
+        ]
+      }
+  ]
+}
