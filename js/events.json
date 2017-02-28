@@ -1,6 +1,48 @@
 {
   "NoOfClubs":"10",
 
+      "Gaming": {
+        "Name": "Gaming",
+        "NoOfEvents": "3",
+        "Events": [{
+          "Name": "Fifa 14",
+          "Desc": "",
+          "Dating": "",
+          "Timing": "",
+          "Venue": "",
+          "Info": [ ],
+          "Ruling": [
+
+          ],
+          "Contact": []
+        },
+        {
+          "Name": "Counter Strike",
+          "Desc": "",
+          "Dating": "In Schedule",
+          "Timing": "In Schedule",
+          "Venue": "In Schedule",
+          "Info": [
+
+          ],
+          "Ruling": [
+
+          ],
+          "Contact": []
+        },
+        {
+          "Name": "Dota 2",
+          "Desc": "",
+          "Dating": "In Schedule",
+          "Timing": "In Schedule",
+          "Venue": "In Schedule",
+          "Info": [],
+          "Ruling": [
+
+          ],
+          "Contact": []
+        }]
+      },
   	"Quiz": {
   		"Name": "Quiz",
   		"NoOfEvents": "4",
@@ -14,7 +56,7 @@
   				"Prizes worth 2k"
   			],
   			"Ruling": [
-
+          "Event will conducted in facebook."
   			],
   			"Contact": [{
   				"Name": "Saketh",
@@ -363,32 +405,6 @@
     "NoOfEvents":"6",
     "Events": [
       {
-        "Name": "SSN DEBATES",
-        "Desc": "SSN Debates is our flagship event and has evolved into one of the most popular parliamentary style debates in the city. This event is open to teams of two. Cross college teams are allowed.",
-        "Dating": "08/03/2017 - Day 0",
-        "Timing": "9:00am",
-        "Venue": "IT Classrooms",
-        "Info": [],
-        "Ruling": [
-          "Two members per team.",
-          "In each round, two teams will be pitted against each other.",
-          "Points of information allowed, the details of which will be put up in a dedicated post shortly.",
-          "Topics will be out soon! The list of topics and study guidelines will be given in advance for the prelims.",
-          "Prelims: Each speaker s substantive speech time is 5 minutes.",
-          "Rebuttal time for each team is 3 minutes, where either speaker from each team can choose to do the rebuttal",
-          "Questioning by the judges and audience will roughly be allotted 5 minutes per team.",
-          "Finals: Each speaker s substantive speech time is 7 minutes.",
-          "Rebuttal time for each team is 4 minutes, where either speaker from each team can choose to do the rebuttal.",
-          "Questioning by the judges and audience will roughly be allotted 5 minutes per team."
-        ],
-        "Contact": [
-          {
-            "Name": "Radhakrishnan V",
-            "Number": "8754507189"
-          }
-        ]
-      },
-      {
         "Name": "Lawyer Up",
         "Desc": "Battle it out in a mock trial as you are forced to defend yourself in outlandish cases",
         "Dating": "09/03/2017 - Day 1",
@@ -407,7 +423,32 @@
           }
         ]
       },
-
+      {
+        "Name": "SSN DEBATES",
+        "Desc": "SSN Debates is our flagship event and has evolved into one of the most popular parliamentary style debates in the city. This event is open to teams of two. Cross college teams are allowed.",
+        "Dating": "08/03/2017 - Day 0",
+        "Timing": "9:00am",
+        "Venue": "IT Classrooms",
+        "Info": [],
+        "Ruling": [
+          "Two members per team.",
+          "In each round, two teams will be pitted against each other.",
+          "Points of information allowed, the details of which will be put up in a dedicated post shortly.",
+          "Topics will be out soon! The list of topics and study guidelines will be given in advance for the prelims.",
+          "Prelims: Each speakers substantive speech time is 5 minutes.",
+          "Rebuttal time for each team is 3 minutes, where either speaker from each team can choose to do the rebuttal",
+          "Questioning by the judges and audience will roughly be allotted 5 minutes per team.",
+          "Finals: Each speaker s substantive speech time is 7 minutes.",
+          "Rebuttal time for each team is 4 minutes, where either speaker from each team can choose to do the rebuttal.",
+          "Questionings by the judges and audience will roughly be allotted 5 minutes per team."
+        ],
+        "Contact": [
+          {
+            "Name": "Radhakrishnan V",
+            "Number": "8754507189"
+          }
+        ]
+      },
       {
         "Name": "JAM",
         "Desc": "An event for the Grammar Nazis to reign supreme. If you can make us laugh while speaking impeccable English, this one's for you.",
@@ -858,7 +899,7 @@
           "Topics: Finals Debate Rules:",
           "Top four qualified in speech can participate in this debate.",
           "The duration will be seven minutes.",
-          "Blaming without proof and usage of non-parlimentary words is not allowed."
+          "Blaming without proof and usage of non-parlimentary words are not allowed."
       	],
       	"Contact": [
           {
@@ -888,12 +929,11 @@
           "The time required by the participant will be considered.",
           "Any sort of misbehaviour or any act of hurting any individual is not allowed.",
           "Finals Rules:",
-          "A team must consist two members.",
-          "Usage of mouth to convey the data is considered illegal.",
-          "The data should not be conveyed by writing it.",
+          "Usage of mouth to convey words is considered illegal.",
+          "The data shouldn't be conveyed by writing it.",
           "The data to be conveyed would be thirukkural, proverbs and book titles.",
-          "The time required by the participant will be considered.",
-          "Any sort of misbehaviour or any act of hurting any individual is not allowed."
+          "The time required by the participants will be considered.",
+          "Any sort of misbehaviour or any act of hurting any individual is strictly not allowed."
       	],
       	"Contact": [
           {

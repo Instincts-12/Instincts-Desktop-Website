@@ -195,6 +195,9 @@ body{
   text-transform: uppercase;
   /*font-variant: small-caps;*/
 }
+.itile{
+  width: 31.33%;
+}
 .ititle-active, .ititle:hover{
   color: #F7E490;
   cursor: pointer;
@@ -208,6 +211,7 @@ body{
   padding: 0 20px;
   /*padding-bottom: 0px;*/
 }
+.about-committee{padding-top: 10px;}
 .about-itop{height: 88px;}
 .designation-container{padding-top: 20px;}
 .about-itop .designation-container{float: left; width: 33.33%;}
@@ -240,7 +244,7 @@ body{
   float: left;
   height: 100%;
   box-sizing: border-box;
-  padding: 21px 0;
+  padding: 5px 0;
 }
 .events-side-front{
   position: absolute;
@@ -254,8 +258,8 @@ body{
   list-style-type: none;
   box-sizing: border-box;
   width: 100%;
-  height: 48px;
-  padding: 6px;
+  height: 46px;
+  padding: 5px;
   display: flex;
 }
 .club-bg , .events-side ul li:hover{
@@ -263,7 +267,7 @@ body{
   background: #b2a56d;
 }
 .clubs-div{
-  padding: 3px 6px;
+  padding: 2px 6px;
   box-sizing: border-box;
 }
 .clubs-image{
@@ -337,6 +341,7 @@ body{
   position: relative;
   overflow-y: hidden;
   box-sizing: border-box;
+  width:630px;
   height: 100%;
 }
 .event-name{
@@ -407,6 +412,9 @@ body{
   font : 16px "fontRegular";
   padding: 20px;
   box-sizing: border-box;
+  /*font-weight: bold;*/
+}
+.hos-contact span{
   font-weight: bold;
 }
 .hos-guidelines{
@@ -461,7 +469,7 @@ body{
   position: relative;
   background: rgba(0,0,0,0.3);
   height: 80px;
-  width: calc(1750px);
+  width: calc(3000px);
   float: left;
 }
 .image-layer img{
@@ -512,6 +520,10 @@ body{
   top: 0px;
 }
 
+.register-container{
+  padding: 50px;
+}
+
 .address-container{
   padding: 20px 50px;
   position: relative;
@@ -526,13 +538,13 @@ body{
 }
 .logo{position: relative;width: 100px;height:100px; float: left;}
 .logo img{width: 96px; height: 96px; }
-.add-content{position: relative; text-align: left; width: 300px;height:100px;padding-left: 130px;}
+.add-content{position: relative; text-align: left; width: 350px;padding-left: 130px;}
 .add{padding-top: 25px;}
-.phn{padding-top: 35px;}
-.eml{padding-top: 35px;}
+.phn{padding-top: 30px;}
+.eml{padding-top: 20px;}
 .social-container{
   position: absolute;
-  left: 600px;
+  left: 650px;
   /*top:100px;*/
   padding-top: 60px;
   width: 64px;
@@ -559,20 +571,31 @@ body{
 }
 .co-sponsors{
   width: 100%;
-  height: 350px;
+  /*height: 350px;*/
 }
+/*.co-spon{height: 250px;}*/
 .poweredby, .presentedby{width:50%; float:left;padding-top: 30px;}
+.powerby img{height: 200px;}
 
-.other-sponsors{position: relative;padding-top: 50px; padding-bottom: 120px;}
-.o-sponsor{width: 100%; height:300px; box-sizing: border-box; padding-bottom: 50px;box-sizing: border-box;}
+.other-sponsors{position: relative;padding-top: 50px; width: 100%;padding-bottom: 120px;}
+.o-sponsor{width: 50%; box-sizing: border-box; padding-bottom: 50px;box-sizing: border-box; float: left;}
+.o-sponsor img{padding-top: 25px;}
 .title{padding-top: 10px;padding-bottom: 30px;}
-.o-sponsor .img-div{float: left; width:50%;}
-.hindu{padding: 70px 0;}
+.o-sponsor .img-div{width:100%}
+/*.o-sponsor .img-div:first-child { }*/
+.hindu{padding: 50px 0;}
 .other-sponsors .title{padding-bottom:  50px;}
 /*.dugar{ top: 0px; position: relative;}*/
 /*.o-sponsor img{height: 100px;}*/
 /*.micron, .bluestar, {width: 250px;}*/
-
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
 .content-container-inner ::-webkit-scrollbar {
     height: 5px;
     width: 5px;
@@ -873,18 +896,26 @@ body{
 }
 .b1{left: 398px;}
 .b2{left: 438px;}
-.cl{left: 538px;}
+.rl{left: 538px;}
+.register-build{
+  width: 126px;
+  height: 179px;
+  position: relative;
+  top: calc(100vh - 261px);
+  left: 568px;
+}
+.rr, .cl{left: 598px;}
 .contact-build{
   width: 134px;
   height: 179px;
   position: relative;
   top: calc(100vh - 261px);
-  left: 568px;
+  left: 628px;
   transition: all 0.2s ease-in-out;
 }
-.cr{left: 598px;}
+.cr{left: 658px;}
 
-.mouseon ,.about-instincts-hover:hover, .about-ssn-hover:hover, .event-build:hover, .gallery-build:hover, .schedule-build:hover, .hospitality-build:hover, .sponsors-build:hover, .contact-build:hover{
+.mouseon ,.about-instincts-hover:hover,.register-build:hover , .about-ssn-hover:hover, .event-build:hover, .gallery-build:hover, .schedule-build:hover, .hospitality-build:hover, .sponsors-build:hover, .contact-build:hover{
   cursor: pointer;
   -webkit-filter: drop-shadow(1px 1px 3px #fff);
   filter:         drop-shadow(1px 1px 3px #fff);

@@ -2347,6 +2347,11 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.ititle-active').removeClass('ititle-active');
 		$('.iteam').addClass('ititle-active');
 	};
+	$scope.changetocommittee = function(){
+		$scope.instinctspage = "thecommittee";
+		$('.ititle-active').removeClass('ititle-active');
+		$('.icommittee').addClass('ititle-active');
+	};
 	$scope.changetoabtins = function(){
 		$scope.instinctspage = "theinstincts";
 		$('.ititle-active').removeClass('ititle-active');
@@ -2364,10 +2369,10 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		// $('body').unbind('wheel');
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
-		checkarrow();
-		eventnamereset();
-		$scope.quiz();
-		$('.quiz-bg').addClass('club-bg');
+		// $('.game-bg').addClass('club-bg');
+		$scope.game();
+		// checkarrow();
+		// eventnamereset();
 	};
 	$scope.gallerypage = function() {
 		$scope.pagetitle = "GALLERY";
@@ -2391,7 +2396,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$scope.checkarrowimage();
 	}
  }
- $scope.hospitalitypage = function() {
+ $scope.hospitalityp = function() {
 	 $scope.pagetitle = "HOSPITALITY";
 	 $scope.page = "hospitality";
 	 $scope.hospitalitypage = "general";
@@ -2418,6 +2423,11 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		// 	horizontalscroll(e);
 		// });
 	};
+	$scope.registerpage = function() {
+		$scope.pagetitle = "REGISTER";
+		$scope.page = "register";
+		$('.page').fadeIn();
+	}
 	$scope.contactpage = function() {
 		$scope.pagetitle = "CONTACT";
 		$scope.page = "contactus";
@@ -2430,6 +2440,18 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('#body').removeClass('sto-scroll');
 	};
 
+	$scope.game = function() {
+		$scope.club= $scope.clubdetails.Gaming;
+		$scope.event = $scope.club.Events[0];
+		$scope.eventswidth = $scope.club.NoOfEvents * 210;
+		$('.event-names').width($scope.eventswidth);
+		$('.club-bg').removeClass('club-bg');
+		$('.game-bg').addClass('club-bg');
+		// $scope.checkarrow();
+		// $scope.eventnamereset();
+		checkarrow();
+		eventnamereset();
+	};
 	$scope.quiz = function() {
 		$scope.club= $scope.clubdetails.Quiz;
 		$scope.event = $scope.club.Events[0];
@@ -2602,7 +2624,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 			if(width - owidth +left -30 < 800){change = width - owidth +left }
 			$('.img-layers').animate({left: left - change},500);
 			$('.img-layers').css({left: left - change});
-			console.log(left);
+			// console.log(left);
 		}
 	};
 	$scope.checkarrowimage = function(){
@@ -2621,5 +2643,5 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.big-img').attr("src","img/gallery/big/"+x+".jpg");
 		$scope.checkarrowimage();
 	};
-	
+
 });

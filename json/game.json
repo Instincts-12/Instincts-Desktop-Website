@@ -1,0 +1,43 @@
+{"Gaming": {
+  "Name": "Gaming",
+  "NoOfEvents": "3",
+  "Events": [{
+    "Name": "Fifa 14",
+    "Desc": "",
+    "Dating": "",
+    "Timing": "",
+    "Venue": "",
+    "Info": [ ],
+    "Ruling": [
+
+    ],
+    "Contact": []
+  },
+  {
+    "Name": "Counter Strike",
+    "Desc": "",
+    "Dating": "In Schedule",
+    "Timing": "In Schedule",
+    "Venue": "In Schedule",
+    "Info": [
+
+    ],
+    "Ruling": [
+
+    ],
+    "Contact": []
+  },
+  {
+    "Name": "Dota 2",
+    "Desc": "",
+    "Dating": "In Schedule",
+    "Timing": "In Schedule",
+    "Venue": "In Schedule",
+    "Info": [],
+    "Ruling": [
+
+    ],
+    "Contact": []
+  }]
+}
+}

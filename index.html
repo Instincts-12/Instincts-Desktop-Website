@@ -66,8 +66,9 @@
               <div class="about-instincts-container" ng-switch-when="aboutinstincts">
                 <!-- <img class="frame" src="img/Events/frame.svg"/> -->
                 <div class="about-instincts-tabs">
-                  <div ng-click="changetoteam()" class="ititle iteam ititle-active">Our Team</div>
-                  <div ng-click="changetoabtins()" class="ititle iins">Instincts ?</div>
+                  <div ng-click="changetoteam()" class="ititle itile iteam ititle-active">Our Team</div>
+                  <div ng-click="changetoabtins()" class="ititle itile iins">Instincts ?</div>
+                  <div ng-click="changetocommittee()" class="ititle itile icommittee ">Committees</div>
                 </div>
                 <div class="about-ins-content" ng-switch="instinctspage">
                   <div class="about-team" ng-switch-when="theteam">
@@ -178,6 +179,115 @@
                       </div>
                     </div>
                   </div>
+                  <div class="about-committee" ng-switch-when="thecommittee">
+                    <div class="about-ibottom">
+                      <div class="about-iside">
+                        <div class="designation-container">
+                          <div class="designation">
+                            EVENT COORDINATORS
+                          </div>
+                          <div class="designation-name">
+                            Tarun Subramanian<br/>
+                            Rishab Venkatraman
+                          </div>
+                        </div>
+                        <div class="designation-container">
+                          <div class="designation">
+                            CONTENT DEVELOPMENT
+                          </div>
+                          <div class="designation-name">
+                            Priyashree
+                            <!-- Ramya Ramalingam -->
+                          </div>
+                        </div>
+                        <div class="designation-container">
+                          <div class="designation">
+                            HOSPITALITY
+                          </div>
+                          <div class="designation-name">
+                            Aravinth S<br/>
+                            Sreeram K
+                          </div>
+                        </div>
+                        <div class="designation-container">
+                          <div class="designation">
+                            STAGE COMMITTEE
+                          </div>
+                          <div class="designation-name">
+                            Mani Rajan<br/>
+                            Raghul Kishore
+                          </div>
+                        </div>
+                      </div>
+                      <div class="about-iside">
+                        <div class="designation-container">
+                          <div class="designation">
+                            DECO TEAM
+                          </div>
+                          <div class="designation-name">
+                            Logith<br/>
+                            Sowmya<br/>
+                            Kathick Ravilla<br/>
+                            Rahul Rangarajan
+                          </div>
+                        </div>
+                        <div class="designation-container">
+                          <div class="designation">
+                            INFORMALS
+                          </div>
+                          <div class="designation-name">
+                            Vishnuvardhan N<br/>
+                            Lasya<br/>
+                            Govardhan<br/>
+                            Tej Tarang D
+                          </div>
+                        </div>
+                        <div class="designation-container">
+                          <div class="designation">
+                            FOOD COMMITTEE
+                          </div>
+                          <div class="designation-name">
+                            Krishna Kumar R<br/>
+                            Manish V
+                          </div>
+                        </div>
+                      </div>
+                      <div class="about-iside">
+
+                        <div class="designation-container">
+                          <div class="designation">
+                            TRANSPORT
+                          </div>
+                          <div class="designation-name">
+                            Arun Kumar N<br/>
+                            Nithin Kumar<br/>
+                            Mohan kumar
+                          </div>
+                        </div>
+                        <div class="designation-container">
+                          <div class="designation">
+                            CROWD MANAGEMENT
+                          </div>
+                          <div class="designation-name">
+                            Aslam Basha<br/>
+                            Saravana Kumar K S<br/>
+                            Ponnarasan  D<br/>
+                            Sethumanickam
+                          </div>
+                        </div>
+                        <div class="designation-container">
+                          <div class="designation">
+                            PUBLICITY
+                          </div>
+                          <div class="designation-name">
+                            Athesh Kumar<br/>
+                            Basheer<br/>
+                            Mano Venkatesh
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="about-instincts-content" ng-switch-when="theinstincts">
                     <p>Instincts, since its inception in 2006, has today become one of the largest campus festivals in South India, attracting crowds of well over 10,000, from over 150 institutions of higher learning.</p>
                     <p>A number of celebrities, performers and eminent personalities from the literary,cine, musical, sporting and educational streams visit our campus across these three days.</p>
@@ -216,10 +326,17 @@
                     <li></li>
                     <li></li>
                     <li></li>
+                    <li></li>
                   </ul>
                 </div>
                 <div class="events-side-front events-side">
                   <ul>
+                    <li class="game-bg" ng-click="game()">
+                      <div class="clubs-div">
+                        <img class="clubs-image" src="img/Events/game.svg"/>
+                        <div class="clubs-name">Gaming</div>
+                      </div>
+                    </li>
                     <li class="quiz-bg" ng-click="quiz()">
                       <div class="clubs-div">
                         <img class="clubs-image" src="img/Events/quiz.svg"/>
@@ -307,14 +424,14 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="event-desc-container">
+                    <!-- <div class="event-desc-container">
                       <div class="event-title">Info</div><span class="colon">:</span>
                       <div class="event-desc">
                         <ul>
                           <li ng-repeat="e in event.Info">{{e}}</li>
                         </ul>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="event-desc-container">
                       <div class="event-title">Contact</div><span class="colon">:</span>
                       <div class="event-desc">
@@ -347,6 +464,16 @@
                       <img class="img11" ng-click="changeimage(11)" onmouseover="macin(11)" onmouseout="macout(11)" src="img/gallery/small/11.jpg"/>
                       <img class="img12" ng-click="changeimage(12)" onmouseover="macin(12)" onmouseout="macout(12)" src="img/gallery/small/12.jpg"/>
                       <img class="img13" ng-click="changeimage(13)" onmouseover="macin(13)" onmouseout="macout(13)" src="img/gallery/small/13.jpg"/>
+                      <img class="img14" ng-click="changeimage(14)" onmouseover="macin(14)" onmouseout="macout(14)" src="img/gallery/small/14.jpg"/>
+                      <img class="img15" ng-click="changeimage(15)" onmouseover="macin(15)" onmouseout="macout(15)" src="img/gallery/small/15.jpg"/>
+                      <img class="img16" ng-click="changeimage(16)" onmouseover="macin(16)" onmouseout="macout(16)" src="img/gallery/small/16.jpg"/>
+                      <img class="img17" ng-click="changeimage(17)" onmouseover="macin(17)" onmouseout="macout(17)" src="img/gallery/small/17.jpg"/>
+                      <img class="img18" ng-click="changeimage(18)" onmouseover="macin(18)" onmouseout="macout(18)" src="img/gallery/small/18.jpg"/>
+                      <img class="img19" ng-click="changeimage(19)" onmouseover="macin(19)" onmouseout="macout(19)" src="img/gallery/small/19.jpg"/>
+                      <img class="img20" ng-click="changeimage(20)" onmouseover="macin(20)" onmouseout="macout(20)" src="img/gallery/small/20.jpg"/>
+                      <img class="img21" ng-click="changeimage(21)" onmouseover="macin(21)" onmouseout="macout(21)" src="img/gallery/small/21.jpg"/>
+                      <img class="img22" ng-click="changeimage(22)" onmouseover="macin(22)" onmouseout="macout(22)" src="img/gallery/small/22.jpg"/>
+                      <img class="img23" ng-click="changeimage(23)" onmouseover="macin(23)" onmouseout="macout(23)" src="img/gallery/small/23.jpg"/>
                     </div>
                   </div>
                   <span ng-click="moveimageright()" class="img-arrow img-right"><img src="img/Events/arrow.svg"/><span>
@@ -360,12 +487,13 @@
                 <div class="about-ins-content" ng-switch="hospitalitypage">
                   <div class="general" ng-switch-when="general">
                     <div class="hos-contact">
-                      CONTACT: Aravinth S - +91 97 90 088471
+                      <span>CONTACT:</span><br/> &nbsp; &nbsp; &nbsp; &nbsp; Aravinth S - +91 97 90 088471 <br/>
+                      &nbsp; &nbsp; &nbsp; &nbsp; Sreeram K - +91 96 98 406000
                     </div>
                     <div class="hos-guidelines">
                       General Guidelines:
                       <ul class="guidepoints">
-                        <li>Please carry with you your college ID card.
+                        <li>Please carry your college ID card with you.</li>
                         <li>Cars and bikes will not be allowed to enter campus. So you will be asked to park them at the gate and walk inside.</li>
                         <li>Registrations start at 10.30AM on Day 1 and 9AM on Day 2 and Day 3. Please be there on time. Kindly take a note of the events under general registration and those under special event registration. </li>
                         <!-- <li>Kindly download the SSN Instincts 2017 android application, it will be of great use during Instincts.</li> -->
@@ -381,7 +509,7 @@
                   </div>
                   <div class="accomodation" ng-switch-when="accomodation">
                     <div class="hos-contact">
-                      CONTACT: Sasikumar K - +91 89 39 619640
+                      <span>CONTACT:</span><br/> &nbsp; &nbsp; &nbsp; &nbsp; Sasikumar K - +91 89 39 619640
                     </div>
                     <div class="hos-guidelines">
                       Accomodation Guidelines:
@@ -405,75 +533,74 @@
               </div>
               <div class="sponsors-container" ng-switch-when="sponsors" >
                 <div class="sponsors-div">
-                  <div class="title-sponsor">
+                  <div class="title-sponsor clearfix">
                     <div class="title">TITLE SPONSOR</div>
-                    <a href="https://www.hcl.com" target="_blank"><img class="hcl" src="img/Sponsors/HCL.jpg"/></a>
+                    <a href="https://www.hcl.com" target="_blank"><img class="hcl" src="img/Sponsors/HCL.png"/></a>
                   </div>
-                  <div class="co-sponsors">
-                    <div class="poweredby">
+                  <div class="co-sponsors clearfix">
+                    <div class="poweredby powerby ">
                       <div class="title">POWERED BY</div>
                       <a href="https://www.bharatpetroleum.com" target="_blank"><img class="bpcl" src="img/Sponsors/bpcl.jpg"/></a>
                     </div>
                     <div class="presentedby">
                       <div class="title">PRESENTED BY</div>
-                      <a href="http://www.thehindu.com" target="_blank"><img class="hindu" src="img/Sponsors/the_hindu.jpg"/></a>
+                      <a href="http://www.thehindu.com" target="_blank"><img class="hindu" src="img/Sponsors/METROPLUS.jpg"/></a>
                     </div>
                   </div>
-                  <div class="co-sponsors">
+                  <div class="co-sponsors co-spon clearfix">
                     <div class="poweredby">
                       <div class="title">CO-SPONSOR</div>
-                      <a href="https://www.cognizant.com" target="_blank"><img class="hindu" src="img/Sponsors/cts.jpg"/></a>
+                      <a href="https://www.cognizant.com" target="_blank"><img class="" src="img/Sponsors/cts.jpg"/></a>
                     </div>
                     <div class="presentedby">
                       <div class="title">HOSPITALITY SPONSOR</div>
-                      <a href="http://www.confluenceconvention.com" target="_blank"><img class="hindu" src="img/Sponsors/confluence.png"/></a>
+                      <a href="http://www.confluenceconvention.com" target="_blank"><img class="confluence" src="img/Sponsors/confluence.png"/></a>
                     </div>
                   </div>
-                  <div class="co-sponsors">
+                  <div class="co-sponsors co-spon clearfix">
                     <div class="poweredby">
                       <div class="title">RADIO PARTNER</div>
                       <a href="http://www.927bigfm.com" target="_blank"><img class="hindu" src="img/Sponsors/bigfm.jpg"/></a>
                     </div>
                     <div class="presentedby">
                       <div class="title">MULTIPLEX PARTNER</div>
-                      <a href="http://www.agscinemas.com" target="_blank"><img class="hindu" src="img/Sponsors/ags.png"/></a>
+                      <a href="http://www.agscinemas.com" target="_blank"><img class="" src="img/Sponsors/ags.png"/></a>
                     </div>
                   </div>
-                  <!-- <div style="clear-fix: both"></div> -->
                   <div class="other-sponsors">
                     <div class="title"> ASSOCIATE SPONSORS </div>
-                    <!-- <div class="o-sponsor">
-                      <div class="img-div"><img class="" src="img/Sponsors/confluence.png"/></div>
-                      <div class="img-div"><img class="" src="img/Sponsors/policy.jpg"/></div>
-                    </div> -->
-                    <!-- <div class="o-sponsor">
-                    </div> -->
-                    <div class="o-sponsor">
-                      <div class="img-div"><a href="http://micronelectricals.com" target="_blank"><img class="hindu" src="img/Sponsors/micron.jpg"/></a></div>
-                      <div class="img-div"><a href="https://bluestarindia.com" target="_blank"><img class="hindu" src="img/Sponsors/bluestar.jpg"/></a></div>
-                    </div>
-                    <!-- <div class="o-sponsor">
-                    </div> -->
-                    <div class="o-sponsor">
+
+                    <div class="o-sponsor clearfix">
                       <div class="img-div"><a href="http://www.archeegroup.com/aboutus.html" target="_blank"><img class="" src="img/Sponsors/archee.jpg"/></a></div>
-                      <div class="img-div"><a href="http://www.asiaengg.com" target="_blank"><img class="" src="img/Sponsors/asia.png"/></a></div>
-                    </div>
-                    <!-- <div class="o-sponsor">
-                    </div> -->
-                    <div class="o-sponsor">
+                      <div class="img-div"><a href="https://bluestarindia.com" target="_blank"><img class="" src="img/Sponsors/bluestar.jpg"/></a></div>
                       <div class="img-div"><a href="http://www.sricomforts.com" target="_blank"><img class="" src="img/Sponsors/sricomforts.jpg"/></a></div>
                       <div class="img-div"><a href="https://www.dugar.in" target="_blank"><img class="dugar" src="img/Sponsors/dugar.jpg"/></a></div>
+                      <div class="img-div"><a href="http://uniqtechnologies.co.in/" target="_blank"><img class="" src="img/Sponsors/uniqtech.png"/></a></div>
                     </div>
                     <!-- <div class="o-sponsor">
                     </div> -->
-                    <div class="o-sponsor">
+                    <div class="o-sponsor clearfix">
+                      <div class="img-div"><a href="http://www.asiaengg.com" target="_blank"><img class="" src="img/Sponsors/asia.png"/></a></div>
+                      <div class="img-div"><a href="http://micronelectricals.com" target="_blank"><img class="" src="img/Sponsors/micron.jpg"/></a></div>
                       <div class="img-div"><a href="https://www.tmbnet.in" target="_blank"><img class="" src="img/Sponsors/tmb.jpg"/></a></div>
                       <div class="img-div"><a href="https://www.policy99.com" target="_blank"><img class="" src="img/Sponsors/policy.jpg"/></a></div>
+                      <div class="img-div"><a href="http://www.lansontoyota.com/" target="_blank"><img class="" src="img/Sponsors/toyoto.jpg"/></a></div>
                     </div>
                     <!-- <div class="o-sponsor">
+                    </div> -->
+                    <!-- <div class="o-sponsor">
+                    </div> -->
+                    <!-- <div class="o-sponsor">
+                    </div> -->
+                    <!-- <div class="o-sponsor">
+                    </div>
+                    <div class="o-sponsor">
                     </div> -->
                   </div>
                 </div>
+              </div>
+              <div class="register-container" ng-switch-when="register" >
+
               </div>
               <div class="contact-container" ng-switch-when="contactus">
                 <img class="frame" src="img/Events/frame.svg"/>
@@ -494,7 +621,8 @@
                         <img src="img/contact/phone.svg"/>
                       </div>
                       <div class="add-content phn">
-                        (+91) 99 62 780637
+                        Kameshwar - (+91) 99 62 780637<br/>
+                        Avaneeja - (+91) 98 40 833082
                       </div>
                     </div>
                     <div class="email">
@@ -502,15 +630,16 @@
                         <img src="img/contact/email.svg"/>
                       </div>
                       <div class="add-content eml">
-                        Sponsorship.Instincts@ssn.edu.in
-                        <!-- contact.instincts@gmail.com -->
+                        Contact - Contact.Instincts@gmail.com<br/>
+                        Sponsorship - Sponsorship.Instincts@ssn.edu.in<br/>
+                        College Website - <a href="http://www.ssn.edu.in">www.ssn.edu.in</a>
                       </div>
                     </div>
                   </div>
                   <div class="social-container">
                     <a href="https://www.facebook.com/instincts.ssn" target="_blank"><div class="social social-fb"><img src="img/contact/facebook.svg"/></div></a>
-                    <div class="img-disabled social social-tw"><img src="img/contact/twitter.svg"/></div>
-                    <div class="img-disabled social social-yt"><img src="img/contact/youtube.svg"/></div>
+                    <a href="https://twitter.com/ssn_instincts" target="_blank"><div class="social social-tw"><img src="img/contact/twitter.svg"/></div></a>
+                    <a href="https://www.instagram.com/ssninstincts/?hl=en" target="_blank"><div class="social social-yt"><img src="img/contact/instagram.svg"/></div></a>
                   </div>
                 </div>
                 <img class="frame top-flip" src="img/Events/frame.svg"/>
@@ -603,760 +732,761 @@
     </div>
     <div class="grass-top"></div>
     <div class="grass"></div>
-      <div class="road-2-top"></div>
-      <div class="road-1-top"></div>
-      <div class="road">
-        <div class="road-dash"></div>
+    <div class="road-2-top"></div>
+    <div class="road-1-top"></div>
+    <div class="road">
+      <div class="road-dash"></div>
+    </div>
+    <div class="about-instincts"><img class="instincts-img" src="img/about-instincts.png"/></div>
+    <div ng-click="aboutinstinctspage()" id="scroll-home" class="about-instincts-hover"></div>
+    <div ng-click="aboutssnpage()" class="about-ssn-hover"></div>
+    <div class="building-container">
+      <div class="env"></div>
+      <div class="about-ssn">
+        <div id="as_animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:742px; height:546px">
+          <canvas id="as_canvas" width="742" height="546" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+          <div id="as_dom_overlay_container" style="pointer-events:none; overflow:hidden; width:742px; height:546px; position: absolute; left: 0px; top: 0px; display: block;"></div>
+        </div>
       </div>
-      <div class="about-instincts"><img class="instincts-img" src="img/about-instincts.png"/></div>
-      <div ng-click="aboutinstinctspage()" id="scroll-home" class="about-instincts-hover"></div>
-      <div ng-click="aboutssnpage()" class="about-ssn-hover"></div>
-      <div class="building-container">
-        <div class="env"></div>
-        <div class="about-ssn">
-          <div id="as_animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:742px; height:546px">
-            <canvas id="as_canvas" width="742" height="546" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-            <div id="as_dom_overlay_container" style="pointer-events:none; overflow:hidden; width:742px; height:546px; position: absolute; left: 0px; top: 0px; display: block;"></div>
-          </div>
-        </div>
-        <div class="env flip"></div>
-        <img class="lamp el" src="img/lamp.svg"/>
-        <div ng-click="eventspage()" id="scroll-event" class="event-build">
-          <?xml version="1.0" encoding="utf-8"?>
-          <svg  id="event-svg" onmouseover="eventhover()" onmouseout="eventplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 197 257" style="enable-background:new 0 0 197 257;" xml:space="preserve">
-          <g id="event"  >
-          	<g>
-          		<g>
-          			<g>
-          				<path class="st0" d="M187,56.8c0,0-3.2,166.5-2.8,188.7l-154.9,7.4c0,0-16.5-188.7-17.3-193.6L187,56.8z"/>
-          				<polygon class="st1" points="29.3,256 24.4,200.1 184.7,193.7 184.7,256 				"/>
-          			</g>
-          			<polygon class="st1" points="16,135 17.6,143.7 187,139.4 188.4,129.5 			"/>
-          		</g>
-          		<g>
-          			<polygon class="st1" points="5.7,54.5 7.6,62.4 189,59.8 192.1,52.1 			"/>
-          			<path class="st2" d="M29,9.1L3,54.5l191.5-2.4c0,0-33-42-36.8-49.9C157.7,2.2,34.1,9.4,29,9.1z"/>
-          		</g>
-          		<g>
-          			<g>
-          				<polygon class="st2" points="132.4,206.5 153.1,205.6 153.1,243.6 136.5,244.7 				"/>
-          			</g>
-          			<g>
-          				<polygon class="st2" points="160.7,242.3 160,206.4 177.9,205.7 176.7,241.7 				"/>
-          			</g>
-          			<g>
-          				<polygon class="st2" points="78.2,209.6 58.7,210.2 60.1,245.4 76.9,245.2 				"/>
-          			</g>
-          			<g>
-          				<polygon class="st2" points="52.8,245.2 50.8,211 32.3,211.6 36.3,245.8 				"/>
-          			</g>
-          			<g>
-          				<polygon class="st3" points="91.3,250.9 88.4,203 122.6,202 122.6,249.1 				"/>
-          				<circle class="st4" cx="117.8" cy="229.3" r="2.1"/>
-          			</g>
-          		</g>
-          	</g>
-          	<g>
-          		<g>
-          			<path class="st5" d="M153.4,116.7H43.8c0-3.9-3.1-7-7-7V82.2c3.9,0,7-3.1,7-7h109.6c0,3.9,3.1,7,7,7v27.5
-          				C156.5,109.7,153.4,112.8,153.4,116.7z"/>
-          			<path class="st6" d="M155.3,117.5H42v-0.9c0-2.8-2.3-5.1-5.1-5.1H36V80.3h0.9c2.8,0,5.1-2.3,5.1-5.1v-0.9h113.3v0.9
-          				c0,2.8,2.3,5.1,5.1,5.1h0.9v31.3h-0.9c-2.8,0-5.1,2.3-5.1,5.1V117.5z M43.6,115.8h110c0.4-3.1,2.8-5.5,5.9-5.9v-28
-          				c-3.1-0.4-5.5-2.8-5.9-5.9h-110c-0.4,3.1-2.8,5.5-5.9,5.9v28C40.8,110.3,43.2,112.7,43.6,115.8z"/>
-          		</g>
-          		<g>
-          			<path class="st7" d="M77.5,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2h8.8v3h-2.4v-0.7H73v1.4h1.8v1.9H73v1.5h2.1v-0.7h2.4V99.8z"/>
-          			<path class="st7" d="M85,99.9h-2.9l-3-7.1h-0.7v-2.2h5v2.2h-0.8l1.4,3.9l1.4-3.9h-0.8v-2.2h3.7v2.2h-0.7L85,99.9z"/>
-          			<path class="st7" d="M98,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2H98v3h-2.4v-0.7h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7H98V99.8z"/>
-          			<path class="st7" d="M103,99.8h-3.8v-2.2h0.8v-4.8h-0.8v-2.2h4.4l3.4,4.8v-2.6h-0.8v-2.2h3.7v2.2h-0.8v7.2h-3l-3.9-5.6v3.3h0.8
-          				V99.8z"/>
-          			<path class="st7" d="M118.1,99.8h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9h9.2v3.9h-1.7v-1.7h-1.1v4.8h0.8V99.8z"/>
-          			<path class="st7" d="M123.3,99.8h-2.1v-3h2.1c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
-          				c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
-          				c0.6-0.5,1.2-0.7,2.1-0.7c0.8,0,1.5,0.2,2.1,0.7v-0.6h2.1v2.6h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
-          				c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
-          				c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V99.8z"/>
-          		</g>
-          		<g>
-          			<path class="st7" d="M77.5,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2h8.8v3h-2.4v-0.7H73v1.4h1.8v1.9H73v1.5h2.1v-0.7h2.4V99.8z"/>
-          			<path class="st7" d="M85,99.9h-2.9l-3-7.1h-0.7v-2.2h5v2.2h-0.8l1.4,3.9l1.4-3.9h-0.8v-2.2h3.7v2.2h-0.7L85,99.9z"/>
-          			<path class="st7" d="M98,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2H98v3h-2.4v-0.7h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7H98V99.8z"/>
-          			<path class="st7" d="M103,99.8h-3.8v-2.2h0.8v-4.8h-0.8v-2.2h4.4l3.4,4.8v-2.6h-0.8v-2.2h3.7v2.2h-0.8v7.2h-3l-3.9-5.6v3.3h0.8
-          				V99.8z"/>
-          			<path class="st7" d="M118.1,99.8h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9h9.2v3.9h-1.7v-1.7h-1.1v4.8h0.8V99.8z"/>
-          			<path class="st7" d="M123.3,99.8h-2.1v-3h2.1c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
-          				c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
-          				c0.6-0.5,1.2-0.7,2.1-0.7c0.8,0,1.5,0.2,2.1,0.7v-0.6h2.1v2.6h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
-          				c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
-          				c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V99.8z"/>
-          		</g>
-          	</g>
-            <polygon class="st8 event-anim" id="st81" points="96.8,186.7 92.4,149.5 114.6,148.8 113.8,186.7 	"/>
-          	<polygon class="st8 event-anim" id="st82" points="151,185.5 146.6,148.3 168.8,147.6 168,185.5 	"/>
-          	<polygon class="st8 event-anim" id="st83" points="42.2,187.5 37.8,150.4 60,149.6 59.2,187.5 	"/>
-          	<g>
-          		<g>
-          			<g>
-          				<polygon class="st9" points="96.8,186.7 92.4,149.5 114.6,148.8 113.8,186.7 				"/>
-          				<g>
-          					<polygon class="st10" points="92.2,188.4 91.1,183.1 119,183.1 117.9,188.4 					"/>
-          					<path class="st6" d="M117.8,184.1l-0.6,3.3H93l-0.6-3.3H117.8 M120.2,182.1h-2.4H92.4h-2.4l0.5,2.4l0.6,3.3l0.3,1.6H93h24.1
-          						h1.7l0.3-1.6l0.6-3.3L120.2,182.1L120.2,182.1z"/>
-          				</g>
-          			</g>
-          			<g>
-          				<polygon class="st9" points="151,185.5 146.6,148.3 168.8,147.6 168,185.5 				"/>
-          				<g>
-          					<polygon class="st10" points="146.4,186.4 145.4,181 173.2,181 172.2,186.4 					"/>
-          					<path class="st6" d="M172,182l-0.6,3.3h-24.1l-0.6-3.3H172 M174.4,180H172h-25.4h-2.4l0.5,2.4l0.6,3.3l0.3,1.6h1.7h24.1h1.7
-          						l0.3-1.6l0.6-3.3L174.4,180L174.4,180z"/>
-          				</g>
-          			</g>
-          			<g>
-          				<polygon class="st9" points="42.2,187.5 37.8,150.4 60,149.6 59.2,187.5 				"/>
-          				<g>
-          					<polygon class="st10" points="37.6,190.1 36.6,184.8 64.4,184.8 63.4,190.1 					"/>
-          					<path class="st6" d="M63.2,185.8l-0.6,3.3H38.4l-0.6-3.3H63.2 M65.6,183.8h-2.4H37.8h-2.4l0.5,2.4l0.6,3.3l0.3,1.6h1.7h24.1
-          						h1.7l0.3-1.6l0.6-3.3L65.6,183.8L65.6,183.8z"/>
-          				</g>
-          			</g>
-          		</g>
-          	</g>
-          </g>
-          </svg>
-        </div>
-        <img class="lamp er" src="img/lamp.svg"/>
-        <div class="fountain-build">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg id="fountain-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 175 130" style="enable-background:new 0 0 175 130;" xml:space="preserve">
-
-          <g>
-          	<g id="XMLID_12774_">
-          		<g id="XMLID_12837_">
-          			<path id="XMLID_12839_" class="st0" d="M34.2,96.6c0-11.3,9-20.4,20-20.3c8.1,0,15,5,18.1,12.1c1.1,2.6,1.7,5.4,1.7,8.4"/>
-          			<path id="XMLID_12838_" class="st0" d="M101.5,96.9c0-11.3,9-20.4,20-20.3c8.1,0,15,5,18.1,12.1c1.1,2.6,1.7,5.4,1.7,8.4"/>
-          		</g>
-          		<g id="XMLID_12834_">
-          			<path id="XMLID_12836_" class="st1" d="M173.1,121.3c0,4.3-3.6,7.8-7.9,7.8L10,128.4c-4.3,0-7.8-3.6-7.8-7.9l0-0.1
-          				c0-4.3,3.6-7.8,7.9-7.8l155.3,0.7C169.6,113.3,173.2,116.9,173.1,121.3L173.1,121.3z"/>
-          		</g>
-
-          			<rect id="XMLID_12816_" x="82.1" y="41.2" transform="matrix(4.330507e-03 -1 1 4.330507e-03 -18.7787 193.3699)" class="st2" width="11.2" height="129.8"/>
-          		<g id="XMLID_12803_">
-          			<g id="XMLID_12815_">
-          				<path class="st3" d="M32.2,111.5l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L32.2,111.5z"/>
-          			</g>
-          			<g id="XMLID_12814_">
-          				<path class="st3" d="M42.8,111.5l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L42.8,111.5z"/>
-          			</g>
-          			<g id="XMLID_12813_">
-          				<path class="st3" d="M53.3,111.5l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L53.3,111.5z"/>
-          			</g>
-          			<g id="XMLID_12812_">
-          				<path class="st3" d="M63.8,111.6l0-3.6c0-1-1.1-1.9-2.5-1.9s-2.5,0.8-2.5,1.9l0,3.6L63.8,111.6z"/>
-          			</g>
-          			<g id="XMLID_12811_">
-          				<path class="st3" d="M74.4,111.6l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L74.4,111.6z"/>
-          			</g>
-          			<g id="XMLID_12810_">
-          				<path class="st3" d="M84.9,111.7l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L84.9,111.7z"/>
-          			</g>
-          			<g id="XMLID_12809_">
-          				<path class="st3" d="M95.4,111.7l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L95.4,111.7z"/>
-          			</g>
-          			<g id="XMLID_12808_">
-          				<path class="st3" d="M106,111.8l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L106,111.8z"/>
-          			</g>
-          			<g id="XMLID_12807_">
-          				<path class="st3" d="M116.5,111.8l0-3.6c0-1-1.1-1.9-2.5-1.9s-2.5,0.8-2.5,1.9l0,3.6L116.5,111.8z"/>
-          			</g>
-          			<g id="XMLID_12806_">
-          				<path class="st3" d="M127,111.9l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L127,111.9z"/>
-          			</g>
-          			<g id="XMLID_12805_">
-          				<path class="st3" d="M137.5,111.9l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L137.5,111.9z"/>
-          			</g>
-          			<g id="XMLID_12804_">
-          				<path class="st3" d="M148.1,112l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L148.1,112z"/>
-          			</g>
-          		</g>
-          		<g id="XMLID_12801_">
-
-          				<rect x="83.8" y="69.1" transform="matrix(4.338752e-03 -1 1 4.338752e-03 -3.8862 178.6458)" class="st4" width="8" height="44.3"/>
-          			<g>
-          				<path class="st5" d="M66.6,88.2l42.3,0.2l0,6l-42.3-0.2L66.6,88.2 M64.6,86.2l0,2l0,6l0,2l2,0l42.3,0.2l2,0l0-2l0-6l0-2l-2,0
-          					l-42.3-0.2L64.6,86.2L64.6,86.2z"/>
-          			</g>
-          		</g>
-          		<g id="XMLID_12798_">
-
-          				<rect x="84.5" y="68.6" transform="matrix(4.324445e-03 -1 1 4.324445e-03 6.9016 167.9779)" class="st4" width="6.5" height="23.9"/>
-          			<g>
-          				<path class="st5" d="M76.9,78.2l21.9,0.1l0,4.5l-21.9-0.1L76.9,78.2 M74.9,76.2l0,2l0,4.5l0,2l2,0l21.9,0.1l2,0l0-2l0-4.5l0-2
-          					l-2,0l-21.9-0.1L74.9,76.2L74.9,76.2z"/>
-          			</g>
-          		</g>
-          		<path id="XMLID_12796_" class="st6" d="M92,64.6c0-1.8,0.4-3.5,1-5l0,0l-10.1,0l0,0c0.6,1.5,0.9,3.1,0.9,5c0,6.7-5,11.2-6.5,12.4
-          			c-0.2,0.1-0.1,0.4,0.1,0.4l10.4,0l0,0l10.4,0c0.2,0,0.3-0.2,0.1-0.4C96.9,75.8,92,71.3,92,64.6z"/>
-          		<g id="XMLID_12784_">
-          			<path id="XMLID_12786_" class="st0" d="M88,25.6l0-2.6c0-4.2-3.4-7.6-7.6-7.6s-7.6,3.4-7.6,7.6l-0.1,26.6"/>
-          			<path id="XMLID_12785_" class="st0" d="M88.1,30.4l0-7.4c0-4.2,3.4-7.6,7.6-7.6s7.6,3.4,7.6,7.6l-0.1,26.6"/>
-          		</g>
-          		<g id="XMLID_12781_">
-          			<path id="XMLID_12783_" class="st0" d="M107.1,49.7l0-1.7c0-6.2,5.1-11.2,11.3-11.2c6.2,0,11.2,5.1,11.2,11.3L129.3,97"/>
-          			<path id="XMLID_12782_" class="st0" d="M68.8,49.5l0-1.7c0-6.2-5-11.2-11.2-11.3c-6.2,0-11.2,5-11.3,11.2l-0.2,48.9"/>
-          		</g>
-          		<g id="XMLID_12777_">
-
-          				<ellipse  transform="matrix(4.330507e-03 -1 1 4.330507e-03 77.4684 98.4204)" id="bubble1" class="st7" cx="88.2" cy="10.3" rx="3.5" ry="3.5"/>
-
-          				<ellipse  transform="matrix(4.330507e-03 -1 1 4.330507e-03 87.1978 93.4484)" id="bubble2" class="st7" cx="90.5" cy="2.9" rx="1.9" ry="1.9"/>
-
-          				<ellipse  transform="matrix(4.330507e-03 -1 1 4.330507e-03 73.2757 87.0679)" id="bubble3" class="st7" cx="80.4" cy="6.7" rx="2.7" ry="2.7"/>
-          		</g>
-          		<g id="XMLID_12776_">
-          			<path class="st3" d="M20.3,101.4c-0.9,0-1.7-0.3-2.3-0.9c-0.6-0.6-0.9-1.4-0.9-2.3c0-1.8,1.4-3.2,3.2-3.2l134.9,0.6
-          				c0.9,0,1.7,0.3,2.3,0.9c0.6,0.6,0.9,1.4,0.9,2.3c0,1.8-1.4,3.2-3.2,3.2L20.3,101.4z"/>
-          			<path class="st5" d="M20.3,96C20.3,96,20.3,96,20.3,96l134.9,0.6c1.2,0,2.2,1,2.2,2.2c0,1.2-1,2.2-2.2,2.2c0,0,0,0,0,0
-          				l-134.9-0.6c-1.2,0-2.2-1-2.2-2.2C18.1,97,19.1,96,20.3,96 M20.3,94c-2.3,0-4.2,1.9-4.2,4.2c0,2.3,1.9,4.2,4.2,4.2l134.9,0.6
-          				c2.3,0,4.2-1.9,4.2-4.2c0-2.3-1.9-4.2-4.2-4.2L20.3,94L20.3,94L20.3,94L20.3,94z"/>
-          		</g>
-          		<g id="XMLID_12775_">
-          			<path class="st3" d="M66.4,88.3c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5l42.7,0.2c0.7,0,1.3,0.3,1.7,0.7
-          				c0.5,0.5,0.7,1.1,0.7,1.7c0,1.4-1.1,2.5-2.5,2.5L66.4,88.3z"/>
-          			<path class="st5" d="M66.4,84.4C66.4,84.4,66.4,84.4,66.4,84.4l42.7,0.2c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5
-          				c0,0,0,0,0,0l-42.7-0.2c-0.8,0-1.5-0.7-1.5-1.5C65,85.1,65.6,84.4,66.4,84.4 M66.4,82.4c-1.9,0-3.5,1.5-3.5,3.4
-          				c0,0.9,0.4,1.8,1,2.5c0.7,0.7,1.5,1,2.4,1l42.7,0.2c1.9,0,3.5-1.5,3.5-3.4c0-0.9-0.4-1.8-1-2.5c-0.7-0.7-1.5-1-2.4-1L66.4,82.4
-          				L66.4,82.4L66.4,82.4L66.4,82.4z"/>
-          		</g>
-          		<g id="XMLID_12800_">
-          			<path class="st4" d="M61.9,48.7c-0.6,0-1.1-0.2-1.6-0.7s-0.6-1-0.6-1.6c0-1.2,1-2.2,2.2-2.2l52.2,0.2c0.6,0,1.2,0.2,1.6,0.7
-          				c0.4,0.4,0.6,1,0.6,1.6c0,1.2-1,2.2-2.2,2.2L61.9,48.7z"/>
-          			<path class="st5" d="M61.9,45.2C61.9,45.2,61.9,45.2,61.9,45.2l52.2,0.2c0.7,0,1.2,0.6,1.2,1.2c0,0.7-0.5,1.2-1.2,1.2
-          				c0,0,0,0,0,0l-52.2-0.2c-0.7,0-1.2-0.6-1.2-1.2C60.7,45.8,61.2,45.2,61.9,45.2 M61.9,43.2c-1.8,0-3.2,1.4-3.2,3.2
-          				c0,0.9,0.3,1.7,0.9,2.3c0.6,0.6,1.4,0.9,2.3,1l52.2,0.2c1.8,0,3.2-1.4,3.2-3.2c0-0.9-0.3-1.7-0.9-2.3s-1.4-0.9-2.3-1L61.9,43.2
-          				L61.9,43.2L61.9,43.2L61.9,43.2z"/>
-          		</g>
-          		<g id="XMLID_12790_">
-          			<path class="st3" d="M71.2,59c-2.5,0-4.9-1-6.6-2.8c-1.8-1.8-2.7-4.1-2.7-6.6l0-1l52.1,0.2l0,1c0,5.1-4.2,9.3-9.4,9.3
-          				C104.6,59.1,71.2,59,71.2,59z"/>
-          			<path class="st5" d="M62.9,49.6l50.1,0.2c0,4.6-3.8,8.3-8.4,8.3c0,0,0,0,0,0L71.2,58C66.6,58,62.9,54.2,62.9,49.6 M60.9,47.6l0,2
-          				c0,5.7,4.6,10.4,10.3,10.4l33.3,0.1c5.7,0,10.4-4.6,10.4-10.3l0-2l-2,0l-50.1-0.2L60.9,47.6L60.9,47.6z"/>
-          		</g>
-          	</g>
-          	<circle class="st6" cx="87.6" cy="35.5" r="7.7"/>
-          </g>
-          </svg>
-        </div>
-        <img class="lamp gl" src="img/lamp.svg"/>
-        <div ng-click="gallerypage()" id="scroll-gallery" class="gallery-build"><img src="img/gallery.svg"/></div>
-        <img class="lamp gr sl" src="img/lamp.svg"/>
-        <a href="Schedule.pdf" target="_blank"><div id="scroll-schedule" class="schedule-build">
-          <!-- <?xml version="1.0" encoding="utf-8"?> -->
-          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg id="schedule-svg" onmouseover="schedulehover()" onmouseout="scheduleplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 206 272" style="enable-background:new 0 0 206 272;" xml:space="preserve">
-          <g>
-          	<g>
-          		<g>
-          			<g>
-          				<path class="st0" d="M159.2,42.9H49.7c0-3.9-3.1-7-7-7V8.4c3.9,0,7-3.1,7-7h109.6c0,3.9,3.1,7,7,7v27.5
-          					C162.4,35.9,159.2,39.1,159.2,42.9z"/>
-          				<g>
-          					<path class="st1" d="M65.5,26.1h-2.1v-3h2.1c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
-          						c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
-          						c0.6-0.5,1.2-0.7,2.1-0.7s1.5,0.2,2.1,0.7v-0.6h2.1v2.6h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
-          						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
-          						c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V26.1z"/>
-          					<path class="st1" d="M79.3,22l2.4,0.8c-0.2,1-0.7,1.8-1.4,2.4c-0.7,0.6-1.8,1-3.1,1c-1.8,0-3.1-0.5-3.9-1.4
-          						c-0.9-0.9-1.3-2.1-1.3-3.4c0-1.3,0.4-2.5,1.3-3.4c0.8-0.9,1.9-1.4,3.3-1.4c1.1,0,2,0.3,2.7,0.8v-0.6h2.2v3.4h-2.3
-          						c-0.1-0.4-0.3-0.8-0.6-1c-0.3-0.2-0.6-0.4-1-0.4c-1,0-1.5,0.9-1.5,2.6c0,1.7,0.5,2.6,1.6,2.6C78.5,24,79.1,23.3,79.3,22z"/>
-          					<path class="st1" d="M87.8,26.1h-4.9v-2.2h0.7V19h-0.7v-2.2h4.9V19h-0.6v1.4h2.1V19h-0.6v-2.2h4.9V19h-0.7v4.8h0.7v2.2h-4.9
-          						v-2.2h0.6v-1.5h-2.1v1.5h0.6V26.1z"/>
-          					<path class="st1" d="M103.7,26.1h-8.8v-2.2h0.7V19h-0.7v-2.2h8.8v3h-2.4V19h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7h2.4V26.1z"/>
-          					<path class="st1" d="M109.5,26.1h-4.3v-2.2h0.7V19h-0.7v-2.2h4.4c1,0,1.8,0.1,2.5,0.2c0.6,0.1,1.3,0.4,1.8,0.8
-          						c0.6,0.4,1,0.9,1.3,1.6c0.2,0.3,0.3,0.7,0.4,1c0.1,0.4,0.1,0.7,0.1,1.1c0,0.8-0.2,1.5-0.5,2.2c-0.3,0.7-0.8,1.2-1.3,1.5
-          						c-0.5,0.4-1.1,0.6-1.7,0.7C111.7,26,110.7,26.1,109.5,26.1z M109.5,19v4.8h0.3c0.8,0,1.4-0.2,1.6-0.7c0.2-0.4,0.4-1,0.4-1.7
-          						c0-0.4-0.1-0.8-0.2-1.2c-0.1-0.4-0.3-0.7-0.6-0.9c-0.3-0.2-0.8-0.3-1.5-0.3H109.5z"/>
-          					<path class="st1" d="M117.5,19h-0.7v-2.2h4.7V19h-0.4v3.1c0,0.7,0.1,1.3,0.2,1.5c0.1,0.3,0.4,0.4,0.8,0.4
-          						c0.3,0,0.5-0.1,0.7-0.3c0.1-0.2,0.2-0.7,0.2-1.4V19h-0.5v-2.2h3.5V19h-0.7v3.4c0,0.9-0.1,1.6-0.4,2.1c-0.2,0.5-0.7,1-1.2,1.3
-          						c-0.6,0.3-1.3,0.5-2.1,0.5c-0.7,0-1.3-0.1-1.8-0.2c-0.5-0.2-1-0.4-1.3-0.7c-0.3-0.3-0.5-0.7-0.7-1.2c-0.2-0.4-0.2-1.1-0.2-2.1
-          						V19z"/>
-          					<path class="st1" d="M135.6,26.1h-8.8v-2.2h0.8V19h-0.8v-2.2h5.3V19h-0.9v4.8h2.2v-1.5h2.2V26.1z"/>
-          					<path class="st1" d="M145.3,26.1h-8.8v-2.2h0.7V19h-0.7v-2.2h8.8v3h-2.4V19h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7h2.4V26.1z"/>
-          				</g>
-          			</g>
-          			<line class="st3" x1="103.2" y1="68.2" x2="103.2" y2="42.6"/>
-          		</g>
-          		<g>
-          			<line class="st4" x1="39.7" y1="270.6" x2="57.6" y2="238.2"/>
-          			<line class="st4" x1="165.8" y1="270.6" x2="147.9" y2="238.2"/>
-          			<line class="st4" x1="15" y1="269.7" x2="188.8" y2="269.7"/>
-          		</g>
-          	</g>
-          </g>
-          <g id="wheel">
-          	<line class="st5" x1="103.2" y1="66.5" x2="103.2" y2="249.7"/>
-          	<line class="st5" x1="148.8" y1="78.9" x2="57.5" y2="237.7"/>
-          	<line class="st5" x1="182.2" y1="112.5" x2="23.9" y2="204.6"/>
-          	<line class="st5" x1="194.4" y1="158.2" x2="11.2" y2="159.1"/>
-          	<line class="st5" x1="182.2" y1="203.9" x2="22.9" y2="113.4"/>
-          	<line class="st5" x1="148.9" y1="237.4" x2="55.9" y2="79.6"/>
-          	<circle class="st5" cx="103.2" cy="158.5" r="90.3"/>
-          	<circle class="st5" cx="103.2" cy="158.5" r="58.4"/>
-          	<circle class="st6" cx="103.2" cy="158.5" r="20.9"/>
-          	<g>
-          		<circle class="st7" cx="103.2" cy="158.5" r="7.5"/>
-          		<path class="st8" d="M103.2,152c3.6,0,6.5,2.9,6.5,6.5c0,3.6-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5C96.7,154.9,99.6,152,103.2,152
-          			 M103.2,150c-4.7,0-8.5,3.8-8.5,8.5s3.8,8.5,8.5,8.5s8.5-3.8,8.5-8.5S107.9,150,103.2,150L103.2,150z"/>
-          	</g>
-          	<circle class="st9" cx="103.2" cy="68.2" r="10.7"/>
-          	<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 5.1215 168.8988)" class="st10" cx="147.9" cy="80" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.8605 -0.5095 0.5095 0.8605 -32.0755 107.8626)" class="st9" cx="180.9" cy="112.5" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.9999 -1.648731e-02 1.648731e-02 0.9999 -2.5627 3.2115)" class="st10" cx="193.5" cy="157" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.4808 -0.8768 0.8768 0.4808 -83.0022 267.1335)" class="st9" cx="184.1" cy="203.7" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.852 -0.5236 0.5236 0.852 -102.7389 112.6873)" class="st10" cx="147.9" cy="238" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.9995 -3.297014e-02 3.297014e-02 0.9995 -8.1471 3.5227)" class="st9" cx="102.7" cy="248.8" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.4663 -0.8846 0.8846 0.4663 -178.9463 178.5323)" class="st10" cx="58.5" cy="237.6" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.8432 -0.5376 0.5376 0.8432 -105.1983 44.942)" class="st9" cx="24.4" cy="202.8" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.9988 -4.944400e-02 4.944400e-02 0.9988 -7.8742 0.8355)" class="st10" cx="13" cy="159.6" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.4517 -0.8922 0.8922 0.4517 -89.1365 83.5851)" class="st9" cx="23.4" cy="114.3" rx="10.7" ry="10.7"/>
-
-          		<ellipse transform="matrix(0.8342 -0.5514 0.5514 0.8342 -34.848 43.5848)" class="st10" cx="55.1" cy="79.8" rx="10.7" ry="10.7"/>
-          </g>
-          </svg>
-        </div></a>
-        <img class="lamp sr" src="img/lamp.svg"/>
-        <div class="stall-build"><img src="img/stall.svg"/></div>
-        <div class="clocktower-build">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg id="clocktower-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 197 183" style="enable-background:new 0 0 197 183;" xml:space="preserve">
-
-          <g>
-          	<g>
-          		<rect x="74.4" y="1.4" class="st0" width="44" height="163"/>
-          		<line class="st1" x1="96.7" y1="5.6" x2="96.7" y2="12.2"/>
-          		<line class="st1" x1="114.1" y1="23" x2="107.6" y2="23"/>
-          		<line class="st1" x1="96.7" y1="40.5" x2="96.7" y2="33.9"/>
-          		<line class="st1" x1="79.3" y1="23" x2="85.9" y2="23"/>
-          		<polyline id="chour" class="st2" points="84.7,23 97.4,23 		"/>
-              <polyline id="cminute" class="st2" points="95.4,24 111.5,8.9 		"/>
-              <polyline id="csecond" class="st23" points="95.4,24 111.5,8.9 		"/>
-          	</g>
-          	<path class="st4" d="M165.4,162.8H27.3c-2,0-3.6-1.6-3.6-3.6l0,0c0-2,1.6-3.6,3.6-3.6h138.1c2,0,3.6,1.6,3.6,3.6l0,0
-          		C169,161.2,167.4,162.8,165.4,162.8z"/>
-          	<path class="st5" d="M174.2,170H18.6c-2,0-3.6-1.6-3.6-3.6l0,0c0-2,1.6-3.6,3.6-3.6h155.6c2,0,3.6,1.6,3.6,3.6l0,0
-          		C177.7,168.4,176.1,170,174.2,170z"/>
-          	<path class="st6" d="M196,182.7H2.3v-8.8c0-2.6,2.1-4.7,4.7-4.7h184.2c2.6,0,4.7,2.1,4.7,4.7V182.7z"/>
-          </g>
-          </svg>
-        </div>
-        <img class="lamp hl" src="img/lamp.svg"/>
-        <div ng-click="hospitalitypage()" id="scroll-hospitality" class="hospitality-build">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg id="hospitality-svg" onmouseover="hospitalityhover()" onmouseout="hospitalityplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 166 274" style="enable-background:new 0 0 166 274;" xml:space="preserve">
-
-          <g>
-          	<polygon class="st0" points="31.3,273.6 21.6,124.8 142.3,127 130.4,273.6 	"/>
-          	<polygon class="st0" points="29.6,273.6 28.4,262.6 132.4,262.6 131.3,273.6 	"/>
-          	<g>
-          		<polygon class="st1" points="66.5,273.6 64.1,229.7 92.1,229.7 91.1,273.6 		"/>
-          	</g>
-          	<circle class="st2" cx="85.5" cy="253.1" r="2.1"/>
-          	<polygon class="st3" points="97.2,232.4 97.2,255.9 123.4,255.9 125.9,231.4 	"/>
-          	<polygon class="st3" points="57.7,234.8 59.7,256.9 37.2,256.9 35.7,235.2 	"/>
-          	<polygon class="st4" points="145.5,132.2 19,130 16.5,117.2 148,121.3 	"/>
-          	<polygon class="st4" points="19,225.1 145.5,222.8 148,210.1 16.5,214.2 	"/>
-          	<g>
-          		<g>
-          			<polygon class="st4 sth4" id="window1" points="51.2,164.9 48.1,139 63.7,138.5 63.1,164.9 			"/>
-          			<g>
-          				<polygon class="st5" points="47.7,167.1 46.9,162.7 67.1,162.7 66.2,167.1 				"/>
-          				<path class="st6" d="M65.9,163.7l-0.5,2.3H48.6l-0.5-2.3H65.9 M68.3,161.7h-2.4H48.1h-2.4l0.5,2.4l0.5,2.3l0.3,1.6h1.7h16.8h1.7
-          					l0.3-1.6l0.5-2.3L68.3,161.7L68.3,161.7z"/>
-          			</g>
-          		</g>
-          		<g>
-          			<polygon class="st4 sth4" id="window2" points="107.1,202.4 110.2,176.5 94.6,176 95.2,202.4 			"/>
-          			<g>
-          				<polygon class="st5" points="92,204.6 91.2,200.2 111.4,200.2 110.5,204.6 				"/>
-          				<g>
-          					<path class="st6" d="M110.2,201.2l-0.5,2.3H92.9l-0.5-2.3H110.2 M112.6,199.2h-2.4H92.4H90l0.5,2.4l0.5,2.3l0.3,1.6h1.7h16.8
-          						h1.7l0.3-1.6l0.5-2.3L112.6,199.2L112.6,199.2z"/>
-          				</g>
-          			</g>
-          		</g>
-          		<g>
-          			<polygon class="st4 sth4" id="window3" points="96.3,165.6 93,137.9 109.6,137.3 109,165.6 			"/>
-          			<g>
-          				<polygon class="st5" points="92.6,166.5 91.8,162 113.1,162 112.3,166.5 				"/>
-          				<g>
-          					<path class="st6" d="M111.9,163l-0.5,2.5h-18L93,163H111.9 M114.4,161h-2.4H93h-2.4l0.5,2.4l0.5,2.5l0.3,1.6h1.7h18h1.7
-          						l0.3-1.6l0.5-2.5L114.4,161L114.4,161z"/>
-          				</g>
-          			</g>
-          		</g>
-          		<g>
-          			<polygon class="st4 sth4" id="window4" points="61.8,203.9 65.1,176.2 48.5,175.7 49.1,203.9 			"/>
-          			<g>
-          				<polygon class="st5" points="45.8,204.8 44.9,200.4 66.3,200.4 65.4,204.8 				"/>
-          				<g>
-          					<path class="st6" d="M65.1,201.4l-0.5,2.5h-18l-0.5-2.5H65.1 M67.5,199.4h-2.4h-19h-2.4l0.5,2.4l0.5,2.5l0.3,1.6h1.7h18h1.7
-          						l0.3-1.6l0.5-2.5L67.5,199.4L67.5,199.4z"/>
-          				</g>
-          			</g>
-          		</g>
-          	</g>
-          	<g>
-          		<g>
-          			<path class="st7" d="M138.2,42.5H28.6c0-3.9-3.1-7-7-7V8c3.9,0,7-3.1,7-7h109.6c0,3.9,3.1,7,7,7v27.5
-          				C141.3,35.5,138.2,38.6,138.2,42.5z"/>
-          			<g>
-          				<path class="st8" d="M36.1,25.6h-4.9v-2.2h0.7v-4.8h-0.7v-2.2h4.9v2.2h-0.6V20h2.1v-1.4H37v-2.2h4.9v2.2h-0.7v4.8h0.7v2.2H37
-          					v-2.2h0.6v-1.5h-2.1v1.5h0.6V25.6z"/>
-          				<path class="st8" d="M43.2,21c0-0.8,0.2-1.5,0.6-2.2c0.4-0.7,1-1.3,1.7-1.8c0.3-0.2,0.6-0.3,0.9-0.4s0.6-0.2,1-0.2
-          					c0.3-0.1,0.7-0.1,1.1-0.1c1.7,0,2.9,0.5,3.9,1.5c0.5,0.5,0.8,1,1,1.6c0.2,0.6,0.3,1.2,0.3,1.8c0,1.3-0.5,2.4-1.4,3.4
-          					s-2.2,1.4-3.8,1.4c-1.5,0-2.8-0.4-3.8-1.3C43.7,23.5,43.2,22.4,43.2,21z M47.2,21c0,1,0.1,1.7,0.3,2.1c0.2,0.4,0.5,0.5,0.9,0.5
-          					c0.4,0,0.7-0.2,0.9-0.5c0.2-0.4,0.3-1.1,0.3-2.1c0-1-0.1-1.7-0.3-2.1c-0.2-0.4-0.5-0.5-0.9-0.5c-0.4,0-0.7,0.2-0.9,0.5
-          					C47.3,19.2,47.2,19.9,47.2,21z"/>
-          				<path class="st8" d="M57,25.6H55v-3H57c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
-          					c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
-          					c0.6-0.5,1.2-0.7,2.1-0.7s1.5,0.2,2.1,0.7v-0.6h2.1V19h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
-          					c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
-          					c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V25.6z"/>
-          				<path class="st8" d="M68.9,25.6h-5.4v-2.2h0.9v-4.8h-0.9v-2.2h5.7c1.3,0,2.3,0.1,2.9,0.4c0.6,0.3,1,0.6,1.3,1.1
-          					c0.3,0.4,0.4,0.9,0.4,1.5c0,0.7-0.2,1.2-0.5,1.6c-0.3,0.4-0.8,0.8-1.3,0.9c-0.5,0.2-1.4,0.3-2.5,0.3h-1.4v1.3h0.9V25.6z
-          					 M67.9,18.4v1.7h0.7c0.5,0,0.8-0.1,1.1-0.2c0.2-0.1,0.3-0.3,0.3-0.7c0-0.2-0.1-0.4-0.2-0.6c-0.1-0.1-0.3-0.2-0.4-0.3
-          					c-0.2,0-0.5-0.1-0.9-0.1H67.9z"/>
-          				<path class="st8" d="M79.9,25.6h-5.3v-2.2h0.9v-4.8h-0.9v-2.2h5.3v2.2H79v4.8h0.8V25.6z"/>
-          				<path class="st8" d="M88.1,25.6h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9H90v3.9h-1.7v-1.7h-1.1v4.8h0.8V25.6z"/>
-          				<path class="st8" d="M93.7,25.6H90v-2.2h0.7l1.7-4.8h-0.7v-2.2h6.7v2.2h-0.7l1.8,4.8h0.7v2.2h-4.8v-2h0.8l-0.4-1.2h-2.4L93,23.6
-          					h0.8V25.6z M94.6,18.7l-0.9,2.6h1.7L94.6,18.7z"/>
-          				<path class="st8" d="M109.6,25.6h-8.8v-2.2h0.8v-4.8h-0.8v-2.2h5.3v2.2h-0.9v4.8h2.2v-1.5h2.2V25.6z"/>
-          				<path class="st8" d="M115.5,25.6h-5.3v-2.2h0.9v-4.8h-0.9v-2.2h5.3v2.2h-0.8v4.8h0.8V25.6z"/>
-          				<path class="st8" d="M123.7,25.6h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9h9.2v3.9H124v-1.7h-1.1v4.8h0.8V25.6z"/>
-          				<path class="st8" d="M133.8,25.6h-5.1v-2.2h0.7v-1.5l-2.3-3.4h-0.6v-2.2h4.8v2.2h-0.6l1,1.9l1.2-1.9h-0.6v-2.2h3.6v2.2h-0.6
-          					l-2.3,3.4v1.5h0.7V25.6z"/>
-          			</g>
-          		</g>
-          		<line class="st9" x1="43.8" y1="61.8" x2="43.8" y2="42.2"/>
-          		<line class="st9" x1="122.2" y1="60.9" x2="122.2" y2="41.3"/>
-          	</g>
-          	<g>
-          		<path class="st3" d="M22.2,51.6c0,0-16.4,60.7-19,66.3c0,0,154.2,4.7,161.1,5.1c0,0-20-53.3-21.3-64.8
-          			C143,58.2,31.4,52.9,22.2,51.6z"/>
-          	</g>
-          	<g>
-          		<path class="st0" d="M108.3,93.4l-2,24.5l-46.9-1.7l-2.6-19.6c0,0,22.7-21.6,26.7-32.7C83.6,63.9,99.5,87.2,108.3,93.4z"/>
-          		<polygon class="st3" points="58.3,119.6 56.9,115.5 109.7,116.2 108.3,121.9 		"/>
-          		<g>
-          			<circle class="st4" cx="82.6" cy="93.4" r="6.3"/>
-          		</g>
-          		<path class="st4" d="M50.1,98.9l4,2.7c0,0,23.3-18.6,29-33.7c0,0,16.2,24.7,29.3,31.2l4.8-2c0,0-20.7-14.5-31.1-31.8
-          			c0,0,4.1-5.7-2.4-6c-6.5-0.3-2.3,6-2.3,6S76.1,75.8,50.1,98.9z"/>
-          	</g>
-          </g>
-          </svg>
-        </div>
-        <img class="lamp hr spl" src="img/lamp.svg"/>
-        <div ng-click="sponsorspage()" id="scroll-sponsors" class="sponsors-build">
-          <!-- <?xml version="1.0" encoding="utf-8"?> -->
-          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg id="sponsors-svg"  onmouseover="sponsorshover()" onmouseout="sponsorsplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 156 228" style="enable-background:new 0 0 156 228;" xml:space="preserve">
-
-          <g>
-          	<g>
-          		<g>
-          			<path class="st0" d="M144.5,172.2c-0.4,0-0.7-0.2-0.9-0.6l-20.5-50.1c-0.2-0.5,0-1,0.5-1.3c0.5-0.2,1,0,1.3,0.5l20.5,50.1
-          				c0.2,0.5,0,1-0.5,1.3C144.8,172.2,144.6,172.2,144.5,172.2z"/>
-          		</g>
-          		<g>
-          			<path class="st0" d="M128.3,195.4c-0.4,0-0.8-0.3-0.9-0.7l-18.7-70.9c-0.2-0.5,0.1-1,0.6-1.2c0.5-0.2,1,0.1,1.2,0.6l18.7,70.9
-          				c0.2,0.5-0.1,1-0.6,1.2C128.5,195.4,128.4,195.4,128.3,195.4z"/>
-          		</g>
-          		<g>
-          			<g>
-          				<rect x="78.5" y="112" class="st0" width="3.6" height="109.5"/>
-          				<rect x="27.2" y="219" class="st1" width="105.3" height="8.8"/>
-          			</g>
-          		</g>
-          		<g>
-          			<path class="st0" d="M10.4,167.7c-0.1,0-0.3-0.1-0.4-0.1c-0.5-0.3-0.6-0.8-0.4-1.3L36.2,122c0.3-0.5,0.8-0.6,1.3-0.4
-          				c0.5,0.3,0.6,0.8,0.3,1.3l-26.5,44.2C11.1,167.5,10.8,167.7,10.4,167.7z"/>
-          		</g>
-          		<g>
-          			<path class="st0" d="M45.9,190.4c0,0-0.1,0-0.1,0c-0.5-0.1-0.9-0.6-0.8-1.1l10.7-71.8c0.1-0.5,0.6-0.9,1.1-0.8
-          				c0.5,0.1,0.9,0.6,0.8,1.1l-10.6,71.8C46.8,190.1,46.4,190.4,45.9,190.4z"/>
-          		</g>
-          		<g>
-          			<path class="st0" d="M65.8,166.9C65.8,166.9,65.8,166.9,65.8,166.9c-0.5,0-1-0.5-0.9-1l2.6-47.4c0-0.5,0.5-0.9,1-0.9c0,0,0,0,0,0
-          				c0.5,0,0.9,0.5,0.9,1L66.8,166C66.7,166.5,66.3,166.9,65.8,166.9z"/>
-          		</g>
-          		<g>
-          			<path class="st0" d="M23.4,194.8c-0.1,0-0.2,0-0.3,0c-0.5-0.1-0.8-0.7-0.6-1.2l26.8-73.2c0.2-0.5,0.7-0.8,1.2-0.6
-          				c0.5,0.2,0.8,0.7,0.6,1.2l-26.8,73.2C24.2,194.6,23.8,194.8,23.4,194.8z"/>
-          		</g>
-          		<g>
-          			<path class="st0" d="M107.7,174c-0.5,0-0.9-0.3-1-0.8l-9.9-55c-0.1-0.5,0.2-1,0.7-1.1c0.5-0.1,1,0.2,1.1,0.7l9.9,55
-          				c0.1,0.5-0.2,1-0.7,1.1C107.8,174,107.7,174,107.7,174z"/>
-          		</g>
-          		<g>
-          			<path class="st0" d="M93.7,187.6c-0.5,0-1-0.4-1-0.9l-5.4-69c0-0.5,0.3-1,0.9-1c0,0,0,0,0,0c0.5,0,1,0.4,1,0.9l5.4,69
-          				C94.7,187.1,94.3,187.6,93.7,187.6C93.7,187.6,93.7,187.6,93.7,187.6z"/>
-          		</g>
-          		<g>
-          			<g>
-          				<path class="st2" d="M133.4,41.1H31.3c0-3.9-3.1-7-7-7v-25c3.9,0,7-3.1,7-7h102.1c0,3.9,3.1,7,7,7v25
-          					C136.5,34.1,133.4,37.2,133.4,41.1z"/>
-          				<g>
-          					<path class="st3" d="M45.8,25.2h-2v-2.8h2c0.2,0.8,0.7,1.1,1.3,1.1c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.2-0.5
-          						c-0.2-0.1-0.5-0.3-1.1-0.6c-0.7-0.3-1.2-0.6-1.6-0.8c-0.3-0.2-0.6-0.5-0.8-0.9c-0.2-0.4-0.3-0.8-0.3-1.2c0-0.8,0.3-1.4,0.8-1.9
-          						c0.5-0.5,1.2-0.7,1.9-0.7c0.8,0,1.4,0.2,1.9,0.7v-0.5h2V19h-1.9c-0.2-0.7-0.7-1-1.3-1c-0.4,0-0.6,0.2-0.6,0.5
-          						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.9,0.4,1.4,0.7,1.7,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.4,0.4,0.5
-          						c0.2,0.4,0.3,0.9,0.3,1.3c0,0.7-0.3,1.3-0.8,1.9c-0.5,0.5-1.2,0.8-2.1,0.8c-0.8,0-1.5-0.2-2.1-0.7V25.2z"/>
-          					<path class="st3" d="M56.9,25.2h-5.1v-2.1h0.8v-4.5h-0.8v-2.1h5.3c1.2,0,2.1,0.1,2.7,0.4c0.6,0.2,1,0.6,1.3,1
-          						c0.3,0.4,0.4,0.9,0.4,1.4c0,0.6-0.2,1.1-0.5,1.5c-0.3,0.4-0.7,0.7-1.3,0.9c-0.5,0.2-1.3,0.3-2.4,0.3H56v1.2h0.9V25.2z M56,18.5
-          						v1.6h0.7c0.5,0,0.8-0.1,1-0.2c0.2-0.1,0.3-0.3,0.3-0.6c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.2-0.2-0.4-0.3c-0.2,0-0.5-0.1-0.9-0.1
-          						H56z"/>
-          					<path class="st3" d="M62.4,20.9c0-0.7,0.2-1.4,0.5-2.1c0.3-0.7,0.9-1.2,1.6-1.7c0.3-0.2,0.5-0.3,0.8-0.4s0.6-0.2,0.9-0.2
-          						c0.3-0.1,0.7-0.1,1-0.1c1.6,0,2.8,0.5,3.6,1.4c0.4,0.5,0.7,0.9,1,1.5s0.3,1.1,0.3,1.7c0,1.2-0.4,2.3-1.3,3.2
-          						c-0.9,0.9-2.1,1.3-3.6,1.3c-1.5,0-2.6-0.4-3.5-1.3C62.9,23.3,62.4,22.2,62.4,20.9z M66.2,20.9c0,1,0.1,1.6,0.3,2
-          						c0.2,0.3,0.5,0.5,0.8,0.5c0.4,0,0.7-0.2,0.9-0.5c0.2-0.3,0.3-1,0.3-2c0-1-0.1-1.6-0.3-2c-0.2-0.3-0.5-0.5-0.9-0.5
-          						c-0.4,0-0.7,0.2-0.8,0.5C66.3,19.2,66.2,19.9,66.2,20.9z"/>
-          					<path class="st3" d="M76.9,25.2h-3.6v-2.1h0.8v-4.5h-0.8v-2.1h4.1l3.2,4.5v-2.5h-0.7v-2.1h3.5v2.1h-0.8v6.7h-2.9l-3.7-5.3v3.1
-          						h0.8V25.2z"/>
-          					<path class="st3" d="M86.4,25.2h-2v-2.8h2c0.2,0.8,0.7,1.1,1.3,1.1c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.2-0.5
-          						C88,22.4,87.6,22.2,87,22c-0.7-0.3-1.2-0.6-1.6-0.8c-0.3-0.2-0.6-0.5-0.8-0.9c-0.2-0.4-0.3-0.8-0.3-1.2c0-0.8,0.3-1.4,0.8-1.9
-          						c0.5-0.5,1.2-0.7,1.9-0.7c0.8,0,1.4,0.2,1.9,0.7v-0.5h2V19H89c-0.2-0.7-0.7-1-1.3-1c-0.4,0-0.6,0.2-0.6,0.5
-          						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.9,0.4,1.4,0.7,1.7,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.4,0.4,0.5
-          						c0.2,0.4,0.3,0.9,0.3,1.3c0,0.7-0.3,1.3-0.8,1.9c-0.5,0.5-1.2,0.8-2.1,0.8c-0.8,0-1.5-0.2-2.1-0.7V25.2z"/>
-          					<path class="st3" d="M92.5,20.9c0-0.7,0.2-1.4,0.5-2.1c0.3-0.7,0.9-1.2,1.6-1.7c0.3-0.2,0.5-0.3,0.8-0.4s0.6-0.2,0.9-0.2
-          						c0.3-0.1,0.7-0.1,1-0.1c1.6,0,2.8,0.5,3.6,1.4c0.4,0.5,0.7,0.9,1,1.5s0.3,1.1,0.3,1.7c0,1.2-0.4,2.3-1.3,3.2
-          						c-0.9,0.9-2.1,1.3-3.6,1.3c-1.5,0-2.6-0.4-3.5-1.3C92.9,23.3,92.5,22.2,92.5,20.9z M96.2,20.9c0,1,0.1,1.6,0.3,2
-          						c0.2,0.3,0.5,0.5,0.8,0.5c0.4,0,0.7-0.2,0.9-0.5c0.2-0.3,0.3-1,0.3-2c0-1-0.1-1.6-0.3-2c-0.2-0.3-0.5-0.5-0.9-0.5
-          						c-0.4,0-0.7,0.2-0.8,0.5C96.3,19.2,96.2,19.9,96.2,20.9z"/>
-          					<path class="st3" d="M108.2,25.2h-4.7v-2.1h0.7v-4.5h-0.7v-2.1h4.7c0.4,0,0.8,0,1.2,0c0.4,0,0.7,0,0.9,0.1
-          						c0.3,0,0.5,0.1,0.7,0.1c0.6,0.1,1.1,0.4,1.5,0.8c0.4,0.4,0.6,1,0.6,1.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.6-0.9,0.8l1.2,2
-          						h0.6v2.1h-3.1l-1.9-3.6h-1.1v1.5h0.7V25.2z M107.5,18.5v1.7h0.4c0.5,0,0.8,0,1,0c0.2,0,0.3-0.1,0.5-0.3
-          						c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.3-0.2-0.5-0.3c-0.2,0-0.5,0-1.1,0H107.5z"/>
-          					<path class="st3" d="M116.4,25.2h-2v-2.8h2c0.2,0.8,0.7,1.1,1.3,1.1c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.2-0.5
-          						c-0.2-0.1-0.5-0.3-1.1-0.6c-0.7-0.3-1.2-0.6-1.6-0.8c-0.3-0.2-0.6-0.5-0.8-0.9c-0.2-0.4-0.3-0.8-0.3-1.2c0-0.8,0.3-1.4,0.8-1.9
-          						c0.5-0.5,1.2-0.7,1.9-0.7c0.8,0,1.4,0.2,1.9,0.7v-0.5h2V19H119c-0.2-0.7-0.7-1-1.3-1c-0.4,0-0.6,0.2-0.6,0.5
-          						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.9,0.4,1.4,0.7,1.7,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.4,0.4,0.5
-          						c0.2,0.4,0.3,0.9,0.3,1.3c0,0.7-0.3,1.3-0.8,1.9c-0.5,0.5-1.2,0.8-2.1,0.8c-0.8,0-1.5-0.2-2.1-0.7V25.2z"/>
-          				</g>
-          			</g>
-          			<line class="st4" x1="81.1" y1="64.8" x2="81.1" y2="40.8"/>
-          			<path class="st5" d="M80.3,125.4c0.5,0,1,0,1.4,0c3.8-0.2,7.4-1.7,11.2-2.4c5.1-0.8,9.3,2.3,13.8,4.5c2.5,1.2,4.9,1.9,7.7,1.3
-          				c2.9-0.6,5.8-2,8.6-0.3c2.3,1.4,4.2,3.3,7.1,2.8c2.5-0.5,4.7-2.3,7.1-3.1c2.4-0.8,4.6,0,7-0.3c4.7-0.7,7.7-9.3,9.3-13.6
-          				c6.1-16-8.4-32.5-18.9-40.4c-15.9-11.9-35.8-16.5-54.4-17.6C61.7,57.5,41.8,62.1,25.9,74C15.4,81.8,1,98.4,7,114.3
-          				c1.3,3.5,3.4,8.3,6.5,10.3c3.6,2.4,8.1,1.9,11.9,4.1c2.7,1.6,5.4,3.7,8.7,2.7c2.9-0.9,5.1-3.4,8.2-3.2c2.4,0.1,4.6,0.9,7.1,0.6
-          				c2.3-0.3,4.5-1.2,6.6-2.2c4.9-2.3,9.7-4.4,15.2-3C74.2,124.3,77.2,125.3,80.3,125.4z"/>
-          			<g>
-          				<path class="st6" d="M81.7,99.4c-30.7,0-58,3.9-76.1,7.4c0,2.5,0.5,5,1.4,7.6c0.5,1.2,1,2.6,1.7,4c17.7-3.3,43.9-7.1,73-7.1
-          					c32,0,56.1,4.5,69.9,8c0.8-1.8,1.4-3.6,2-5c0.8-2.2,1.3-4.3,1.4-6.5C140.5,104.1,115.4,99.4,81.7,99.4z"/>
-          				<path class="st6" d="M25.9,74c-2.7,2-5.6,4.6-8.4,7.5C34.6,78.7,57.2,76,81.7,76c26.5,0,47.6,3.1,62,6.2c-3-3.3-6.1-6.1-9-8.2
-          					c-1.6-1.2-3.3-2.4-5.1-3.5c-13-1.9-29.1-3.4-47.9-3.4c-18.6,0-35.8,1.4-50.6,3.3C29.3,71.5,27.6,72.7,25.9,74z"/>
-          			</g>
-          		</g>
-          		<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -144.7497 93.277)" id="sc1" class="st5 stc5" cx="7.9" cy="171.2" rx="6.4" ry="6.4"/>
-
-          			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -145.9263 137.6749)" id="sc2" class="st5 stc5" cx="45.5" cy="194.4" rx="6.4" ry="6.4"/>
-
-          			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -159.7287 118.7218)" id="sc5" class="st6 stc6" cx="22.3" cy="196.8" rx="6.4" ry="6.4"/>
-
-          			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -115.6607 143.3423)" id="sc6" class="st6 stc6" cx="65.5" cy="171.2" rx="6.4" ry="6.4"/>
-
-          			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -95.9301 182.1034)" id="sc7" class="st6 stc6" cx="108.7" cy="173.6" rx="6.4" ry="6.4"/>
-
-          			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -79.0275 215.9969)" id="sc8" class="st6 stc6" cx="146.4" cy="176" rx="6.4" ry="6.4"/>
-          		<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -118.5 178.4753)" id="sc3" class="st5 stc5" cx="94.3" cy="191.2" rx="6.4" ry="6.4"/>
-
-          			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -107.273 213.8063)" id="sc4" class="st5 stc5" cx="130.4" cy="199.2" rx="6.4" ry="6.4"/>
-          	</g>
-          </g>
-          </svg>
-        </div>
-        <img class="lamp spr" src="img/lamp.svg"/>
-        <img class="bench b1" src="img/bench.svg"/>
-        <img class="bench b2" src="img/bench.svg"/>
-        <img class="lamp cl" src="img/lamp.svg"/>
-        <div ng-click="contactpage()" id="scroll-contact" class="contact-build">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg id="contact-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 viewBox="0 0 134 179" style="enable-background:new 0 0 134 179;" xml:space="preserve">
-
-          <g id="XMLID_605_">
-          	<g id="XMLID_725_">
-          		<g id="XMLID_729_">
-          			<rect id="XMLID_731_" x="9.8" y="49.9" class="st0" width="5.6" height="59"/>
-          		</g>
-          		<g id="XMLID_726_">
-
-          				<rect id="XMLID_728_" x="118.8" y="49.9" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 243.1912 158.8075)" class="st0" width="5.7" height="59"/>
-          		</g>
-          	</g>
-          	<g id="XMLID_688_">
-          		<rect id="XMLID_724_" x="58.7" y="71.7" class="st1" width="42.7" height="40.4"/>
-
-          			<rect id="XMLID_723_" x="64" y="75.1" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 171.8522 11.9533)" class="st2" width="31.9" height="33.6"/>
-          		<g id="XMLID_690_">
-          			<defs>
-
-          					<rect id="XMLID_691_" x="64.8" y="75.9" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 171.8522 11.9533)" width="30.4" height="32"/>
-          			</defs>
-          			<clipPath id="XMLID_9_">
-          				<use xlink:href="#XMLID_691_"  style="overflow:visible;"/>
-          			</clipPath>
-          			<g id="XMLID_711_" class="st3">
-          				<ellipse class="st4" id="bub10" cx="66.5" cy="96.3" rx="1.9" ry="2"/>
-          				<ellipse class="st4" cx="72.7" cy="97.6" rx="4.2" ry="4.3"/>
-          				<ellipse class="st4" cx="67" cy="102.7" rx="4.3" ry="4.4"/>
-          				<ellipse class="st4" cx="79.9" cy="100.3" rx="4.3" ry="4.4"/>
-          				<ellipse class="st4" cx="77.3" cy="104.9" rx="4.6" ry="4.7"/>
-          				<ellipse class="st4" cx="87.1" cy="103.6" rx="5.2" ry="5.3"/>
-          				<ellipse class="st4" id="bub11" cx="89.8" cy="95.6" rx="2.6" ry="2.7"/>
-          				<ellipse class="st4" cx="93.8" cy="104.5" rx="5.4" ry="5.5"/>
-          				<ellipse class="st4" cx="69.6" cy="105.3" rx="5.4" ry="5.5"/>
-          				<ellipse class="st4" cx="82.6" cy="107" rx="4.7" ry="4.8"/>
-          				<ellipse class="st4" id="bub12" cx="71.3" cy="88.2" rx="1.7" ry="1.8"/>
-          			</g>
-          			<ellipse class="st5" id="bub1" cx="77.2" cy="88.6" rx="0.9" ry="0.9"/>
-                <ellipse class="st5" id="bub2" cx="72.4" cy="92.7" rx="1.1" ry="1.1"/>
-          			<ellipse class="st5" id="bub3" cx="72.4" cy="92.7" rx="1.1" ry="1.1"/>
-          			<ellipse class="st5" id="bub4" cx="83.7" cy="91.2" rx="1.9" ry="1.9"/>
-          			<ellipse class="st5" id="bub5" cx="78.5" cy="93.4" rx="1.5" ry="1.5"/>
-          			<ellipse class="st5" id="bub6" cx="89.5" cy="88.8" rx="0.8" ry="0.8"/>
-          			<ellipse class="st5" id="bub7" cx="86.1" cy="95.8" rx="0.6" ry="0.6"/>
-          			<ellipse class="st5" id="bub8" cx="93.3" cy="92.5" rx="0.9" ry="0.9"/>
-          			<ellipse class="st5" id="bub9" cx="79.4" cy="85.2" rx="1.2" ry="1.2"/>
-          		</g>
-          		<polygon id="XMLID_689_" class="st6" points="108.7,76.6 51.4,76.6 53.1,69.9 107,69.9 		"/>
-          	</g>
-          	<g id="XMLID_685_">
-          		<rect x="2.4" y="108.9" class="st6" width="129.4" height="69.3"/>
-          	</g>
-          	<g>
-          		<g>
-          			<g id="XMLID_684_">
-          				<path class="st7" d="M30.1,55.9c-5.6,0-10.2-4.6-10.2-10.2v-2.7h20.5v2.7C40.4,51.3,35.8,55.9,30.1,55.9z"/>
-          				<path class="st8" d="M39.4,43.9v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2v-1.7H39.4 M41.4,41.9h-2H20.9h-2v2v1.7
-          					c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V41.9L41.4,41.9z"/>
-          			</g>
-          			<polygon id="XMLID_676_" class="st0" points="27.5,1.7 20.9,43.9 39.4,43.9 43.3,1.7 			"/>
-          		</g>
-          		<g>
-          			<g id="XMLID_683_">
-          				<path class="st9" d="M48.6,55.9c-5.6,0-10.2-4.6-10.2-10.2v-0.4l1.7-1.9l18.8-0.4v2.7C58.8,51.3,54.2,55.9,48.6,55.9z"/>
-          				<g>
-          					<path class="st8" d="M57.8,43.9v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2l1.1-1.3L57.8,43.9 M59.8,41.9l-2,0
-          						l-17.3,0.4l-0.9,0L39,43l-1.1,1.3l-0.5,0.6v0.8c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V41.9L59.8,41.9z"/>
-          				</g>
-          			</g>
-          			<polygon id="XMLID_675_" class="st6" points="43.3,1.7 39.4,43.9 57.8,43.9 59.2,1.7 			"/>
-          		</g>
-          		<g>
-          			<g id="XMLID_682_">
-          				<path class="st9" d="M11.6,56.7C6,56.7,1.4,52.1,1.4,46.5v-0.2l1-2.1l19.5-0.4v2.7C21.9,52.1,17.3,56.7,11.6,56.7z"/>
-          				<path class="st8" d="M20.9,44.8v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2L3,45.2L20.9,44.8 M22.9,42.7l-2,0L3,43.2
-          					l-1.2,0l-0.5,1.1l-0.6,1.3L0.4,46v0.4c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V42.7L22.9,42.7z"/>
-          			</g>
-          			<polygon id="XMLID_674_" class="st6" points="11.6,1.7 2.4,43.9 20.9,43.9 27.5,1.7 			"/>
-          		</g>
-          		<g>
-          			<g id="XMLID_681_">
-          				<path class="st9" d="M85.6,55.9c-5.6,0-10.2-4.6-10.2-10.2v-2.7h20.5v2.7C95.8,51.3,91.2,55.9,85.6,55.9z"/>
-          				<g>
-          					<path class="st8" d="M94.8,43.9v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2v-1.7H94.8 M96.8,41.9h-2H76.3h-2v2v1.7
-          						c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V41.9L96.8,41.9z"/>
-          				</g>
-          			</g>
-          			<polygon id="XMLID_626_" class="st6" points="75,1.7 76.3,43.9 94.8,43.9 90.8,1.7 			"/>
-          		</g>
-          		<g>
-          			<g id="XMLID_680_">
-          				<path class="st9" d="M122.5,55.9c-5.6,0-10.2-4.6-10.2-10.2v-2.7l18,0.4l2.4,1.8v0.5C132.8,51.3,128.2,55.9,122.5,55.9z"/>
-          				<g>
-          					<path class="st8" d="M113.3,43.9l16.7,0.4l1.8,1.3c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2V43.9 M111.3,41.9v2v1.7
-          						c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1l-0.8-0.6l-1.8-1.3l-0.5-0.4l-0.6,0l-16.7-0.4L111.3,41.9L111.3,41.9z"/>
-          				</g>
-          			</g>
-          			<polygon id="XMLID_622_" class="st6" points="113.3,43.9 131.8,43.9 122.5,1.7 106.7,1.7 			"/>
-          		</g>
-          		<g>
-          			<g id="XMLID_679_">
-          				<path class="st7" d="M67.1,55.9c-5.6,0-10.2-4.6-10.2-10.2v-0.6l3-1.7h15.1l2.4,1.8v0.5C77.3,51.3,72.7,55.9,67.1,55.9z"/>
-          				<g>
-          					<path class="st8" d="M74.6,44.3l1.7,1.3c0,5.1-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2l2.3-1.3H74.6 M75.3,42.3h-0.7H60.1h-0.5
-          						l-0.5,0.3l-2.3,1.3l-1,0.6v1.2c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1L77.5,44l-1.7-1.3L75.3,42.3L75.3,42.3z"/>
-          				</g>
-          			</g>
-          			<polygon id="XMLID_619_" class="st0" points="59.2,1.7 57.8,43.9 76.3,43.9 75,1.7 			"/>
-          		</g>
-          		<g>
-          			<g id="XMLID_678_">
-          				<path class="st7" d="M104,55.9c-5.6,0-10.2-4.6-10.2-10.2v-0.5l2.6-1.8h15.1l2.8,1.8v0.5C114.3,51.3,109.7,55.9,104,55.9z"/>
-          				<g>
-          					<path class="st8" d="M111.2,44.3l2,1.3c0,5.1-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2l1.9-1.3H111.2 M111.8,42.3h-0.6H96.7
-          						h-0.6l-0.5,0.3L93.7,44l-0.9,0.6v1.1c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.1l-0.9-0.6l-2-1.3L111.8,42.3
-          						L111.8,42.3z"/>
-          				</g>
-          			</g>
-          			<polygon id="XMLID_618_" class="st0" points="90.8,1.7 94.8,43.9 113.3,43.9 106.7,1.7 			"/>
-          		</g>
-          	</g>
-          	<g>
-          		<path class="st10" d="M115.1,162h-96c0-3.9-3.1-7-7-7v-22.9c3.9,0,7-3.1,7-7h96c0,3.9,3.1,7,7,7V155
-          			C118.2,155,115.1,158.2,115.1,162z"/>
-          		<g>
-          			<path class="st11" d="M31,143.4l2.1,0.8c-0.2,0.9-0.6,1.6-1.3,2.2c-0.7,0.6-1.6,0.8-2.7,0.8c-1.6,0-2.8-0.4-3.5-1.2
-          				c-0.8-0.8-1.1-1.8-1.1-3c0-1.2,0.4-2.2,1.1-3s1.7-1.3,2.9-1.3c1,0,1.8,0.2,2.4,0.7v-0.6h2v3h-2.1c-0.1-0.4-0.3-0.7-0.5-0.9
-          				c-0.3-0.2-0.5-0.3-0.9-0.3c-0.9,0-1.3,0.8-1.3,2.3c0,1.5,0.5,2.3,1.4,2.3C30.3,145.2,30.8,144.6,31,143.4z"/>
-          			<path class="st11" d="M34.2,142.9c0-0.7,0.2-1.4,0.5-2c0.3-0.6,0.8-1.2,1.5-1.6c0.2-0.2,0.5-0.3,0.8-0.4c0.3-0.1,0.5-0.2,0.9-0.2
-          				c0.3,0,0.6-0.1,1-0.1c1.5,0,2.6,0.4,3.4,1.3c0.4,0.4,0.7,0.9,0.9,1.4c0.2,0.5,0.3,1,0.3,1.6c0,1.1-0.4,2.1-1.3,3
-          				c-0.8,0.9-2,1.3-3.4,1.3c-1.4,0-2.5-0.4-3.4-1.2C34.7,145.2,34.2,144.1,34.2,142.9z M37.8,142.9c0,0.9,0.1,1.5,0.3,1.9
-          				c0.2,0.3,0.4,0.5,0.8,0.5c0.4,0,0.6-0.2,0.8-0.5c0.2-0.3,0.3-0.9,0.3-1.9c0-0.9-0.1-1.5-0.3-1.8c-0.2-0.3-0.4-0.5-0.8-0.5
-          				c-0.4,0-0.6,0.2-0.8,0.5C37.9,141.3,37.8,141.9,37.8,142.9z"/>
-          			<path class="st11" d="M47.9,147h-3.4v-2h0.7v-4.3h-0.7v-2h3.9l3,4.3v-2.3h-0.7v-2h3.3v2h-0.7v6.4h-2.7l-3.5-5v2.9h0.7V147z"/>
-          			<path class="st11" d="M61.4,147h-4.6v-2h0.7v-4.3h-0.9v1.5H55v-3.5h8.2v3.5h-1.5v-1.5h-0.9v4.3h0.7V147z"/>
-          			<path class="st11" d="M66.4,147h-3.3v-2h0.6l1.5-4.3h-0.7v-2h5.9v2h-0.7l1.6,4.3h0.6v2h-4.3v-1.8h0.7l-0.3-1h-2.1l-0.4,1h0.7V147
-          				z M67.2,140.9l-0.8,2.3h1.5L67.2,140.9z"/>
-          			<path class="st11" d="M79.1,143.4l2.1,0.8c-0.2,0.9-0.6,1.6-1.3,2.2c-0.7,0.6-1.6,0.8-2.7,0.8c-1.6,0-2.8-0.4-3.5-1.2
-          				c-0.8-0.8-1.1-1.8-1.1-3c0-1.2,0.4-2.2,1.1-3s1.7-1.3,2.9-1.3c1,0,1.8,0.2,2.4,0.7v-0.6h2v3h-2.1c-0.1-0.4-0.3-0.7-0.5-0.9
-          				c-0.3-0.2-0.5-0.3-0.9-0.3c-0.9,0-1.3,0.8-1.3,2.3c0,1.5,0.5,2.3,1.4,2.3C78.3,145.2,78.8,144.6,79.1,143.4z"/>
-          			<path class="st11" d="M88.6,147H84v-2h0.7v-4.3h-0.9v1.5h-1.5v-3.5h8.2v3.5h-1.5v-1.5h-0.9v4.3h0.7V147z"/>
-          			<path class="st11" d="M94.8,140.7h-0.6v-2h4.2v2H98v2.8c0,0.7,0.1,1.1,0.2,1.4c0.1,0.2,0.4,0.4,0.7,0.4c0.3,0,0.5-0.1,0.6-0.3
-          				c0.1-0.2,0.2-0.6,0.2-1.2v-3h-0.4v-2h3.1v2h-0.7v3c0,0.8-0.1,1.4-0.3,1.9c-0.2,0.5-0.6,0.9-1.1,1.1c-0.5,0.3-1.1,0.4-1.9,0.4
-          				c-0.6,0-1.1-0.1-1.6-0.2c-0.5-0.1-0.8-0.4-1.1-0.7c-0.3-0.3-0.5-0.6-0.6-1c-0.1-0.4-0.2-1-0.2-1.8V140.7z"/>
-          			<path class="st11" d="M105.1,147h-1.9v-2.6h1.9c0.2,0.7,0.6,1.1,1.3,1.1c0.4,0,0.7-0.2,0.7-0.5c0-0.2-0.1-0.3-0.2-0.5
-          				c-0.2-0.1-0.5-0.3-1-0.6c-0.7-0.3-1.2-0.6-1.5-0.8c-0.3-0.2-0.5-0.5-0.8-0.8c-0.2-0.4-0.3-0.7-0.3-1.2c0-0.8,0.2-1.4,0.7-1.8
-          				c0.5-0.4,1.1-0.6,1.8-0.6c0.7,0,1.3,0.2,1.8,0.6v-0.5h1.9v2.3h-1.8c-0.2-0.6-0.6-1-1.2-1c-0.4,0-0.6,0.2-0.6,0.5
-          				c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.8,0.4,1.4,0.7,1.6,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.3,0.4,0.5
-          				c0.2,0.4,0.3,0.8,0.3,1.3c0,0.7-0.3,1.3-0.8,1.8c-0.5,0.5-1.2,0.7-1.9,0.7c-0.7,0-1.4-0.2-2-0.6V147z"/>
-          		</g>
-          	</g>
-          </g>
-          </svg>
-        </div>
-        <img class="lamp cr" src="img/lamp.svg"/>
+      <div class="env flip"></div>
+      <img class="lamp el" src="img/lamp.svg"/>
+      <div ng-click="eventspage()" id="scroll-event" class="event-build">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg  id="event-svg" onmouseover="eventhover()" onmouseout="eventplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 197 257" style="enable-background:new 0 0 197 257;" xml:space="preserve">
+        <g id="event"  >
+        	<g>
+        		<g>
+        			<g>
+        				<path class="st0" d="M187,56.8c0,0-3.2,166.5-2.8,188.7l-154.9,7.4c0,0-16.5-188.7-17.3-193.6L187,56.8z"/>
+        				<polygon class="st1" points="29.3,256 24.4,200.1 184.7,193.7 184.7,256 				"/>
+        			</g>
+        			<polygon class="st1" points="16,135 17.6,143.7 187,139.4 188.4,129.5 			"/>
+        		</g>
+        		<g>
+        			<polygon class="st1" points="5.7,54.5 7.6,62.4 189,59.8 192.1,52.1 			"/>
+        			<path class="st2" d="M29,9.1L3,54.5l191.5-2.4c0,0-33-42-36.8-49.9C157.7,2.2,34.1,9.4,29,9.1z"/>
+        		</g>
+        		<g>
+        			<g>
+        				<polygon class="st2" points="132.4,206.5 153.1,205.6 153.1,243.6 136.5,244.7 				"/>
+        			</g>
+        			<g>
+        				<polygon class="st2" points="160.7,242.3 160,206.4 177.9,205.7 176.7,241.7 				"/>
+        			</g>
+        			<g>
+        				<polygon class="st2" points="78.2,209.6 58.7,210.2 60.1,245.4 76.9,245.2 				"/>
+        			</g>
+        			<g>
+        				<polygon class="st2" points="52.8,245.2 50.8,211 32.3,211.6 36.3,245.8 				"/>
+        			</g>
+        			<g>
+        				<polygon class="st3" points="91.3,250.9 88.4,203 122.6,202 122.6,249.1 				"/>
+        				<circle class="st4" cx="117.8" cy="229.3" r="2.1"/>
+        			</g>
+        		</g>
+        	</g>
+        	<g>
+        		<g>
+        			<path class="st5" d="M153.4,116.7H43.8c0-3.9-3.1-7-7-7V82.2c3.9,0,7-3.1,7-7h109.6c0,3.9,3.1,7,7,7v27.5
+        				C156.5,109.7,153.4,112.8,153.4,116.7z"/>
+        			<path class="st6" d="M155.3,117.5H42v-0.9c0-2.8-2.3-5.1-5.1-5.1H36V80.3h0.9c2.8,0,5.1-2.3,5.1-5.1v-0.9h113.3v0.9
+        				c0,2.8,2.3,5.1,5.1,5.1h0.9v31.3h-0.9c-2.8,0-5.1,2.3-5.1,5.1V117.5z M43.6,115.8h110c0.4-3.1,2.8-5.5,5.9-5.9v-28
+        				c-3.1-0.4-5.5-2.8-5.9-5.9h-110c-0.4,3.1-2.8,5.5-5.9,5.9v28C40.8,110.3,43.2,112.7,43.6,115.8z"/>
+        		</g>
+        		<g>
+        			<path class="st7" d="M77.5,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2h8.8v3h-2.4v-0.7H73v1.4h1.8v1.9H73v1.5h2.1v-0.7h2.4V99.8z"/>
+        			<path class="st7" d="M85,99.9h-2.9l-3-7.1h-0.7v-2.2h5v2.2h-0.8l1.4,3.9l1.4-3.9h-0.8v-2.2h3.7v2.2h-0.7L85,99.9z"/>
+        			<path class="st7" d="M98,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2H98v3h-2.4v-0.7h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7H98V99.8z"/>
+        			<path class="st7" d="M103,99.8h-3.8v-2.2h0.8v-4.8h-0.8v-2.2h4.4l3.4,4.8v-2.6h-0.8v-2.2h3.7v2.2h-0.8v7.2h-3l-3.9-5.6v3.3h0.8
+        				V99.8z"/>
+        			<path class="st7" d="M118.1,99.8h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9h9.2v3.9h-1.7v-1.7h-1.1v4.8h0.8V99.8z"/>
+        			<path class="st7" d="M123.3,99.8h-2.1v-3h2.1c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
+        				c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
+        				c0.6-0.5,1.2-0.7,2.1-0.7c0.8,0,1.5,0.2,2.1,0.7v-0.6h2.1v2.6h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
+        				c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
+        				c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V99.8z"/>
+        		</g>
+        		<g>
+        			<path class="st7" d="M77.5,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2h8.8v3h-2.4v-0.7H73v1.4h1.8v1.9H73v1.5h2.1v-0.7h2.4V99.8z"/>
+        			<path class="st7" d="M85,99.9h-2.9l-3-7.1h-0.7v-2.2h5v2.2h-0.8l1.4,3.9l1.4-3.9h-0.8v-2.2h3.7v2.2h-0.7L85,99.9z"/>
+        			<path class="st7" d="M98,99.8h-8.8v-2.2h0.7v-4.8h-0.7v-2.2H98v3h-2.4v-0.7h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7H98V99.8z"/>
+        			<path class="st7" d="M103,99.8h-3.8v-2.2h0.8v-4.8h-0.8v-2.2h4.4l3.4,4.8v-2.6h-0.8v-2.2h3.7v2.2h-0.8v7.2h-3l-3.9-5.6v3.3h0.8
+        				V99.8z"/>
+        			<path class="st7" d="M118.1,99.8h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9h9.2v3.9h-1.7v-1.7h-1.1v4.8h0.8V99.8z"/>
+        			<path class="st7" d="M123.3,99.8h-2.1v-3h2.1c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
+        				c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
+        				c0.6-0.5,1.2-0.7,2.1-0.7c0.8,0,1.5,0.2,2.1,0.7v-0.6h2.1v2.6h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
+        				c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
+        				c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V99.8z"/>
+        		</g>
+        	</g>
+          <polygon class="st8 event-anim" id="st81" points="96.8,186.7 92.4,149.5 114.6,148.8 113.8,186.7 	"/>
+        	<polygon class="st8 event-anim" id="st82" points="151,185.5 146.6,148.3 168.8,147.6 168,185.5 	"/>
+        	<polygon class="st8 event-anim" id="st83" points="42.2,187.5 37.8,150.4 60,149.6 59.2,187.5 	"/>
+        	<g>
+        		<g>
+        			<g>
+        				<polygon class="st9" points="96.8,186.7 92.4,149.5 114.6,148.8 113.8,186.7 				"/>
+        				<g>
+        					<polygon class="st10" points="92.2,188.4 91.1,183.1 119,183.1 117.9,188.4 					"/>
+        					<path class="st6" d="M117.8,184.1l-0.6,3.3H93l-0.6-3.3H117.8 M120.2,182.1h-2.4H92.4h-2.4l0.5,2.4l0.6,3.3l0.3,1.6H93h24.1
+        						h1.7l0.3-1.6l0.6-3.3L120.2,182.1L120.2,182.1z"/>
+        				</g>
+        			</g>
+        			<g>
+        				<polygon class="st9" points="151,185.5 146.6,148.3 168.8,147.6 168,185.5 				"/>
+        				<g>
+        					<polygon class="st10" points="146.4,186.4 145.4,181 173.2,181 172.2,186.4 					"/>
+        					<path class="st6" d="M172,182l-0.6,3.3h-24.1l-0.6-3.3H172 M174.4,180H172h-25.4h-2.4l0.5,2.4l0.6,3.3l0.3,1.6h1.7h24.1h1.7
+        						l0.3-1.6l0.6-3.3L174.4,180L174.4,180z"/>
+        				</g>
+        			</g>
+        			<g>
+        				<polygon class="st9" points="42.2,187.5 37.8,150.4 60,149.6 59.2,187.5 				"/>
+        				<g>
+        					<polygon class="st10" points="37.6,190.1 36.6,184.8 64.4,184.8 63.4,190.1 					"/>
+        					<path class="st6" d="M63.2,185.8l-0.6,3.3H38.4l-0.6-3.3H63.2 M65.6,183.8h-2.4H37.8h-2.4l0.5,2.4l0.6,3.3l0.3,1.6h1.7h24.1
+        						h1.7l0.3-1.6l0.6-3.3L65.6,183.8L65.6,183.8z"/>
+        				</g>
+        			</g>
+        		</g>
+        	</g>
+        </g>
+        </svg>
       </div>
+      <img class="lamp er" src="img/lamp.svg"/>
+      <div class="fountain-build">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg id="fountain-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 175 130" style="enable-background:new 0 0 175 130;" xml:space="preserve">
 
+        <g>
+        	<g id="XMLID_12774_">
+        		<g id="XMLID_12837_">
+        			<path id="XMLID_12839_" class="st0" d="M34.2,96.6c0-11.3,9-20.4,20-20.3c8.1,0,15,5,18.1,12.1c1.1,2.6,1.7,5.4,1.7,8.4"/>
+        			<path id="XMLID_12838_" class="st0" d="M101.5,96.9c0-11.3,9-20.4,20-20.3c8.1,0,15,5,18.1,12.1c1.1,2.6,1.7,5.4,1.7,8.4"/>
+        		</g>
+        		<g id="XMLID_12834_">
+        			<path id="XMLID_12836_" class="st1" d="M173.1,121.3c0,4.3-3.6,7.8-7.9,7.8L10,128.4c-4.3,0-7.8-3.6-7.8-7.9l0-0.1
+        				c0-4.3,3.6-7.8,7.9-7.8l155.3,0.7C169.6,113.3,173.2,116.9,173.1,121.3L173.1,121.3z"/>
+        		</g>
+
+        			<rect id="XMLID_12816_" x="82.1" y="41.2" transform="matrix(4.330507e-03 -1 1 4.330507e-03 -18.7787 193.3699)" class="st2" width="11.2" height="129.8"/>
+        		<g id="XMLID_12803_">
+        			<g id="XMLID_12815_">
+        				<path class="st3" d="M32.2,111.5l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L32.2,111.5z"/>
+        			</g>
+        			<g id="XMLID_12814_">
+        				<path class="st3" d="M42.8,111.5l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L42.8,111.5z"/>
+        			</g>
+        			<g id="XMLID_12813_">
+        				<path class="st3" d="M53.3,111.5l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L53.3,111.5z"/>
+        			</g>
+        			<g id="XMLID_12812_">
+        				<path class="st3" d="M63.8,111.6l0-3.6c0-1-1.1-1.9-2.5-1.9s-2.5,0.8-2.5,1.9l0,3.6L63.8,111.6z"/>
+        			</g>
+        			<g id="XMLID_12811_">
+        				<path class="st3" d="M74.4,111.6l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L74.4,111.6z"/>
+        			</g>
+        			<g id="XMLID_12810_">
+        				<path class="st3" d="M84.9,111.7l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L84.9,111.7z"/>
+        			</g>
+        			<g id="XMLID_12809_">
+        				<path class="st3" d="M95.4,111.7l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L95.4,111.7z"/>
+        			</g>
+        			<g id="XMLID_12808_">
+        				<path class="st3" d="M106,111.8l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L106,111.8z"/>
+        			</g>
+        			<g id="XMLID_12807_">
+        				<path class="st3" d="M116.5,111.8l0-3.6c0-1-1.1-1.9-2.5-1.9s-2.5,0.8-2.5,1.9l0,3.6L116.5,111.8z"/>
+        			</g>
+        			<g id="XMLID_12806_">
+        				<path class="st3" d="M127,111.9l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L127,111.9z"/>
+        			</g>
+        			<g id="XMLID_12805_">
+        				<path class="st3" d="M137.5,111.9l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L137.5,111.9z"/>
+        			</g>
+        			<g id="XMLID_12804_">
+        				<path class="st3" d="M148.1,112l0-3.6c0-1-1.1-1.9-2.5-1.9c-1.4,0-2.5,0.8-2.5,1.9l0,3.6L148.1,112z"/>
+        			</g>
+        		</g>
+        		<g id="XMLID_12801_">
+
+        				<rect x="83.8" y="69.1" transform="matrix(4.338752e-03 -1 1 4.338752e-03 -3.8862 178.6458)" class="st4" width="8" height="44.3"/>
+        			<g>
+        				<path class="st5" d="M66.6,88.2l42.3,0.2l0,6l-42.3-0.2L66.6,88.2 M64.6,86.2l0,2l0,6l0,2l2,0l42.3,0.2l2,0l0-2l0-6l0-2l-2,0
+        					l-42.3-0.2L64.6,86.2L64.6,86.2z"/>
+        			</g>
+        		</g>
+        		<g id="XMLID_12798_">
+
+        				<rect x="84.5" y="68.6" transform="matrix(4.324445e-03 -1 1 4.324445e-03 6.9016 167.9779)" class="st4" width="6.5" height="23.9"/>
+        			<g>
+        				<path class="st5" d="M76.9,78.2l21.9,0.1l0,4.5l-21.9-0.1L76.9,78.2 M74.9,76.2l0,2l0,4.5l0,2l2,0l21.9,0.1l2,0l0-2l0-4.5l0-2
+        					l-2,0l-21.9-0.1L74.9,76.2L74.9,76.2z"/>
+        			</g>
+        		</g>
+        		<path id="XMLID_12796_" class="st6" d="M92,64.6c0-1.8,0.4-3.5,1-5l0,0l-10.1,0l0,0c0.6,1.5,0.9,3.1,0.9,5c0,6.7-5,11.2-6.5,12.4
+        			c-0.2,0.1-0.1,0.4,0.1,0.4l10.4,0l0,0l10.4,0c0.2,0,0.3-0.2,0.1-0.4C96.9,75.8,92,71.3,92,64.6z"/>
+        		<g id="XMLID_12784_">
+        			<path id="XMLID_12786_" class="st0" d="M88,25.6l0-2.6c0-4.2-3.4-7.6-7.6-7.6s-7.6,3.4-7.6,7.6l-0.1,26.6"/>
+        			<path id="XMLID_12785_" class="st0" d="M88.1,30.4l0-7.4c0-4.2,3.4-7.6,7.6-7.6s7.6,3.4,7.6,7.6l-0.1,26.6"/>
+        		</g>
+        		<g id="XMLID_12781_">
+        			<path id="XMLID_12783_" class="st0" d="M107.1,49.7l0-1.7c0-6.2,5.1-11.2,11.3-11.2c6.2,0,11.2,5.1,11.2,11.3L129.3,97"/>
+        			<path id="XMLID_12782_" class="st0" d="M68.8,49.5l0-1.7c0-6.2-5-11.2-11.2-11.3c-6.2,0-11.2,5-11.3,11.2l-0.2,48.9"/>
+        		</g>
+        		<g id="XMLID_12777_">
+
+        				<ellipse  transform="matrix(4.330507e-03 -1 1 4.330507e-03 77.4684 98.4204)" id="bubble1" class="st7" cx="88.2" cy="10.3" rx="3.5" ry="3.5"/>
+
+        				<ellipse  transform="matrix(4.330507e-03 -1 1 4.330507e-03 87.1978 93.4484)" id="bubble2" class="st7" cx="90.5" cy="2.9" rx="1.9" ry="1.9"/>
+
+        				<ellipse  transform="matrix(4.330507e-03 -1 1 4.330507e-03 73.2757 87.0679)" id="bubble3" class="st7" cx="80.4" cy="6.7" rx="2.7" ry="2.7"/>
+        		</g>
+        		<g id="XMLID_12776_">
+        			<path class="st3" d="M20.3,101.4c-0.9,0-1.7-0.3-2.3-0.9c-0.6-0.6-0.9-1.4-0.9-2.3c0-1.8,1.4-3.2,3.2-3.2l134.9,0.6
+        				c0.9,0,1.7,0.3,2.3,0.9c0.6,0.6,0.9,1.4,0.9,2.3c0,1.8-1.4,3.2-3.2,3.2L20.3,101.4z"/>
+        			<path class="st5" d="M20.3,96C20.3,96,20.3,96,20.3,96l134.9,0.6c1.2,0,2.2,1,2.2,2.2c0,1.2-1,2.2-2.2,2.2c0,0,0,0,0,0
+        				l-134.9-0.6c-1.2,0-2.2-1-2.2-2.2C18.1,97,19.1,96,20.3,96 M20.3,94c-2.3,0-4.2,1.9-4.2,4.2c0,2.3,1.9,4.2,4.2,4.2l134.9,0.6
+        				c2.3,0,4.2-1.9,4.2-4.2c0-2.3-1.9-4.2-4.2-4.2L20.3,94L20.3,94L20.3,94L20.3,94z"/>
+        		</g>
+        		<g id="XMLID_12775_">
+        			<path class="st3" d="M66.4,88.3c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5l42.7,0.2c0.7,0,1.3,0.3,1.7,0.7
+        				c0.5,0.5,0.7,1.1,0.7,1.7c0,1.4-1.1,2.5-2.5,2.5L66.4,88.3z"/>
+        			<path class="st5" d="M66.4,84.4C66.4,84.4,66.4,84.4,66.4,84.4l42.7,0.2c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.7,1.5-1.5,1.5
+        				c0,0,0,0,0,0l-42.7-0.2c-0.8,0-1.5-0.7-1.5-1.5C65,85.1,65.6,84.4,66.4,84.4 M66.4,82.4c-1.9,0-3.5,1.5-3.5,3.4
+        				c0,0.9,0.4,1.8,1,2.5c0.7,0.7,1.5,1,2.4,1l42.7,0.2c1.9,0,3.5-1.5,3.5-3.4c0-0.9-0.4-1.8-1-2.5c-0.7-0.7-1.5-1-2.4-1L66.4,82.4
+        				L66.4,82.4L66.4,82.4L66.4,82.4z"/>
+        		</g>
+        		<g id="XMLID_12800_">
+        			<path class="st4" d="M61.9,48.7c-0.6,0-1.1-0.2-1.6-0.7s-0.6-1-0.6-1.6c0-1.2,1-2.2,2.2-2.2l52.2,0.2c0.6,0,1.2,0.2,1.6,0.7
+        				c0.4,0.4,0.6,1,0.6,1.6c0,1.2-1,2.2-2.2,2.2L61.9,48.7z"/>
+        			<path class="st5" d="M61.9,45.2C61.9,45.2,61.9,45.2,61.9,45.2l52.2,0.2c0.7,0,1.2,0.6,1.2,1.2c0,0.7-0.5,1.2-1.2,1.2
+        				c0,0,0,0,0,0l-52.2-0.2c-0.7,0-1.2-0.6-1.2-1.2C60.7,45.8,61.2,45.2,61.9,45.2 M61.9,43.2c-1.8,0-3.2,1.4-3.2,3.2
+        				c0,0.9,0.3,1.7,0.9,2.3c0.6,0.6,1.4,0.9,2.3,1l52.2,0.2c1.8,0,3.2-1.4,3.2-3.2c0-0.9-0.3-1.7-0.9-2.3s-1.4-0.9-2.3-1L61.9,43.2
+        				L61.9,43.2L61.9,43.2L61.9,43.2z"/>
+        		</g>
+        		<g id="XMLID_12790_">
+        			<path class="st3" d="M71.2,59c-2.5,0-4.9-1-6.6-2.8c-1.8-1.8-2.7-4.1-2.7-6.6l0-1l52.1,0.2l0,1c0,5.1-4.2,9.3-9.4,9.3
+        				C104.6,59.1,71.2,59,71.2,59z"/>
+        			<path class="st5" d="M62.9,49.6l50.1,0.2c0,4.6-3.8,8.3-8.4,8.3c0,0,0,0,0,0L71.2,58C66.6,58,62.9,54.2,62.9,49.6 M60.9,47.6l0,2
+        				c0,5.7,4.6,10.4,10.3,10.4l33.3,0.1c5.7,0,10.4-4.6,10.4-10.3l0-2l-2,0l-50.1-0.2L60.9,47.6L60.9,47.6z"/>
+        		</g>
+        	</g>
+        	<circle class="st6" cx="87.6" cy="35.5" r="7.7"/>
+        </g>
+        </svg>
+      </div>
+      <img class="lamp gl" src="img/lamp.svg"/>
+      <div ng-click="gallerypage()" id="scroll-gallery" class="gallery-build"><img src="img/gallery.svg"/></div>
+      <img class="lamp gr sl" src="img/lamp.svg"/>
+      <a href="Schedule.pdf" target="_blank"><div id="scroll-schedule" class="schedule-build">
+        <!-- <?xml version="1.0" encoding="utf-8"?> -->
+        <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg id="schedule-svg" onmouseover="schedulehover()" onmouseout="scheduleplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 206 272" style="enable-background:new 0 0 206 272;" xml:space="preserve">
+        <g>
+        	<g>
+        		<g>
+        			<g>
+        				<path class="st0" d="M159.2,42.9H49.7c0-3.9-3.1-7-7-7V8.4c3.9,0,7-3.1,7-7h109.6c0,3.9,3.1,7,7,7v27.5
+        					C162.4,35.9,159.2,39.1,159.2,42.9z"/>
+        				<g>
+        					<path class="st1" d="M65.5,26.1h-2.1v-3h2.1c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
+        						c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
+        						c0.6-0.5,1.2-0.7,2.1-0.7s1.5,0.2,2.1,0.7v-0.6h2.1v2.6h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
+        						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
+        						c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V26.1z"/>
+        					<path class="st1" d="M79.3,22l2.4,0.8c-0.2,1-0.7,1.8-1.4,2.4c-0.7,0.6-1.8,1-3.1,1c-1.8,0-3.1-0.5-3.9-1.4
+        						c-0.9-0.9-1.3-2.1-1.3-3.4c0-1.3,0.4-2.5,1.3-3.4c0.8-0.9,1.9-1.4,3.3-1.4c1.1,0,2,0.3,2.7,0.8v-0.6h2.2v3.4h-2.3
+        						c-0.1-0.4-0.3-0.8-0.6-1c-0.3-0.2-0.6-0.4-1-0.4c-1,0-1.5,0.9-1.5,2.6c0,1.7,0.5,2.6,1.6,2.6C78.5,24,79.1,23.3,79.3,22z"/>
+        					<path class="st1" d="M87.8,26.1h-4.9v-2.2h0.7V19h-0.7v-2.2h4.9V19h-0.6v1.4h2.1V19h-0.6v-2.2h4.9V19h-0.7v4.8h0.7v2.2h-4.9
+        						v-2.2h0.6v-1.5h-2.1v1.5h0.6V26.1z"/>
+        					<path class="st1" d="M103.7,26.1h-8.8v-2.2h0.7V19h-0.7v-2.2h8.8v3h-2.4V19h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7h2.4V26.1z"/>
+        					<path class="st1" d="M109.5,26.1h-4.3v-2.2h0.7V19h-0.7v-2.2h4.4c1,0,1.8,0.1,2.5,0.2c0.6,0.1,1.3,0.4,1.8,0.8
+        						c0.6,0.4,1,0.9,1.3,1.6c0.2,0.3,0.3,0.7,0.4,1c0.1,0.4,0.1,0.7,0.1,1.1c0,0.8-0.2,1.5-0.5,2.2c-0.3,0.7-0.8,1.2-1.3,1.5
+        						c-0.5,0.4-1.1,0.6-1.7,0.7C111.7,26,110.7,26.1,109.5,26.1z M109.5,19v4.8h0.3c0.8,0,1.4-0.2,1.6-0.7c0.2-0.4,0.4-1,0.4-1.7
+        						c0-0.4-0.1-0.8-0.2-1.2c-0.1-0.4-0.3-0.7-0.6-0.9c-0.3-0.2-0.8-0.3-1.5-0.3H109.5z"/>
+        					<path class="st1" d="M117.5,19h-0.7v-2.2h4.7V19h-0.4v3.1c0,0.7,0.1,1.3,0.2,1.5c0.1,0.3,0.4,0.4,0.8,0.4
+        						c0.3,0,0.5-0.1,0.7-0.3c0.1-0.2,0.2-0.7,0.2-1.4V19h-0.5v-2.2h3.5V19h-0.7v3.4c0,0.9-0.1,1.6-0.4,2.1c-0.2,0.5-0.7,1-1.2,1.3
+        						c-0.6,0.3-1.3,0.5-2.1,0.5c-0.7,0-1.3-0.1-1.8-0.2c-0.5-0.2-1-0.4-1.3-0.7c-0.3-0.3-0.5-0.7-0.7-1.2c-0.2-0.4-0.2-1.1-0.2-2.1
+        						V19z"/>
+        					<path class="st1" d="M135.6,26.1h-8.8v-2.2h0.8V19h-0.8v-2.2h5.3V19h-0.9v4.8h2.2v-1.5h2.2V26.1z"/>
+        					<path class="st1" d="M145.3,26.1h-8.8v-2.2h0.7V19h-0.7v-2.2h8.8v3h-2.4V19h-2.1v1.4h1.8v1.9h-1.8v1.5h2.1v-0.7h2.4V26.1z"/>
+        				</g>
+        			</g>
+        			<line class="st3" x1="103.2" y1="68.2" x2="103.2" y2="42.6"/>
+        		</g>
+        		<g>
+        			<line class="st4" x1="39.7" y1="270.6" x2="57.6" y2="238.2"/>
+        			<line class="st4" x1="165.8" y1="270.6" x2="147.9" y2="238.2"/>
+        			<line class="st4" x1="15" y1="269.7" x2="188.8" y2="269.7"/>
+        		</g>
+        	</g>
+        </g>
+        <g id="wheel">
+        	<line class="st5" x1="103.2" y1="66.5" x2="103.2" y2="249.7"/>
+        	<line class="st5" x1="148.8" y1="78.9" x2="57.5" y2="237.7"/>
+        	<line class="st5" x1="182.2" y1="112.5" x2="23.9" y2="204.6"/>
+        	<line class="st5" x1="194.4" y1="158.2" x2="11.2" y2="159.1"/>
+        	<line class="st5" x1="182.2" y1="203.9" x2="22.9" y2="113.4"/>
+        	<line class="st5" x1="148.9" y1="237.4" x2="55.9" y2="79.6"/>
+        	<circle class="st5" cx="103.2" cy="158.5" r="90.3"/>
+        	<circle class="st5" cx="103.2" cy="158.5" r="58.4"/>
+        	<circle class="st6" cx="103.2" cy="158.5" r="20.9"/>
+        	<g>
+        		<circle class="st7" cx="103.2" cy="158.5" r="7.5"/>
+        		<path class="st8" d="M103.2,152c3.6,0,6.5,2.9,6.5,6.5c0,3.6-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5C96.7,154.9,99.6,152,103.2,152
+        			 M103.2,150c-4.7,0-8.5,3.8-8.5,8.5s3.8,8.5,8.5,8.5s8.5-3.8,8.5-8.5S107.9,150,103.2,150L103.2,150z"/>
+        	</g>
+        	<circle class="st9" cx="103.2" cy="68.2" r="10.7"/>
+        	<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 5.1215 168.8988)" class="st10" cx="147.9" cy="80" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.8605 -0.5095 0.5095 0.8605 -32.0755 107.8626)" class="st9" cx="180.9" cy="112.5" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.9999 -1.648731e-02 1.648731e-02 0.9999 -2.5627 3.2115)" class="st10" cx="193.5" cy="157" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.4808 -0.8768 0.8768 0.4808 -83.0022 267.1335)" class="st9" cx="184.1" cy="203.7" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.852 -0.5236 0.5236 0.852 -102.7389 112.6873)" class="st10" cx="147.9" cy="238" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.9995 -3.297014e-02 3.297014e-02 0.9995 -8.1471 3.5227)" class="st9" cx="102.7" cy="248.8" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.4663 -0.8846 0.8846 0.4663 -178.9463 178.5323)" class="st10" cx="58.5" cy="237.6" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.8432 -0.5376 0.5376 0.8432 -105.1983 44.942)" class="st9" cx="24.4" cy="202.8" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.9988 -4.944400e-02 4.944400e-02 0.9988 -7.8742 0.8355)" class="st10" cx="13" cy="159.6" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.4517 -0.8922 0.8922 0.4517 -89.1365 83.5851)" class="st9" cx="23.4" cy="114.3" rx="10.7" ry="10.7"/>
+
+        		<ellipse transform="matrix(0.8342 -0.5514 0.5514 0.8342 -34.848 43.5848)" class="st10" cx="55.1" cy="79.8" rx="10.7" ry="10.7"/>
+        </g>
+        </svg>
+      </div></a>
+      <img class="lamp sr" src="img/lamp.svg"/>
+      <div class="stall-build"><img src="img/stall.svg"/></div>
+      <div class="clocktower-build">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg id="clocktower-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 197 183" style="enable-background:new 0 0 197 183;" xml:space="preserve">
+
+        <g>
+        	<g>
+        		<rect x="74.4" y="1.4" class="st0" width="44" height="163"/>
+        		<line class="st1" x1="96.7" y1="5.6" x2="96.7" y2="12.2"/>
+        		<line class="st1" x1="114.1" y1="23" x2="107.6" y2="23"/>
+        		<line class="st1" x1="96.7" y1="40.5" x2="96.7" y2="33.9"/>
+        		<line class="st1" x1="79.3" y1="23" x2="85.9" y2="23"/>
+        		<polyline id="chour" class="st2" points="84.7,23 97.4,23 		"/>
+            <polyline id="cminute" class="st2" points="95.4,24 111.5,8.9 		"/>
+            <polyline id="csecond" class="st23" points="95.4,24 111.5,8.9 		"/>
+        	</g>
+        	<path class="st4" d="M165.4,162.8H27.3c-2,0-3.6-1.6-3.6-3.6l0,0c0-2,1.6-3.6,3.6-3.6h138.1c2,0,3.6,1.6,3.6,3.6l0,0
+        		C169,161.2,167.4,162.8,165.4,162.8z"/>
+        	<path class="st5" d="M174.2,170H18.6c-2,0-3.6-1.6-3.6-3.6l0,0c0-2,1.6-3.6,3.6-3.6h155.6c2,0,3.6,1.6,3.6,3.6l0,0
+        		C177.7,168.4,176.1,170,174.2,170z"/>
+        	<path class="st6" d="M196,182.7H2.3v-8.8c0-2.6,2.1-4.7,4.7-4.7h184.2c2.6,0,4.7,2.1,4.7,4.7V182.7z"/>
+        </g>
+        </svg>
+      </div>
+      <img class="lamp hl" src="img/lamp.svg"/>
+      <div ng-click="hospitalityp()" id="scroll-hospitality" class="hospitality-build">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg id="hospitality-svg" onmouseover="hospitalityhover()" onmouseout="hospitalityplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 166 274" style="enable-background:new 0 0 166 274;" xml:space="preserve">
+
+        <g>
+        	<polygon class="st0" points="31.3,273.6 21.6,124.8 142.3,127 130.4,273.6 	"/>
+        	<polygon class="st0" points="29.6,273.6 28.4,262.6 132.4,262.6 131.3,273.6 	"/>
+        	<g>
+        		<polygon class="st1" points="66.5,273.6 64.1,229.7 92.1,229.7 91.1,273.6 		"/>
+        	</g>
+        	<circle class="st2" cx="85.5" cy="253.1" r="2.1"/>
+        	<polygon class="st3" points="97.2,232.4 97.2,255.9 123.4,255.9 125.9,231.4 	"/>
+        	<polygon class="st3" points="57.7,234.8 59.7,256.9 37.2,256.9 35.7,235.2 	"/>
+        	<polygon class="st4" points="145.5,132.2 19,130 16.5,117.2 148,121.3 	"/>
+        	<polygon class="st4" points="19,225.1 145.5,222.8 148,210.1 16.5,214.2 	"/>
+        	<g>
+        		<g>
+        			<polygon class="st4 sth4" id="window1" points="51.2,164.9 48.1,139 63.7,138.5 63.1,164.9 			"/>
+        			<g>
+        				<polygon class="st5" points="47.7,167.1 46.9,162.7 67.1,162.7 66.2,167.1 				"/>
+        				<path class="st6" d="M65.9,163.7l-0.5,2.3H48.6l-0.5-2.3H65.9 M68.3,161.7h-2.4H48.1h-2.4l0.5,2.4l0.5,2.3l0.3,1.6h1.7h16.8h1.7
+        					l0.3-1.6l0.5-2.3L68.3,161.7L68.3,161.7z"/>
+        			</g>
+        		</g>
+        		<g>
+        			<polygon class="st4 sth4" id="window2" points="107.1,202.4 110.2,176.5 94.6,176 95.2,202.4 			"/>
+        			<g>
+        				<polygon class="st5" points="92,204.6 91.2,200.2 111.4,200.2 110.5,204.6 				"/>
+        				<g>
+        					<path class="st6" d="M110.2,201.2l-0.5,2.3H92.9l-0.5-2.3H110.2 M112.6,199.2h-2.4H92.4H90l0.5,2.4l0.5,2.3l0.3,1.6h1.7h16.8
+        						h1.7l0.3-1.6l0.5-2.3L112.6,199.2L112.6,199.2z"/>
+        				</g>
+        			</g>
+        		</g>
+        		<g>
+        			<polygon class="st4 sth4" id="window3" points="96.3,165.6 93,137.9 109.6,137.3 109,165.6 			"/>
+        			<g>
+        				<polygon class="st5" points="92.6,166.5 91.8,162 113.1,162 112.3,166.5 				"/>
+        				<g>
+        					<path class="st6" d="M111.9,163l-0.5,2.5h-18L93,163H111.9 M114.4,161h-2.4H93h-2.4l0.5,2.4l0.5,2.5l0.3,1.6h1.7h18h1.7
+        						l0.3-1.6l0.5-2.5L114.4,161L114.4,161z"/>
+        				</g>
+        			</g>
+        		</g>
+        		<g>
+        			<polygon class="st4 sth4" id="window4" points="61.8,203.9 65.1,176.2 48.5,175.7 49.1,203.9 			"/>
+        			<g>
+        				<polygon class="st5" points="45.8,204.8 44.9,200.4 66.3,200.4 65.4,204.8 				"/>
+        				<g>
+        					<path class="st6" d="M65.1,201.4l-0.5,2.5h-18l-0.5-2.5H65.1 M67.5,199.4h-2.4h-19h-2.4l0.5,2.4l0.5,2.5l0.3,1.6h1.7h18h1.7
+        						l0.3-1.6l0.5-2.5L67.5,199.4L67.5,199.4z"/>
+        				</g>
+        			</g>
+        		</g>
+        	</g>
+        	<g>
+        		<g>
+        			<path class="st7" d="M138.2,42.5H28.6c0-3.9-3.1-7-7-7V8c3.9,0,7-3.1,7-7h109.6c0,3.9,3.1,7,7,7v27.5
+        				C141.3,35.5,138.2,38.6,138.2,42.5z"/>
+        			<g>
+        				<path class="st8" d="M36.1,25.6h-4.9v-2.2h0.7v-4.8h-0.7v-2.2h4.9v2.2h-0.6V20h2.1v-1.4H37v-2.2h4.9v2.2h-0.7v4.8h0.7v2.2H37
+        					v-2.2h0.6v-1.5h-2.1v1.5h0.6V25.6z"/>
+        				<path class="st8" d="M43.2,21c0-0.8,0.2-1.5,0.6-2.2c0.4-0.7,1-1.3,1.7-1.8c0.3-0.2,0.6-0.3,0.9-0.4s0.6-0.2,1-0.2
+        					c0.3-0.1,0.7-0.1,1.1-0.1c1.7,0,2.9,0.5,3.9,1.5c0.5,0.5,0.8,1,1,1.6c0.2,0.6,0.3,1.2,0.3,1.8c0,1.3-0.5,2.4-1.4,3.4
+        					s-2.2,1.4-3.8,1.4c-1.5,0-2.8-0.4-3.8-1.3C43.7,23.5,43.2,22.4,43.2,21z M47.2,21c0,1,0.1,1.7,0.3,2.1c0.2,0.4,0.5,0.5,0.9,0.5
+        					c0.4,0,0.7-0.2,0.9-0.5c0.2-0.4,0.3-1.1,0.3-2.1c0-1-0.1-1.7-0.3-2.1c-0.2-0.4-0.5-0.5-0.9-0.5c-0.4,0-0.7,0.2-0.9,0.5
+        					C47.3,19.2,47.2,19.9,47.2,21z"/>
+        				<path class="st8" d="M57,25.6H55v-3H57c0.2,0.8,0.7,1.2,1.4,1.2c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.3-0.5
+        					c-0.2-0.2-0.6-0.4-1.2-0.6c-0.8-0.3-1.3-0.6-1.7-0.9c-0.3-0.2-0.6-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.3c0-0.9,0.3-1.5,0.8-2
+        					c0.6-0.5,1.2-0.7,2.1-0.7s1.5,0.2,2.1,0.7v-0.6h2.1V19h-2.1c-0.3-0.7-0.7-1.1-1.3-1.1c-0.5,0-0.7,0.2-0.7,0.6
+        					c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.2,0.6c0.9,0.5,1.5,0.8,1.8,1c0.2,0.1,0.3,0.2,0.5,0.4c0.2,0.2,0.3,0.4,0.4,0.6
+        					c0.2,0.4,0.4,0.9,0.4,1.4c0,0.8-0.3,1.4-0.9,2c-0.6,0.5-1.3,0.8-2.2,0.8c-0.8,0-1.6-0.2-2.2-0.7V25.6z"/>
+        				<path class="st8" d="M68.9,25.6h-5.4v-2.2h0.9v-4.8h-0.9v-2.2h5.7c1.3,0,2.3,0.1,2.9,0.4c0.6,0.3,1,0.6,1.3,1.1
+        					c0.3,0.4,0.4,0.9,0.4,1.5c0,0.7-0.2,1.2-0.5,1.6c-0.3,0.4-0.8,0.8-1.3,0.9c-0.5,0.2-1.4,0.3-2.5,0.3h-1.4v1.3h0.9V25.6z
+        					 M67.9,18.4v1.7h0.7c0.5,0,0.8-0.1,1.1-0.2c0.2-0.1,0.3-0.3,0.3-0.7c0-0.2-0.1-0.4-0.2-0.6c-0.1-0.1-0.3-0.2-0.4-0.3
+        					c-0.2,0-0.5-0.1-0.9-0.1H67.9z"/>
+        				<path class="st8" d="M79.9,25.6h-5.3v-2.2h0.9v-4.8h-0.9v-2.2h5.3v2.2H79v4.8h0.8V25.6z"/>
+        				<path class="st8" d="M88.1,25.6h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9H90v3.9h-1.7v-1.7h-1.1v4.8h0.8V25.6z"/>
+        				<path class="st8" d="M93.7,25.6H90v-2.2h0.7l1.7-4.8h-0.7v-2.2h6.7v2.2h-0.7l1.8,4.8h0.7v2.2h-4.8v-2h0.8l-0.4-1.2h-2.4L93,23.6
+        					h0.8V25.6z M94.6,18.7l-0.9,2.6h1.7L94.6,18.7z"/>
+        				<path class="st8" d="M109.6,25.6h-8.8v-2.2h0.8v-4.8h-0.8v-2.2h5.3v2.2h-0.9v4.8h2.2v-1.5h2.2V25.6z"/>
+        				<path class="st8" d="M115.5,25.6h-5.3v-2.2h0.9v-4.8h-0.9v-2.2h5.3v2.2h-0.8v4.8h0.8V25.6z"/>
+        				<path class="st8" d="M123.7,25.6h-5.2v-2.2h0.8v-4.8h-1.1v1.7h-1.7v-3.9h9.2v3.9H124v-1.7h-1.1v4.8h0.8V25.6z"/>
+        				<path class="st8" d="M133.8,25.6h-5.1v-2.2h0.7v-1.5l-2.3-3.4h-0.6v-2.2h4.8v2.2h-0.6l1,1.9l1.2-1.9h-0.6v-2.2h3.6v2.2h-0.6
+        					l-2.3,3.4v1.5h0.7V25.6z"/>
+        			</g>
+        		</g>
+        		<line class="st9" x1="43.8" y1="61.8" x2="43.8" y2="42.2"/>
+        		<line class="st9" x1="122.2" y1="60.9" x2="122.2" y2="41.3"/>
+        	</g>
+        	<g>
+        		<path class="st3" d="M22.2,51.6c0,0-16.4,60.7-19,66.3c0,0,154.2,4.7,161.1,5.1c0,0-20-53.3-21.3-64.8
+        			C143,58.2,31.4,52.9,22.2,51.6z"/>
+        	</g>
+        	<g>
+        		<path class="st0" d="M108.3,93.4l-2,24.5l-46.9-1.7l-2.6-19.6c0,0,22.7-21.6,26.7-32.7C83.6,63.9,99.5,87.2,108.3,93.4z"/>
+        		<polygon class="st3" points="58.3,119.6 56.9,115.5 109.7,116.2 108.3,121.9 		"/>
+        		<g>
+        			<circle class="st4" cx="82.6" cy="93.4" r="6.3"/>
+        		</g>
+        		<path class="st4" d="M50.1,98.9l4,2.7c0,0,23.3-18.6,29-33.7c0,0,16.2,24.7,29.3,31.2l4.8-2c0,0-20.7-14.5-31.1-31.8
+        			c0,0,4.1-5.7-2.4-6c-6.5-0.3-2.3,6-2.3,6S76.1,75.8,50.1,98.9z"/>
+        	</g>
+        </g>
+        </svg>
+      </div>
+      <img class="lamp hr spl" src="img/lamp.svg"/>
+      <div ng-click="sponsorspage()" id="scroll-sponsors" class="sponsors-build">
+        <!-- <?xml version="1.0" encoding="utf-8"?> -->
+        <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg id="sponsors-svg"  onmouseover="sponsorshover()" onmouseout="sponsorsplay()" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 156 228" style="enable-background:new 0 0 156 228;" xml:space="preserve">
+
+        <g>
+        	<g>
+        		<g>
+        			<path class="st0" d="M144.5,172.2c-0.4,0-0.7-0.2-0.9-0.6l-20.5-50.1c-0.2-0.5,0-1,0.5-1.3c0.5-0.2,1,0,1.3,0.5l20.5,50.1
+        				c0.2,0.5,0,1-0.5,1.3C144.8,172.2,144.6,172.2,144.5,172.2z"/>
+        		</g>
+        		<g>
+        			<path class="st0" d="M128.3,195.4c-0.4,0-0.8-0.3-0.9-0.7l-18.7-70.9c-0.2-0.5,0.1-1,0.6-1.2c0.5-0.2,1,0.1,1.2,0.6l18.7,70.9
+        				c0.2,0.5-0.1,1-0.6,1.2C128.5,195.4,128.4,195.4,128.3,195.4z"/>
+        		</g>
+        		<g>
+        			<g>
+        				<rect x="78.5" y="112" class="st0" width="3.6" height="109.5"/>
+        				<rect x="27.2" y="219" class="st1" width="105.3" height="8.8"/>
+        			</g>
+        		</g>
+        		<g>
+        			<path class="st0" d="M10.4,167.7c-0.1,0-0.3-0.1-0.4-0.1c-0.5-0.3-0.6-0.8-0.4-1.3L36.2,122c0.3-0.5,0.8-0.6,1.3-0.4
+        				c0.5,0.3,0.6,0.8,0.3,1.3l-26.5,44.2C11.1,167.5,10.8,167.7,10.4,167.7z"/>
+        		</g>
+        		<g>
+        			<path class="st0" d="M45.9,190.4c0,0-0.1,0-0.1,0c-0.5-0.1-0.9-0.6-0.8-1.1l10.7-71.8c0.1-0.5,0.6-0.9,1.1-0.8
+        				c0.5,0.1,0.9,0.6,0.8,1.1l-10.6,71.8C46.8,190.1,46.4,190.4,45.9,190.4z"/>
+        		</g>
+        		<g>
+        			<path class="st0" d="M65.8,166.9C65.8,166.9,65.8,166.9,65.8,166.9c-0.5,0-1-0.5-0.9-1l2.6-47.4c0-0.5,0.5-0.9,1-0.9c0,0,0,0,0,0
+        				c0.5,0,0.9,0.5,0.9,1L66.8,166C66.7,166.5,66.3,166.9,65.8,166.9z"/>
+        		</g>
+        		<g>
+        			<path class="st0" d="M23.4,194.8c-0.1,0-0.2,0-0.3,0c-0.5-0.1-0.8-0.7-0.6-1.2l26.8-73.2c0.2-0.5,0.7-0.8,1.2-0.6
+        				c0.5,0.2,0.8,0.7,0.6,1.2l-26.8,73.2C24.2,194.6,23.8,194.8,23.4,194.8z"/>
+        		</g>
+        		<g>
+        			<path class="st0" d="M107.7,174c-0.5,0-0.9-0.3-1-0.8l-9.9-55c-0.1-0.5,0.2-1,0.7-1.1c0.5-0.1,1,0.2,1.1,0.7l9.9,55
+        				c0.1,0.5-0.2,1-0.7,1.1C107.8,174,107.7,174,107.7,174z"/>
+        		</g>
+        		<g>
+        			<path class="st0" d="M93.7,187.6c-0.5,0-1-0.4-1-0.9l-5.4-69c0-0.5,0.3-1,0.9-1c0,0,0,0,0,0c0.5,0,1,0.4,1,0.9l5.4,69
+        				C94.7,187.1,94.3,187.6,93.7,187.6C93.7,187.6,93.7,187.6,93.7,187.6z"/>
+        		</g>
+        		<g>
+        			<g>
+        				<path class="st2" d="M133.4,41.1H31.3c0-3.9-3.1-7-7-7v-25c3.9,0,7-3.1,7-7h102.1c0,3.9,3.1,7,7,7v25
+        					C136.5,34.1,133.4,37.2,133.4,41.1z"/>
+        				<g>
+        					<path class="st3" d="M45.8,25.2h-2v-2.8h2c0.2,0.8,0.7,1.1,1.3,1.1c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.2-0.5
+        						c-0.2-0.1-0.5-0.3-1.1-0.6c-0.7-0.3-1.2-0.6-1.6-0.8c-0.3-0.2-0.6-0.5-0.8-0.9c-0.2-0.4-0.3-0.8-0.3-1.2c0-0.8,0.3-1.4,0.8-1.9
+        						c0.5-0.5,1.2-0.7,1.9-0.7c0.8,0,1.4,0.2,1.9,0.7v-0.5h2V19h-1.9c-0.2-0.7-0.7-1-1.3-1c-0.4,0-0.6,0.2-0.6,0.5
+        						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.9,0.4,1.4,0.7,1.7,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.4,0.4,0.5
+        						c0.2,0.4,0.3,0.9,0.3,1.3c0,0.7-0.3,1.3-0.8,1.9c-0.5,0.5-1.2,0.8-2.1,0.8c-0.8,0-1.5-0.2-2.1-0.7V25.2z"/>
+        					<path class="st3" d="M56.9,25.2h-5.1v-2.1h0.8v-4.5h-0.8v-2.1h5.3c1.2,0,2.1,0.1,2.7,0.4c0.6,0.2,1,0.6,1.3,1
+        						c0.3,0.4,0.4,0.9,0.4,1.4c0,0.6-0.2,1.1-0.5,1.5c-0.3,0.4-0.7,0.7-1.3,0.9c-0.5,0.2-1.3,0.3-2.4,0.3H56v1.2h0.9V25.2z M56,18.5
+        						v1.6h0.7c0.5,0,0.8-0.1,1-0.2c0.2-0.1,0.3-0.3,0.3-0.6c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.2-0.2-0.4-0.3c-0.2,0-0.5-0.1-0.9-0.1
+        						H56z"/>
+        					<path class="st3" d="M62.4,20.9c0-0.7,0.2-1.4,0.5-2.1c0.3-0.7,0.9-1.2,1.6-1.7c0.3-0.2,0.5-0.3,0.8-0.4s0.6-0.2,0.9-0.2
+        						c0.3-0.1,0.7-0.1,1-0.1c1.6,0,2.8,0.5,3.6,1.4c0.4,0.5,0.7,0.9,1,1.5s0.3,1.1,0.3,1.7c0,1.2-0.4,2.3-1.3,3.2
+        						c-0.9,0.9-2.1,1.3-3.6,1.3c-1.5,0-2.6-0.4-3.5-1.3C62.9,23.3,62.4,22.2,62.4,20.9z M66.2,20.9c0,1,0.1,1.6,0.3,2
+        						c0.2,0.3,0.5,0.5,0.8,0.5c0.4,0,0.7-0.2,0.9-0.5c0.2-0.3,0.3-1,0.3-2c0-1-0.1-1.6-0.3-2c-0.2-0.3-0.5-0.5-0.9-0.5
+        						c-0.4,0-0.7,0.2-0.8,0.5C66.3,19.2,66.2,19.9,66.2,20.9z"/>
+        					<path class="st3" d="M76.9,25.2h-3.6v-2.1h0.8v-4.5h-0.8v-2.1h4.1l3.2,4.5v-2.5h-0.7v-2.1h3.5v2.1h-0.8v6.7h-2.9l-3.7-5.3v3.1
+        						h0.8V25.2z"/>
+        					<path class="st3" d="M86.4,25.2h-2v-2.8h2c0.2,0.8,0.7,1.1,1.3,1.1c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.2-0.5
+        						C88,22.4,87.6,22.2,87,22c-0.7-0.3-1.2-0.6-1.6-0.8c-0.3-0.2-0.6-0.5-0.8-0.9c-0.2-0.4-0.3-0.8-0.3-1.2c0-0.8,0.3-1.4,0.8-1.9
+        						c0.5-0.5,1.2-0.7,1.9-0.7c0.8,0,1.4,0.2,1.9,0.7v-0.5h2V19H89c-0.2-0.7-0.7-1-1.3-1c-0.4,0-0.6,0.2-0.6,0.5
+        						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.9,0.4,1.4,0.7,1.7,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.4,0.4,0.5
+        						c0.2,0.4,0.3,0.9,0.3,1.3c0,0.7-0.3,1.3-0.8,1.9c-0.5,0.5-1.2,0.8-2.1,0.8c-0.8,0-1.5-0.2-2.1-0.7V25.2z"/>
+        					<path class="st3" d="M92.5,20.9c0-0.7,0.2-1.4,0.5-2.1c0.3-0.7,0.9-1.2,1.6-1.7c0.3-0.2,0.5-0.3,0.8-0.4s0.6-0.2,0.9-0.2
+        						c0.3-0.1,0.7-0.1,1-0.1c1.6,0,2.8,0.5,3.6,1.4c0.4,0.5,0.7,0.9,1,1.5s0.3,1.1,0.3,1.7c0,1.2-0.4,2.3-1.3,3.2
+        						c-0.9,0.9-2.1,1.3-3.6,1.3c-1.5,0-2.6-0.4-3.5-1.3C92.9,23.3,92.5,22.2,92.5,20.9z M96.2,20.9c0,1,0.1,1.6,0.3,2
+        						c0.2,0.3,0.5,0.5,0.8,0.5c0.4,0,0.7-0.2,0.9-0.5c0.2-0.3,0.3-1,0.3-2c0-1-0.1-1.6-0.3-2c-0.2-0.3-0.5-0.5-0.9-0.5
+        						c-0.4,0-0.7,0.2-0.8,0.5C96.3,19.2,96.2,19.9,96.2,20.9z"/>
+        					<path class="st3" d="M108.2,25.2h-4.7v-2.1h0.7v-4.5h-0.7v-2.1h4.7c0.4,0,0.8,0,1.2,0c0.4,0,0.7,0,0.9,0.1
+        						c0.3,0,0.5,0.1,0.7,0.1c0.6,0.1,1.1,0.4,1.5,0.8c0.4,0.4,0.6,1,0.6,1.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.6-0.9,0.8l1.2,2
+        						h0.6v2.1h-3.1l-1.9-3.6h-1.1v1.5h0.7V25.2z M107.5,18.5v1.7h0.4c0.5,0,0.8,0,1,0c0.2,0,0.3-0.1,0.5-0.3
+        						c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.3-0.2-0.5-0.3c-0.2,0-0.5,0-1.1,0H107.5z"/>
+        					<path class="st3" d="M116.4,25.2h-2v-2.8h2c0.2,0.8,0.7,1.1,1.3,1.1c0.5,0,0.7-0.2,0.7-0.6c0-0.2-0.1-0.4-0.2-0.5
+        						c-0.2-0.1-0.5-0.3-1.1-0.6c-0.7-0.3-1.2-0.6-1.6-0.8c-0.3-0.2-0.6-0.5-0.8-0.9c-0.2-0.4-0.3-0.8-0.3-1.2c0-0.8,0.3-1.4,0.8-1.9
+        						c0.5-0.5,1.2-0.7,1.9-0.7c0.8,0,1.4,0.2,1.9,0.7v-0.5h2V19H119c-0.2-0.7-0.7-1-1.3-1c-0.4,0-0.6,0.2-0.6,0.5
+        						c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.9,0.4,1.4,0.7,1.7,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.4,0.4,0.5
+        						c0.2,0.4,0.3,0.9,0.3,1.3c0,0.7-0.3,1.3-0.8,1.9c-0.5,0.5-1.2,0.8-2.1,0.8c-0.8,0-1.5-0.2-2.1-0.7V25.2z"/>
+        				</g>
+        			</g>
+        			<line class="st4" x1="81.1" y1="64.8" x2="81.1" y2="40.8"/>
+        			<path class="st5" d="M80.3,125.4c0.5,0,1,0,1.4,0c3.8-0.2,7.4-1.7,11.2-2.4c5.1-0.8,9.3,2.3,13.8,4.5c2.5,1.2,4.9,1.9,7.7,1.3
+        				c2.9-0.6,5.8-2,8.6-0.3c2.3,1.4,4.2,3.3,7.1,2.8c2.5-0.5,4.7-2.3,7.1-3.1c2.4-0.8,4.6,0,7-0.3c4.7-0.7,7.7-9.3,9.3-13.6
+        				c6.1-16-8.4-32.5-18.9-40.4c-15.9-11.9-35.8-16.5-54.4-17.6C61.7,57.5,41.8,62.1,25.9,74C15.4,81.8,1,98.4,7,114.3
+        				c1.3,3.5,3.4,8.3,6.5,10.3c3.6,2.4,8.1,1.9,11.9,4.1c2.7,1.6,5.4,3.7,8.7,2.7c2.9-0.9,5.1-3.4,8.2-3.2c2.4,0.1,4.6,0.9,7.1,0.6
+        				c2.3-0.3,4.5-1.2,6.6-2.2c4.9-2.3,9.7-4.4,15.2-3C74.2,124.3,77.2,125.3,80.3,125.4z"/>
+        			<g>
+        				<path class="st6" d="M81.7,99.4c-30.7,0-58,3.9-76.1,7.4c0,2.5,0.5,5,1.4,7.6c0.5,1.2,1,2.6,1.7,4c17.7-3.3,43.9-7.1,73-7.1
+        					c32,0,56.1,4.5,69.9,8c0.8-1.8,1.4-3.6,2-5c0.8-2.2,1.3-4.3,1.4-6.5C140.5,104.1,115.4,99.4,81.7,99.4z"/>
+        				<path class="st6" d="M25.9,74c-2.7,2-5.6,4.6-8.4,7.5C34.6,78.7,57.2,76,81.7,76c26.5,0,47.6,3.1,62,6.2c-3-3.3-6.1-6.1-9-8.2
+        					c-1.6-1.2-3.3-2.4-5.1-3.5c-13-1.9-29.1-3.4-47.9-3.4c-18.6,0-35.8,1.4-50.6,3.3C29.3,71.5,27.6,72.7,25.9,74z"/>
+        			</g>
+        		</g>
+        		<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -144.7497 93.277)" id="sc1" class="st5 stc5" cx="7.9" cy="171.2" rx="6.4" ry="6.4"/>
+
+        			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -145.9263 137.6749)" id="sc2" class="st5 stc5" cx="45.5" cy="194.4" rx="6.4" ry="6.4"/>
+
+        			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -159.7287 118.7218)" id="sc5" class="st6 stc6" cx="22.3" cy="196.8" rx="6.4" ry="6.4"/>
+
+        			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -115.6607 143.3423)" id="sc6" class="st6 stc6" cx="65.5" cy="171.2" rx="6.4" ry="6.4"/>
+
+        			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -95.9301 182.1034)" id="sc7" class="st6 stc6" cx="108.7" cy="173.6" rx="6.4" ry="6.4"/>
+
+        			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -79.0275 215.9969)" id="sc8" class="st6 stc6" cx="146.4" cy="176" rx="6.4" ry="6.4"/>
+        		<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -118.5 178.4753)" id="sc3" class="st5 stc5" cx="94.3" cy="191.2" rx="6.4" ry="6.4"/>
+
+        			<ellipse transform="matrix(0.4952 -0.8688 0.8688 0.4952 -107.273 213.8063)" id="sc4" class="st5 stc5" cx="130.4" cy="199.2" rx="6.4" ry="6.4"/>
+        	</g>
+        </g>
+        </svg>
+      </div>
+      <img class="lamp spr" src="img/lamp.svg"/>
+      <img class="bench b1" src="img/bench.svg"/>
+      <img class="bench b2" src="img/bench.svg"/>
+      <img class="lamp rl" src="img/lamp.svg"/>
+      <div  ng-click="registerpage()" class="register-build" id="scroll-register"><img src="img/register.svg"/></div>
+      <img class="lamp rr cl " src="img/lamp.svg"/>
+      <div ng-click="contactpage()" id="scroll-contact" class="contact-build">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg id="contact-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 134 179" style="enable-background:new 0 0 134 179;" xml:space="preserve">
+
+        <g id="XMLID_605_">
+        	<g id="XMLID_725_">
+        		<g id="XMLID_729_">
+        			<rect id="XMLID_731_" x="9.8" y="49.9" class="st0" width="5.6" height="59"/>
+        		</g>
+        		<g id="XMLID_726_">
+
+        				<rect id="XMLID_728_" x="118.8" y="49.9" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 243.1912 158.8075)" class="st0" width="5.7" height="59"/>
+        		</g>
+        	</g>
+        	<g id="XMLID_688_">
+        		<rect id="XMLID_724_" x="58.7" y="71.7" class="st1" width="42.7" height="40.4"/>
+
+        			<rect id="XMLID_723_" x="64" y="75.1" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 171.8522 11.9533)" class="st2" width="31.9" height="33.6"/>
+        		<g id="XMLID_690_">
+        			<defs>
+
+        					<rect id="XMLID_691_" x="64.8" y="75.9" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 171.8522 11.9533)" width="30.4" height="32"/>
+        			</defs>
+        			<clipPath id="XMLID_9_">
+        				<use xlink:href="#XMLID_691_"  style="overflow:visible;"/>
+        			</clipPath>
+        			<g id="XMLID_711_" class="st3">
+        				<ellipse class="st4" id="bub10" cx="66.5" cy="96.3" rx="1.9" ry="2"/>
+        				<ellipse class="st4" cx="72.7" cy="97.6" rx="4.2" ry="4.3"/>
+        				<ellipse class="st4" cx="67" cy="102.7" rx="4.3" ry="4.4"/>
+        				<ellipse class="st4" cx="79.9" cy="100.3" rx="4.3" ry="4.4"/>
+        				<ellipse class="st4" cx="77.3" cy="104.9" rx="4.6" ry="4.7"/>
+        				<ellipse class="st4" cx="87.1" cy="103.6" rx="5.2" ry="5.3"/>
+        				<ellipse class="st4" id="bub11" cx="89.8" cy="95.6" rx="2.6" ry="2.7"/>
+        				<ellipse class="st4" cx="93.8" cy="104.5" rx="5.4" ry="5.5"/>
+        				<ellipse class="st4" cx="69.6" cy="105.3" rx="5.4" ry="5.5"/>
+        				<ellipse class="st4" cx="82.6" cy="107" rx="4.7" ry="4.8"/>
+        				<ellipse class="st4" id="bub12" cx="71.3" cy="88.2" rx="1.7" ry="1.8"/>
+        			</g>
+        			<ellipse class="st5" id="bub1" cx="77.2" cy="88.6" rx="0.9" ry="0.9"/>
+              <ellipse class="st5" id="bub2" cx="72.4" cy="92.7" rx="1.1" ry="1.1"/>
+        			<ellipse class="st5" id="bub3" cx="72.4" cy="92.7" rx="1.1" ry="1.1"/>
+        			<ellipse class="st5" id="bub4" cx="83.7" cy="91.2" rx="1.9" ry="1.9"/>
+        			<ellipse class="st5" id="bub5" cx="78.5" cy="93.4" rx="1.5" ry="1.5"/>
+        			<ellipse class="st5" id="bub6" cx="89.5" cy="88.8" rx="0.8" ry="0.8"/>
+        			<ellipse class="st5" id="bub7" cx="86.1" cy="95.8" rx="0.6" ry="0.6"/>
+        			<ellipse class="st5" id="bub8" cx="93.3" cy="92.5" rx="0.9" ry="0.9"/>
+        			<ellipse class="st5" id="bub9" cx="79.4" cy="85.2" rx="1.2" ry="1.2"/>
+        		</g>
+        		<polygon id="XMLID_689_" class="st6" points="108.7,76.6 51.4,76.6 53.1,69.9 107,69.9 		"/>
+        	</g>
+        	<g id="XMLID_685_">
+        		<rect x="2.4" y="108.9" class="st6" width="129.4" height="69.3"/>
+        	</g>
+        	<g>
+        		<g>
+        			<g id="XMLID_684_">
+        				<path class="st7" d="M30.1,55.9c-5.6,0-10.2-4.6-10.2-10.2v-2.7h20.5v2.7C40.4,51.3,35.8,55.9,30.1,55.9z"/>
+        				<path class="st8" d="M39.4,43.9v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2v-1.7H39.4 M41.4,41.9h-2H20.9h-2v2v1.7
+        					c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V41.9L41.4,41.9z"/>
+        			</g>
+        			<polygon id="XMLID_676_" class="st0" points="27.5,1.7 20.9,43.9 39.4,43.9 43.3,1.7 			"/>
+        		</g>
+        		<g>
+        			<g id="XMLID_683_">
+        				<path class="st9" d="M48.6,55.9c-5.6,0-10.2-4.6-10.2-10.2v-0.4l1.7-1.9l18.8-0.4v2.7C58.8,51.3,54.2,55.9,48.6,55.9z"/>
+        				<g>
+        					<path class="st8" d="M57.8,43.9v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2l1.1-1.3L57.8,43.9 M59.8,41.9l-2,0
+        						l-17.3,0.4l-0.9,0L39,43l-1.1,1.3l-0.5,0.6v0.8c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V41.9L59.8,41.9z"/>
+        				</g>
+        			</g>
+        			<polygon id="XMLID_675_" class="st6" points="43.3,1.7 39.4,43.9 57.8,43.9 59.2,1.7 			"/>
+        		</g>
+        		<g>
+        			<g id="XMLID_682_">
+        				<path class="st9" d="M11.6,56.7C6,56.7,1.4,52.1,1.4,46.5v-0.2l1-2.1l19.5-0.4v2.7C21.9,52.1,17.3,56.7,11.6,56.7z"/>
+        				<path class="st8" d="M20.9,44.8v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2L3,45.2L20.9,44.8 M22.9,42.7l-2,0L3,43.2
+        					l-1.2,0l-0.5,1.1l-0.6,1.3L0.4,46v0.4c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V42.7L22.9,42.7z"/>
+        			</g>
+        			<polygon id="XMLID_674_" class="st6" points="11.6,1.7 2.4,43.9 20.9,43.9 27.5,1.7 			"/>
+        		</g>
+        		<g>
+        			<g id="XMLID_681_">
+        				<path class="st9" d="M85.6,55.9c-5.6,0-10.2-4.6-10.2-10.2v-2.7h20.5v2.7C95.8,51.3,91.2,55.9,85.6,55.9z"/>
+        				<g>
+        					<path class="st8" d="M94.8,43.9v1.7c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2v-1.7H94.8 M96.8,41.9h-2H76.3h-2v2v1.7
+        						c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.7V41.9L96.8,41.9z"/>
+        				</g>
+        			</g>
+        			<polygon id="XMLID_626_" class="st6" points="75,1.7 76.3,43.9 94.8,43.9 90.8,1.7 			"/>
+        		</g>
+        		<g>
+        			<g id="XMLID_680_">
+        				<path class="st9" d="M122.5,55.9c-5.6,0-10.2-4.6-10.2-10.2v-2.7l18,0.4l2.4,1.8v0.5C132.8,51.3,128.2,55.9,122.5,55.9z"/>
+        				<g>
+        					<path class="st8" d="M113.3,43.9l16.7,0.4l1.8,1.3c0,5.1-4.1,9.2-9.2,9.2h0c-5.1,0-9.2-4.1-9.2-9.2V43.9 M111.3,41.9v2v1.7
+        						c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1l-0.8-0.6l-1.8-1.3l-0.5-0.4l-0.6,0l-16.7-0.4L111.3,41.9L111.3,41.9z"/>
+        				</g>
+        			</g>
+        			<polygon id="XMLID_622_" class="st6" points="113.3,43.9 131.8,43.9 122.5,1.7 106.7,1.7 			"/>
+        		</g>
+        		<g>
+        			<g id="XMLID_679_">
+        				<path class="st7" d="M67.1,55.9c-5.6,0-10.2-4.6-10.2-10.2v-0.6l3-1.7h15.1l2.4,1.8v0.5C77.3,51.3,72.7,55.9,67.1,55.9z"/>
+        				<g>
+        					<path class="st8" d="M74.6,44.3l1.7,1.3c0,5.1-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2l2.3-1.3H74.6 M75.3,42.3h-0.7H60.1h-0.5
+        						l-0.5,0.3l-2.3,1.3l-1,0.6v1.2c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1L77.5,44l-1.7-1.3L75.3,42.3L75.3,42.3z"/>
+        				</g>
+        			</g>
+        			<polygon id="XMLID_619_" class="st0" points="59.2,1.7 57.8,43.9 76.3,43.9 75,1.7 			"/>
+        		</g>
+        		<g>
+        			<g id="XMLID_678_">
+        				<path class="st7" d="M104,55.9c-5.6,0-10.2-4.6-10.2-10.2v-0.5l2.6-1.8h15.1l2.8,1.8v0.5C114.3,51.3,109.7,55.9,104,55.9z"/>
+        				<g>
+        					<path class="st8" d="M111.2,44.3l2,1.3c0,5.1-4.1,9.2-9.2,9.2c-5.1,0-9.2-4.1-9.2-9.2l1.9-1.3H111.2 M111.8,42.3h-0.6H96.7
+        						h-0.6l-0.5,0.3L93.7,44l-0.9,0.6v1.1c0,6.2,5,11.2,11.2,11.2c6.2,0,11.2-5,11.2-11.2v-1.1l-0.9-0.6l-2-1.3L111.8,42.3
+        						L111.8,42.3z"/>
+        				</g>
+        			</g>
+        			<polygon id="XMLID_618_" class="st0" points="90.8,1.7 94.8,43.9 113.3,43.9 106.7,1.7 			"/>
+        		</g>
+        	</g>
+        	<g>
+        		<path class="st10" d="M115.1,162h-96c0-3.9-3.1-7-7-7v-22.9c3.9,0,7-3.1,7-7h96c0,3.9,3.1,7,7,7V155
+        			C118.2,155,115.1,158.2,115.1,162z"/>
+        		<g>
+        			<path class="st11" d="M31,143.4l2.1,0.8c-0.2,0.9-0.6,1.6-1.3,2.2c-0.7,0.6-1.6,0.8-2.7,0.8c-1.6,0-2.8-0.4-3.5-1.2
+        				c-0.8-0.8-1.1-1.8-1.1-3c0-1.2,0.4-2.2,1.1-3s1.7-1.3,2.9-1.3c1,0,1.8,0.2,2.4,0.7v-0.6h2v3h-2.1c-0.1-0.4-0.3-0.7-0.5-0.9
+        				c-0.3-0.2-0.5-0.3-0.9-0.3c-0.9,0-1.3,0.8-1.3,2.3c0,1.5,0.5,2.3,1.4,2.3C30.3,145.2,30.8,144.6,31,143.4z"/>
+        			<path class="st11" d="M34.2,142.9c0-0.7,0.2-1.4,0.5-2c0.3-0.6,0.8-1.2,1.5-1.6c0.2-0.2,0.5-0.3,0.8-0.4c0.3-0.1,0.5-0.2,0.9-0.2
+        				c0.3,0,0.6-0.1,1-0.1c1.5,0,2.6,0.4,3.4,1.3c0.4,0.4,0.7,0.9,0.9,1.4c0.2,0.5,0.3,1,0.3,1.6c0,1.1-0.4,2.1-1.3,3
+        				c-0.8,0.9-2,1.3-3.4,1.3c-1.4,0-2.5-0.4-3.4-1.2C34.7,145.2,34.2,144.1,34.2,142.9z M37.8,142.9c0,0.9,0.1,1.5,0.3,1.9
+        				c0.2,0.3,0.4,0.5,0.8,0.5c0.4,0,0.6-0.2,0.8-0.5c0.2-0.3,0.3-0.9,0.3-1.9c0-0.9-0.1-1.5-0.3-1.8c-0.2-0.3-0.4-0.5-0.8-0.5
+        				c-0.4,0-0.6,0.2-0.8,0.5C37.9,141.3,37.8,141.9,37.8,142.9z"/>
+        			<path class="st11" d="M47.9,147h-3.4v-2h0.7v-4.3h-0.7v-2h3.9l3,4.3v-2.3h-0.7v-2h3.3v2h-0.7v6.4h-2.7l-3.5-5v2.9h0.7V147z"/>
+        			<path class="st11" d="M61.4,147h-4.6v-2h0.7v-4.3h-0.9v1.5H55v-3.5h8.2v3.5h-1.5v-1.5h-0.9v4.3h0.7V147z"/>
+        			<path class="st11" d="M66.4,147h-3.3v-2h0.6l1.5-4.3h-0.7v-2h5.9v2h-0.7l1.6,4.3h0.6v2h-4.3v-1.8h0.7l-0.3-1h-2.1l-0.4,1h0.7V147
+        				z M67.2,140.9l-0.8,2.3h1.5L67.2,140.9z"/>
+        			<path class="st11" d="M79.1,143.4l2.1,0.8c-0.2,0.9-0.6,1.6-1.3,2.2c-0.7,0.6-1.6,0.8-2.7,0.8c-1.6,0-2.8-0.4-3.5-1.2
+        				c-0.8-0.8-1.1-1.8-1.1-3c0-1.2,0.4-2.2,1.1-3s1.7-1.3,2.9-1.3c1,0,1.8,0.2,2.4,0.7v-0.6h2v3h-2.1c-0.1-0.4-0.3-0.7-0.5-0.9
+        				c-0.3-0.2-0.5-0.3-0.9-0.3c-0.9,0-1.3,0.8-1.3,2.3c0,1.5,0.5,2.3,1.4,2.3C78.3,145.2,78.8,144.6,79.1,143.4z"/>
+        			<path class="st11" d="M88.6,147H84v-2h0.7v-4.3h-0.9v1.5h-1.5v-3.5h8.2v3.5h-1.5v-1.5h-0.9v4.3h0.7V147z"/>
+        			<path class="st11" d="M94.8,140.7h-0.6v-2h4.2v2H98v2.8c0,0.7,0.1,1.1,0.2,1.4c0.1,0.2,0.4,0.4,0.7,0.4c0.3,0,0.5-0.1,0.6-0.3
+        				c0.1-0.2,0.2-0.6,0.2-1.2v-3h-0.4v-2h3.1v2h-0.7v3c0,0.8-0.1,1.4-0.3,1.9c-0.2,0.5-0.6,0.9-1.1,1.1c-0.5,0.3-1.1,0.4-1.9,0.4
+        				c-0.6,0-1.1-0.1-1.6-0.2c-0.5-0.1-0.8-0.4-1.1-0.7c-0.3-0.3-0.5-0.6-0.6-1c-0.1-0.4-0.2-1-0.2-1.8V140.7z"/>
+        			<path class="st11" d="M105.1,147h-1.9v-2.6h1.9c0.2,0.7,0.6,1.1,1.3,1.1c0.4,0,0.7-0.2,0.7-0.5c0-0.2-0.1-0.3-0.2-0.5
+        				c-0.2-0.1-0.5-0.3-1-0.6c-0.7-0.3-1.2-0.6-1.5-0.8c-0.3-0.2-0.5-0.5-0.8-0.8c-0.2-0.4-0.3-0.7-0.3-1.2c0-0.8,0.2-1.4,0.7-1.8
+        				c0.5-0.4,1.1-0.6,1.8-0.6c0.7,0,1.3,0.2,1.8,0.6v-0.5h1.9v2.3h-1.8c-0.2-0.6-0.6-1-1.2-1c-0.4,0-0.6,0.2-0.6,0.5
+        				c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.5,0.3,1.1,0.6c0.8,0.4,1.4,0.7,1.6,0.9c0.1,0.1,0.3,0.2,0.4,0.4s0.3,0.3,0.4,0.5
+        				c0.2,0.4,0.3,0.8,0.3,1.3c0,0.7-0.3,1.3-0.8,1.8c-0.5,0.5-1.2,0.7-1.9,0.7c-0.7,0-1.4-0.2-2-0.6V147z"/>
+        		</g>
+        	</g>
+        </g>
+        </svg>
+      </div>
+      <img class="lamp cr" src="img/lamp.svg"/>
+    </div>
   </body>
 </html>
