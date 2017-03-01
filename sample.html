@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <title>sampleINSTINCTS-2K17</title>
@@ -135,46 +135,18 @@
 
       });
       var app = angular.module('instincts', []);
-      app.controller('instinctsctrl', function($scope, $http) {
-        // $http.get("js/events.json")
-        //   .success(function(response) {
-        //       $scope.clubdetails = response;
-        //       $scope.club= response.Quiz;
-        //       $scope.event = $scope.club.Events[0];
-        //       checkarrow();
-        //       eventnamereset();
-        //       $('.events-side-back ul li').eq(0).addClass('club-selected');
-        //   })
-        //   .error(function(response) {
-        //       $scope.clubdetails = "Failed To fetch data from Server";
-        //   });
-          $scope.moveimageleft = function() {
-        		var ileft = $('.img-layers').position().left;
-        		var iwidth = $('.img-layers').width();
-        		var iowidth = $('.small-imgs').width()-60;
-        		if( ileft < 0 ){
-        			var ichange = 800;
-        			if(-ileft<800)
-        			ichange = -ileft;
-        			$('.img-layers').animate({left: ileft + ichange},500);
-        		}
-        	};
-
-
-        	$scope.moveimageright = function() {
-        		var ileft = $('.img-layers').position().left;
-        		var iwidth = $('.img-layers').width();
-        		var iowidth = $('.small-imgs').width()-60;
-        		if( -ileft + iowidth < iwidth){
-        			var ichange =800;
-        			if(iwidth - iowidth +ileft < 800){ichange = iwidth - iowidth +ileft }
-        			$('.img-layers').animate({left: ileft - ichange},500);
-        		}
-        	};
-
-          $scope.changeimage = function(x) {
-            $('.big-img').attr("src","img/gallery/big/"+x+".jpg");
-          }
+      app.controller('instinctsctrl', function($scope, $http, $timeout) {
+        $scope.submitform = function() {
+          $timeout(function () {
+            $scope.fname = "";
+            $scope.fcollege = "";
+            $scope.fdept = "";
+            $scope.fyear = "";
+            $scope.femail = "";
+            $scope.fphone = "";
+            $('.reg-thank').fadeIn(300);
+          }, 500);
+        }
       });
 
     </script>
@@ -347,8 +319,20 @@
         color: #F7E490;
         padding-top: 6px;
       }
-
+      .register-container{
+        padding: 70px;
+      }
+      .reg-form{width: 400px;margin: auto;}
+      .reg{width: 400px;box-sizing: border-box;border-radius: 4px;padding: 7px; background: #fff  !important;font-size: 16px; border: none;}
+      .reg:focus{ border:2px solid #42220A;}
+      .reg-department{ width: 230px;} .reg-year{ width: 150px;}
+      .reg-dept{width: 230px; float: left;} .reg-yr{width: 150px;margin-left: 20px;float: left;}
+      .reg-submit{margin: 0 125px;position: relative; box-sizing: border-box;border-radius: 4px;padding: 7px; width: 150px; background: #F7E490; font-size: 16px; border:2px solid #42220A; }
+      .reg-submit:active{top:2px; box-shadow: none;}
+      .reg-submit:hover{ background: #42220A; color: #F7E490; box-shadow: 0 2px 0 0px  #42220A;}
+      .reg-thank{color: #00aa00; width: 400px;text-align: center;padding: 20px; box-sizing: border-box;display: none;font-size: 16px;}
     </style>
+
   </head>
   <body id="body" ng-app="instincts" ng-controller="instinctsctrl">
     <div class="content-overlay"></div>
@@ -357,8 +341,44 @@
         <div class="content-container-outer">
           <div class="content-container-middle">
             <div class="content-container-inner">
-              <div class="sponsors-container" >
+              <div class="register-container" >
 
+                <form class="reg-form" ng-submit="submitform()" method="post">
+                  Name :<br /><input class="reg reg-name" type="text" name="r-name"  ng-model="fname"  required /><br /><br />
+                  College:<br /> <input class="reg reg-college" type="text" name="r-college"  ng-model="fcollege"  required/><br /> <br />
+                  <div class="reg-dept">  Department:<br /><input class="reg reg-department" name="r-dept" list='dept-list'  ng-model="fdept"  required />
+                    <datalist id="dept-list">
+                      <option value="CSE" />
+                      <option value="IT" />
+                      <option value="MECH" />
+                      <option value="ECE" />
+                      <option value="EEE" />
+                      <option value="Civil" />
+                      <option value="BME" />
+                      <option value="Chem" />
+                      <option value="Arts" />
+                      <option value="Diploma" />
+                      <option value="MCA" />
+                      <option value="Others" />
+                    </datalist>
+                  </div>
+                  <div class="reg-yr">  Year:<br /><input class="reg reg-year" ng-model="fyear" name="r-year" list="yr-list"  required />
+                    <datalist id="yr-list">
+                      <option value="I"/>
+                      <option value="II"/>
+                      <option value="III"/>
+                      <option value="IV"/>
+                    </datalist>
+                  </div>
+                  <div style="clear:both"></div>
+                  <br />E-mail:<br /><input class="reg reg-email" type="email"  name="r-email"  ng-model="femail"  required/><br /> <br />
+                  Mobile:<br /><input class="reg reg-mobile" type="tel"  name="r-mobile"  ng-model="fphone"  required/>
+                  <br /><br/>
+                  <div class="submit_block">
+                    <button type="submit" value="REGISTER" class="reg-submit">REGISTER</button>
+                  </div>
+                  <div class="reg-thank">Thank you for registering...</div>
+                </form>
 
               </div>
             </div>

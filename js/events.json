@@ -1,6 +1,66 @@
 {
   "NoOfClubs":"10",
+      "Special": {
+        "Name": "Special Events",
+        "NoOfEvents": "4",
+        "Events": [{
+          "Name": "Proshow",
+          "Desc": "",
+          "Dating": "",
+          "Timing": "",
+          "Venue": "",
+          "Info": [ ],
+          "Ruling": [
 
+          ],
+          "Contact": []
+        },
+        {
+          "Name": "Dj Night",
+          "Desc": "",
+          "Dating": "",
+          "Timing": "",
+          "Venue": "",
+          "Info": [ ],
+          "Ruling": [
+
+          ],
+          "Contact": []
+        },
+        {
+          "Name": "Bike Stunt",
+          "Desc": "",
+          "Dating": "",
+          "Timing": "",
+          "Venue": "",
+          "Info": [ ],
+          "Ruling": [
+
+          ],
+          "Contact": []
+        },
+        {
+          "Name": "Informals",
+          "Desc": "We have got something for everyone no matter who you are- we're here to celebrate your craziness. Informlas at instincts 2k17 will showcase an enchanting set of games for one and all to play. From breaking ice to breaking hearts ,this year is going to be truly magical for anyone who happens to walk by!!",
+          "Dating": "",
+          "Timing": "",
+          "Venue": "",
+          "Info": [ ],
+          "Ruling": [
+            "No Rules... "
+          ],
+          "Contact": [
+            {
+              "Name":"Vishnuvardhan",
+              "Number":"9884465285"
+            },{
+              "Name":"Tarang",
+              "Number":"9790915699"
+            }
+          ]
+        }
+      ]
+    },
       "Gaming": {
         "Name": "Gaming",
         "NoOfEvents": "3",
@@ -126,7 +186,8 @@
           "Ruling": [
              "Plagiarism of any artist's work will lead to disqualifaction.",
             "Team members is restricted to maximum 3 per team.",
-            "The art is to be completed within 45 MINUTES."
+            "The art is to be completed within 45 MINUTES.",
+            "Materials wont be provided."
           ],
           "Contact": [
             {
@@ -150,7 +211,8 @@
           ],
          "Ruling": [
            "Team members is restricted to maximum 3 per team. ",
-           "The art is to be completed within 30 MINUTES."
+           "The art is to be completed within 30 MINUTES.",
+           "Materials wont be provided."
          ],
          "Contact": [
             {
@@ -174,7 +236,8 @@
           ],
           "Ruling": [
             "Team members is to be restricted to 2 per team.",
-            "Time taken to complete the art should be less than 45 minutes."
+            "Time taken to complete the art should be less than 45 minutes.",
+            "Materials wont be provided."
           ],
           "Contact": [
            {
@@ -196,7 +259,8 @@
           "Info": ["Prize Money: 1000, 750, 500 "],
           "Ruling": [
             "Team members is restricted to maximum 3 per team.",
-            "The art is to be completed within 45 MINUTES."
+            "The art is to be completed within 45 MINUTES.",
+            "Materials wont be provided."
           ],
           "Contact": [
             {
@@ -218,7 +282,8 @@
           "Info": ["Prize Money: 1000, 750, 500 "],
           "Ruling": [
             "Team members is restricted to maximum 3 per team.",
-            "The art is to be completed within 45 MINUTES."
+            "The art is to be completed within 45 MINUTES.",
+            "Materials wont be provided."
           ],
           "Contact": [
             {
@@ -468,7 +533,7 @@
       },
       {
         "Name": "SPOOF IT UP",
-        "Descr": "The idea of spoofs has always excited all kinds of people! If you have a lot of creative ideas flowing then you should definitely try this event. Movies can be turned into new master pieces by just spoofing it up a little and that s what this event is all about!\r\n\r\n",
+        "Desc": "The idea of spoofs has always excited all kinds of people! If you have a lot of creative ideas flowing then you should definitely try this event. Movies can be turned into new master pieces by just spoofing it up a little and that’s what this event is all about!",
         "Dating": "10/03/2017 - Day 2",
         "Timing": "9:00am",
         "Venue": "ECE Seminar Hall",
@@ -757,9 +822,10 @@
         "Timing": "5pm",
         "Venue": "Main stage",
         "Info": [
-          "*Prelims video should be sent to dance.instincts.2k17@gmail.com*"
+
         ],
         "Ruling": [
+          "*Prelims video should be sent to dance.instincts.2k17@gmail.com*",
           "A minimum of eight and a maximum of twenty five students ONSTAGE (+2 for off stage help) per team.",
           "College IDs is a must for all the participants. ",
           "The teams have to strictly do a WESTERN performance.",
@@ -841,12 +907,13 @@
       	"Timing": "",
       	"Venue": "",
         "Info": [
+
+        ],
+        "Ruling": [
           "Theme: Open! (Any theme of the participants choice)",
           "Deadline: 7th March 2017",
           "Send us your clicks to \"spcinstincts2k17@gmail.com\".",
-          "While sending in your entries kindly mention your name, college and contact details."
-        ],
-        "Ruling": [
+          "While sending in your entries kindly mention your name, college and contact details.",
       		"Maximum of 3 entries.",
           "We will not tolerate obscenity of any kind in the photos.",
           "Winners will be chosen based on like and jury separately."

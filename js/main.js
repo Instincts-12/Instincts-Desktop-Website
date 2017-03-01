@@ -2319,9 +2319,40 @@ $(document).ready(function(){
 });
 
 var app = angular.module('instincts', []);
-app.controller('instinctsctrl', function ($scope, $http) {
+app.controller('instinctsctrl', function ($scope, $http, $timeout) {
 	$scope.pagetitle = "";
 	$scope.page = "";
+	$scope.resetuser = {name:"", college:"", dept:"", year:"", email:"", phone:""};
+	$scope.user = {};
+	$scope.submitform = function() {
+		// var data = $.param({
+    //             name: $scope.user.name,
+    //             college: $scope.user.college,
+		// 						dept: $scope.user.dept,
+		// 						year: $scope.user.year,
+		// 						email: $scope.user.email,
+		// 						phone: $scope.user.phone
+    //         });
+		$http({
+          method  : 'POST',
+          url     : 'register.php',
+          data    : $scope.user,
+          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+				}).success(function (response) {
+	        $scope.formData = response.code;
+					if($scope.formData == "i1"){
+						$('.reg-thank').fadeIn(1000);
+						$scope.user = angular.copy($scope.resetuser);
+					}else if($scope.formData == "i2"){
+						$('.reg-again').fadeIn(1000);
+					}else{
+						$('.reg-error').fadeIn(1000);
+					}
+	    })
+	    .error(function (data, status, header, config) {
+	        $('.reg-error').fadeIn(1000);
+	    });
+	}
 	$http.get("js/events.json")
 		.success(function(response) {
 				$scope.clubdetails = response;
@@ -2366,11 +2397,12 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$scope.pagetitle = "EVENTS";
 		$scope.page = "eventsp";
 		$('.page').fadeIn();
+		$('.music-reg').hide();
 		// $('body').unbind('wheel');
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		// $('.game-bg').addClass('club-bg');
-		$scope.game();
+		$scope.special();
 		// checkarrow();
 		// eventnamereset();
 	};
@@ -2439,7 +2471,19 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$scope.page = "";
 		$('#body').removeClass('sto-scroll');
 	};
-
+	$scope.special = function() {
+		$scope.club= $scope.clubdetails.Special;
+		$scope.event = $scope.club.Events[0];
+		$scope.eventswidth = $scope.club.NoOfEvents * 210;
+		$('.event-names').width($scope.eventswidth);
+		$('.club-bg').removeClass('club-bg');
+		$('.special-bg').addClass('club-bg');
+		$('.music-reg').hide();
+		// $scope.checkarrow();
+		// $scope.eventnamereset();
+		checkarrow();
+		eventnamereset();
+	};
 	$scope.game = function() {
 		$scope.club= $scope.clubdetails.Gaming;
 		$scope.event = $scope.club.Events[0];
@@ -2447,6 +2491,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.game-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2459,6 +2504,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.quiz-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2471,6 +2517,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.finearts-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2483,6 +2530,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.variety-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2495,6 +2543,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.elc-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2507,6 +2556,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.music-bg').addClass('club-bg');
+		$('.music-reg').show();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2519,6 +2569,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.dance-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2531,6 +2582,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.lop-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2543,6 +2595,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.photography-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2555,6 +2608,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.saaral-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();
@@ -2567,6 +2621,7 @@ app.controller('instinctsctrl', function ($scope, $http) {
 		$('.event-names').width($scope.eventswidth);
 		$('.club-bg').removeClass('club-bg');
 		$('.filmclub-bg').addClass('club-bg');
+		$('.music-reg').hide();
 		// $scope.checkarrow();
 		// $scope.eventnamereset();
 		checkarrow();

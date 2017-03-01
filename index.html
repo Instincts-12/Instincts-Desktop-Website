@@ -327,14 +327,15 @@
                     <li></li>
                     <li></li>
                     <li></li>
+                    <li></li>
                   </ul>
                 </div>
                 <div class="events-side-front events-side">
                   <ul>
-                    <li class="game-bg" ng-click="game()">
+                    <li class="special-bg" ng-click="special()">
                       <div class="clubs-div">
-                        <img class="clubs-image" src="img/Events/game.svg"/>
-                        <div class="clubs-name">Gaming</div>
+                        <img class="clubs-image" src="img/Events/special.svg"/>
+                        <div class="clubs-name">Special Events</div>
                       </div>
                     </li>
                     <li class="quiz-bg" ng-click="quiz()">
@@ -397,11 +398,17 @@
                         <div class="clubs-name">Film Club</div>
                       </div>
                     </li>
+                    <li class="game-bg" ng-click="game()">
+                      <div class="clubs-div">
+                        <img class="clubs-image" src="img/Events/game1.svg"/>
+                        <div class="clubs-name">Gaming</div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
                 <div class="club-details">
                   <!-- {{clubdetails}} -->
-                  <div class="club-title">{{club.Name}}</div>
+                  <div class="club-title">{{club.Name}}<a href="http://www.hungreeminds.com/instincts" target="_blank"><div class="music-reg">REGISTER</div></a></div>
                   <div class="club-events">
                     <span ng-click="moveleft()" class="arrow-span arrow-span-left"><img class=" arrow left" src="img/Events/arrow.svg"/></span>
                     <div class="events-names"><div class="event-names">
@@ -590,7 +597,44 @@
                 </div>
               </div>
               <div class="register-container" ng-switch-when="register" >
-
+                <form class="reg-form" name="registerForm" ng-submit="submitform()">
+                  Name : <span style="color:red">*</span><br /><input class="reg reg-name" type="text" name="r-name"  ng-model="user.name"  required /><br /><br />
+                  College: <span style="color:red">*</span><br /> <input class="reg reg-college" type="text" name="r-college"  ng-model="user.college"  required/><br /> <br />
+                  <div class="reg-dept">  Department: <span style="color:red">*</span><br /><input class="reg reg-department" name="r-dept" list='dept-list'  ng-model="user.dept"  required />
+                    <datalist id="dept-list">
+                      <option value="CSE" />
+                      <option value="IT" />
+                      <option value="MECH" />
+                      <option value="ECE" />
+                      <option value="EEE" />
+                      <option value="Civil" />
+                      <option value="BME" />
+                      <option value="Chem" />
+                      <option value="Arts" />
+                      <option value="Diploma" />
+                      <option value="MCA" />
+                      <option value="Others" />
+                    </datalist>
+                  </div>
+                  <div class="reg-yr">  Year: <span style="color:red">*</span><br /><input class="reg reg-year" ng-model="user.year" name="r-year" list="yr-list"  required />
+                    <datalist id="yr-list">
+                      <option value="I"/>
+                      <option value="II"/>
+                      <option value="III"/>
+                      <option value="IV"/>
+                    </datalist>
+                  </div>
+                  <div style="clear:both"></div>
+                  <br />E-mail: <span style="color:red">*</span><br /><input class="reg reg-email" type="email"  name="r-email"  ng-model="user.email"  required/><br /> <br />
+                  Mobile: <span style="color:red">*</span><br /><input class="reg reg-mobile" type="tel"  name="r-mobile"  ng-model="user.phone"  required/>
+                  <br /><br/>
+                  <div class="submit_block">
+                    <button type="submit" value="REGISTER" class="reg-submit">REGISTER</button>
+                  </div>
+                  <div class="reg-thank">Thank you for registering...</div>
+                  <div class="reg-error">Error occured. Try again...</div>
+                  <div class="reg-again">Email Id or Mobile no. already exists.</div>
+                </form>
               </div>
               <div class="contact-container" ng-switch-when="contactus">
                 <img class="frame" src="img/Events/frame.svg"/>

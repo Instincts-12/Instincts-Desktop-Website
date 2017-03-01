@@ -1,17 +1,23 @@
 <?php
   require 'database.inc.php';
-    if (isset($_GET['empid'])&&(!empty($_GET['empid']))&&isset($_GET['salary'])&&(!empty($_GET['salary']))) {
-      $empid=$_GET['empid'];
-      $salary=$_GET['salary'];
-      $query="SELECT `EmpID` FROM `emp_salary` WHERE `EmpID`='$empid'";
-      $query_run=mysql_query($query);
-      if (mysql_num_rows($query_run)==0) {
-        $query="INSERT INTO `emp_salary` VALUES ('$empid','$salary')";
-        mysql_query($query);
-        echo "<script>alert('Employee Id added')</script>";
+  $_POST = json_decode(file_get_contents('php://input'), true);
+      $name=$_POST['name'];
+      $college=$_POST['college'];
+      $dept=$_POST['dept'];
+      $yr=$_POST['year'];
+      $email=$_POST['email'];
+      $phone=$_POST['phone'];
+      $equery="SELECT * FROM `register` WHERE `email`='$email'";
+      $pquery="SELECT * FROM `register` WHERE `phone`='$phone'";
+      $equery_run = mysqli_query($conn,$equery);
+      $pquery_run = mysqli_query($conn,$pquery);
+      if (mysqli_num_rows($equery_run)==0 && mysqli_num_rows($pquery_run)==0 ) {
+        $query="INSERT INTO `register` VALUES ('$name','$college','$dept','$yr','$email','$phone')";
+        mysqli_query($conn,$query);
+        $json  =array('code' => 'i1');
       }else{
-        echo "<script>alert('Employee ID already exists.Can\'t add user')</script>";
+        $json  =array('code' => 'i2');
       }
-      // header("Location:admin.php?username=admin");
-    }
+      $jsonstring = json_encode($json);
+      echo $jsonstring;
  ?>
